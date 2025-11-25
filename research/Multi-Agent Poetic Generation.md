@@ -20,7 +20,7 @@
     - 5.2 Consciously choosing Seed #3  
     - 5.3 The contamination of Seed #2  
     - 5.4 Round 1: Poet → Architect → Editor → Poet  
-        - 5.4.1 Poet’s first draft (implicit within Seed #3)  
+        - 5.4.1 Poet’s first draft (V0)  
         - 5.4.2 Architect’s Round 1 revision (V1)  
         - 5.4.3 Editor’s Round 1 suggestions  
         - 5.4.4 Poet’s Round 1 revision (V2)  
@@ -33,16 +33,59 @@
         - 5.6.2 Breath-pattern intensification  
         - 5.6.3 Indentation and spatial stabilization  
         - 5.6.4 Contamination dynamics (Seed #2 bleed-through)  
-        - 5.6.5 Emergence of the "horizon." boundary-collapse  
+        - 5.6.5 Emergence of the “horizon.” boundary-collapse  
 6. **Results (“Saying Your Names”)**  
 7. **Discussion (“1001 Things to Discuss”)**  
 8. **Conclusion**  
-**Appendix** A: Poet Artefacts  
-**Appendix** B: Architect Artefacts  
-**Appendix** C: Editor Artefacts  
-**Appendix** D: System Logs  
-**Appendix** E: Agent Prompts and Global Constraints  
-**Appendix** F: Glossary of Technical Concepts
+9. **Appendices**  
+    - **Appendix A: Poet Artefacts**  
+        - A.1 Full Poem Versions  
+            - V0: Poet Initial Draft (Complete)  
+            - V1: Architect Round 1 Revision (Complete)  
+            - V2: Poet Recursive Expansion (Complete)  
+            - V3: Architect Round 2 Stabilization (Complete)  
+            - V4: Poet Final Recursive Intensification (Complete)  
+        - A.2 Version Comparisons (Diffs)  
+            - A.2.1 Diff: V0 → V1  
+            - A.2.2 Diff: V1 → V2  
+            - A.2.3 Diff: V2 → V3  
+            - A.2.4 Diff: V3 → V4  
+        - A.3 Poet Notes and Decisions  
+        - A.4 Seeds Passed to the Poet  
+    - **Appendix B: Architect Artefacts**  
+        - B.1 Architect Notes (Round 1)  
+        - B.2 Architect Revision Output (Round 1)  
+        - B.3 Architect Notes (Round 2)  
+        - B.4 Architect Revision Output (Round 2)  
+        - B.5 Formatting & Indentation Repairs  
+    - **Appendix C: Editor Artefacts**  
+        - C.1 Editor Notes (Round 1)  
+        - C.2 Poet Response to Editor (Round 1)  
+        - C.3 Editor Notes (Round 2)  
+        - C.4 Poet Response to Editor (Round 2)  
+    - **Appendix D: System Logs**  
+        - D.1 Logger log excerpts  
+        - D.2 Stdout log excerpts  
+        - D.3 Log Commentary  
+    - **Appendix E: Agent Prompts & Global Constraints**  
+        - E.1 Poet Persona Prompt  
+        - E.2 Architect Persona Prompt  
+        - E.3 Editor Persona Prompt  
+        - E.4 Global Guardrails  
+        - E.5 Universal Section Format  
+        - E.6 Tool Usage Rules  
+    - **Appendix F: Breath, Rhythm, and Spatial Architecture**  
+        - F.1 Overview and Motivation  
+        - F.2 Breath as Structural Constraint  
+        - F.3 Indentation as Semantic Function  
+        - F.4 Recursion Mechanics in Poetic Form  
+        - F.5 Line-Breaking and Its Cognitive Effects  
+        - F.6 The Architect’s Role in Enforcing Breath-Architecture  
+        - F.7 Siken’s Genotype: A Formal Analysis  
+        - F.8 Comparative Architectural Modes  
+        - F.9 Implications for Machine-Generated Poetics  
+    - **Appendix G: Glossary of Technical Concepts**
+        - (includes taxonomy of structure, recursion, breath-logic, indentation semantics)  
 
 ---
 
