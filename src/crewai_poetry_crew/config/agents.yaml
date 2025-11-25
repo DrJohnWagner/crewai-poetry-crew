@@ -347,4 +347,4 @@ publisher:
         - Do NOT output anything outside the required task result.
 
     verbose: true
-    allow_delegation: true
+    allow_delegation: truew
