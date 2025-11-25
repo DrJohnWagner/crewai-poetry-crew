@@ -77,13 +77,54 @@
     - **Appendix F: Breath, Rhythm, and Spatial Architecture**  
         - F.1 Overview and Motivation  
         - F.2 Breath as Structural Constraint  
+            - F.2.1 Breath Units  
+            - F.2.2 Breath-Based Lineation  
+            - F.2.3 Breath Collapse  
         - F.3 Indentation as Semantic Function  
+            - F.3.1 Indentation as Meaning  
+            - F.3.2 Indentation as Recursion Marker  
+            - F.3.3 Indentation as Temporal Stagger  
+            - F.3.4 Indentation as Emotional Fracture  
+            - F.3.5 Indentation as Structural Closure Agent  
         - F.4 Recursion Mechanics in Poetic Form  
+            - F.4.1 Recursive Echo Layers  
+            - F.4.2 Recursive Symmetry  
+            - F.4.3 Recursive Misalignment  
         - F.5 Line-Breaking and Its Cognitive Effects  
+            - F.5.1 Line-Break Types  
+            - F.5.2 End-Stops, Caesurae, and Terminal Points  
+            - F.5.3 Emotional Weight and Line-Length  
+            - F.5.4 Breath-Based Pacing  
+            - F.5.5 Line-Break as Semantic Boundary  
+            - F.5.6 Line-Break Sequencing as Meaning-Making  
         - F.6 The Architect’s Role in Enforcing Breath-Architecture  
+            - F.6.1 Repairing Failed Recursion  
+            - F.6.2 Ensuring Indentation Symmetry  
+            - F.6.3 Preventing Structural Drift  
+            - F.6.4 Enabling Controlled Collapse  
+            - F.6.5 Summary: Why the Architect Matters  
         - F.7 Siken’s Genotype: A Formal Analysis  
+            - F.7.1 Phenotype vs. Genotype  
+            - F.7.2 Recursive Torque as a Genetic Marker  
+            - F.7.3 Interruptive Logic and Emotional Velocity  
+            - F.7.4 Structural Self-Contradiction as Drive  
+            - F.7.5 Emergent Genotype Assimilation Across Versions  
         - F.8 Comparative Architectural Modes  
+            - F.8.1 Frost-Linearity  
+            - F.8.2 Glück-Distillation  
+            - F.8.3 Vuong-Ellipticity  
+            - F.8.4 No-Architect Mode  
+            - F.8.5 No-Editor Mode  
+            - F.8.6 Summary of Cross-Mode Behaviors  
         - F.9 Implications for Machine-Generated Poetics  
+            - F.9.1 Agent Interdependence as a Generative Force  
+            - F.9.2 Architectural Pressure as Machine-Literary Style  
+            - F.9.3 Recursion as Aesthetic Memory  
+            - F.9.4 The Paradox of Productive Interference  
+            - F.9.5 Reframing Poetics: From Output to Behavior  
+            - F.9.6 Implications for Computational Creativity Research  
+            - F.9.7 Future Directions  
+            - F.9.8 Conclusion
     - **Appendix G: Glossary of Technical Concepts**
         - (includes taxonomy of structure, recursion, breath-logic, indentation semantics)  
 
