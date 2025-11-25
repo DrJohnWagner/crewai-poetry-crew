@@ -1,0 +1,29 @@
+[project]
+name = "crewai_poetry_crew"
+version = "0.1.0"
+description = "crewai-poetry-crew using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai-tools>=1.5.0",
+    "crewai[google-genai,tools]==1.5.0",
+    "dotenv>=0.9.9",
+    "langchain>=1.0.8",
+    "langchain-openai>=1.0.3",
+    "pydantic>=2.12.4",
+]
+
+[project.scripts]
+crewai_poetry_crew = "crewai_poetry_crew.main:run"
+run_crew = "crewai_poetry_crew.main:run"
+train = "crewai_poetry_crew.main:train"
+replay = "crewai_poetry_crew.main:replay"
+test = "crewai_poetry_crew.main:test"
+run_with_trigger = "crewai_poetry_crew.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
