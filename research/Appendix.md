@@ -314,7 +314,9 @@ reunion; letting go can be its own kind of love.
 ---
 
 # Appendix B: Architect Artefacts
-# Appendix B: Architect Artefacts
+
+> *“Everyone needs a place. It shouldn’t be inside of someone else.”*  
+> —Richard Siken, *Crush*
 
 ## B.1 Architect Notes (Round 1)
 
@@ -651,7 +653,9 @@ In essence, the Poet again chooses **formal recursion over conceptual complicati
 ---
 
 # Appendix F: Breath, Rhythm, and Spatial Architecture  
-*(A Technical Deep Dive into Indentation, Recursion, and Line-Breaking)*
+
+> *“There is a way the mind unfolds, and a way it breaks.”*  
+> —Richard Siken
 
 ## F.1 Overview and Motivation
 
@@ -1952,12 +1956,291 @@ In this view, the future of computational poetics lies not primarily in scaling 
 
 ---
 
-# Appendix G: Glossary of Technical Concepts (Optional)
+# Appendix G: The Taxonomy of Redlining
 
-- Recursion  
-- Breath-logic  
-- Persona genotype vs phenotype  
-- Seed contamination  
-- Attractor-state dynamics  
-- Boundary collapse (“horizon.”)  
-- Multi-agent feedback cycles  
+> *“Say it clearly and you make it beautiful, no matter what.”*  
+> —Richard Siken, *Crush*
+
+## G.0 Actor-Level Redline Categories
+
+While the mutation classes in Sections G.3–G.5 describe *what* kinds of structural transformations occur, each redline also has a distinct *origin*. In the current multi-agent pipeline, redlines can be produced—intentionally or incidentally—by several agents:
+
+- the **Architect** (in-situ structural manipulation)  
+- the **Poet** (persona-driven recursive and lexical manipulation)  
+- the **Editor** (structural suggestions implemented by the Poet)  
+- the **Janitor** (minimal post-hoc cleanup / format normalization)  
+- the **Window Washer** (rendering, display, or superficial cleaning passes)  
+
+These actors vary dramatically in their degrees of agency, intentionality, and structural reach.  
+The Taxonomy of Redlining therefore recognizes **five origin classes**:
+
+1. **Architectural Redlining**  
+2. **Poetic Redlining**  
+3. **Editorial Redlining**  
+4. **Janitorial Redlining**  
+5. **Cosmetic Redlining** (Window Washer)
+
+Each origin class may employ any of the mutation types defined in Sections G.3–G.4, but their roles and constraints differ.
+
+---
+
+### G.0.1 Architectural Redlining (Architect)
+The Architect performs *direct structural manipulation*. These redlines alter the poem’s blueprint:
+
+- indentation  
+- echo-plane creation  
+- recursive scaffolding  
+- line splitting and fracture placement  
+- spatial and rhythmic geometry  
+
+Architectural Redlines are the most load-bearing and are the primary focus of Appendix B.
+
+---
+
+### G.0.2 Poetic Redlining (Poet)
+The Poet performs redlines while generating V2 and V4:
+
+- **recursive intensification**  
+- **lexical shifts**  
+- **semantic pivots**  
+- **overwrites of architectural structure**  
+- **recursion depth increases**  
+- **pattern drift**  
+
+Poetic Redlines may *amplify*, *complicate*, or *erase* architectural structure, and frequently respond to Editor pressure as well.
+
+---
+
+### G.0.3 Editorial Redlining (Editor)
+Though the Editor does not modify the poem directly, Editor Notes exert **structural pressure** on the Poet. Editorial Redlines therefore include:
+
+- requests for structural or rhythmic emphasis  
+- recommendations for breath-breaks  
+- suggestions for recursion escalation or reduction  
+- proposals for rearranging pivot points  
+- semantic pressure that induces Poetic Redlines  
+
+These redlines act through the Poet but originate in the Editor, creating two-level redline causality.
+
+---
+
+### G.0.4 Janitorial Redlining (Janitor)
+The Janitor performs cleanup operations such as:
+
+- removing extra spaces  
+- fixing broken Markdown  
+- repairing malformed stanza boundaries  
+- stripping accidental repetition artifacts  
+- correcting malformed indentation width  
+
+These redlines have *no architectural intent* but do alter structure and therefore belong in the taxonomy.
+
+They are important to track because they may obscure or accidentally undo earlier Architect or Poet redlines.
+
+---
+
+### G.0.5 Cosmetic Redlining (Window Washer)
+These redlines affect:
+
+- whitespace normalization  
+- export formatting  
+- indentation width uniformity  
+- alignment corrections for rendering  
+
+They do not affect semantics, recursion, or architecture, but they matter for the **visual field** and can slightly modify breath logic (Appendix F.1).
+
+---
+
+## G.0.6 Multi-Agent Redline Interference
+
+Redlines from different origins can:
+
+- **compound** each other  
+- **interfere** destructively  
+- **overwrite** earlier redlines  
+- **create drift** when agent goals misalign  
+- produce emergent redline patterns neither agent intended  
+
+Appendix F.9.4 (“The Paradox of Productive Interference”) examines these multi-agent redline interactions in detail.
+
+---
+
+## G.0.7 Summary
+
+Redlines in the system are not merely structural mutations:  
+they are *agent-level behaviors* with distinct signatures, constraints, and interaction patterns.
+
+- Appendix G defines the **full taxonomy**.  
+- Appendix B focuses specifically on **Architectural Redlines**.  
+- Appendices C and F interpret **Editorial** and **Poetic** redlines.  
+- Appendix E documents agents’ rules and constraints.  
+- Appendix H provides the definitions needed to interpret every redline type.
+
+# Appendix H: Vocabulary of Architectural, Poetic, and Redline Terms
+
+This glossary consolidates the terminology used throughout the appendices to describe structural, spatial, rhythmic, cognitive, and recursive transformations within the multi-agent poetic pipeline. These terms integrate the Redline Language (Appendix B) with the architectural framework established in Appendix F.
+
+---
+
+## Redline Terminology
+
+### Architectural Redlines
+Structural interventions made by the Architect—fractures, indentations, echo placements, and breath-breaks—applied directly to the poem’s blueprint to reshape its rhythmic and spatial geometry.
+
+### Poetic Redlines
+Structural or recursive interventions introduced by the Poet. These may amplify, reinterpret, undermine, or overwrite Architect-imposed structures based on persona-driven grammar.
+
+### Redline Language
+The overarching system for classifying all structural mutations across poem versions, built on labels such as [STRUCTURE], [INDENT], [RECURSION+], [RECURSION×], [LEXICON], [ORDER], and [FUSION].
+
+### Redline Vocabulary
+The set of specific classification labels used in the Redline Language. These form the operational lexicon for mutation analysis.
+
+### Redline Ledger
+A detailed, line-by-line record of all Architectural and Poetic Redlines between versions (e.g., V0→V1, V2→V3). Serves as the factual backbone for interpretive work in Appendix F.
+
+### Redline Signature
+The characteristic pattern of redlines specific to each agent. The Architect’s signature often includes indentation symmetry, paired echoes, and careful pivot fractures; the Poet’s signature includes recursive intensification, destabilized echoes, and semantic pressure cycling.
+
+### Redline Depth
+The recursive thickness of a stanza—measured through echo tiers, indentation, vertical descent, and fracture density. High depth corresponds to greater emotional pressure and breath compression.
+
+### Redline Compounding
+Poetic Redlines that amplify or extend an Architectural Redline. Examples include deepening recursion, adding new echo tiers, or reinforcing architected pivot fractures.
+
+### Redline Overwrite
+Poetic Redlines that remove, flatten, or neutralize an Architectural Redline. Examples include collapsing recursion, undoing fractures, or reflowing stanza geometry.
+
+### Redline Collapse
+Poetic reduction of recursive complexity—flattening echo tiers or removing descent to stabilize rhythm.
+
+### Redline Drift
+A mismatch between structural (Architect) and semantic (Editor) pressures. Drift often predicts later Poetic Redlines that tilt the structure toward meaning or emotional truth.
+
+### Redline Geometry
+The spatial configuration produced by redlines: indentation planes, echo columns, recursive descent paths, breath-break intervals, and pivot placements.
+
+### Redline Plane
+A vertically aligned layer of recursion created by an echo. Each plane forms a shadowed or parallel version of a parent line.
+
+### Redline Pivot
+A structurally significant fracture or break that creates torque, rupture, or emotional hinge within a stanza.
+
+---
+
+## Breath Architecture Vocabulary
+
+### Breath Unit
+The smallest rhythmic segment of a poem determined by where a reader would naturally inhale or exhale.
+
+### Breath-Break
+A deliberate pause (often a blank line or fracture) that interrupts narrative flow and lengthens temporal perception.
+
+### Breath-Lift
+A moment where the poem “rises” or lightens—often signaled by line shortening, de-indentation, or release from recursive pressure.
+
+### Breath-Compression
+A condition in which recursion, indentation, or stutter-plane density reduces breathing room, heightening urgency or restraint.
+
+### Inhalation Line
+A line that draws the reader inward—often longer, smoother, or anticipatory.
+
+### Exhalation Line
+A line that releases tension—often short, ruptured, or final.
+
+---
+
+## Spatial Architecture Vocabulary
+
+### Echo Plane
+A vertical recursive alignment beneath a parent line; represents layered memory, echoic pressure, or recursive stutter.
+
+### Descent Column
+A series of increasingly indented lines that create downward motion—psychologically associated with collapse, sinking, or emotional gravity.
+
+### Pivot Axis
+The conceptual or emotional hinge around which fractures and recursive echoes rotate.
+
+### Spatial Drift
+Gradual misalignment of recursion or indentation that suggests instability or dissolution of structural intent.
+
+### Collapse Plane
+A point where a recursive structure gives way—echoes disappear, indentation is flattened, or rhythmic descent stops abruptly.
+
+### Horizon Line
+Any line that aligns visually as a stabilizing point—often used in your poems as exit, distance, or temporal dissolution.
+
+---
+
+## Rhythmic / Temporal Architecture Vocabulary
+
+### Temporal Stretching
+The effect of slowing narrative time through blank lines, line elongation, or spatial dilation.
+
+### Temporal Compression
+The effect of accelerating narrative time by tightening recursion, reducing whitespace, or intensifying stutter cycles.
+
+### Recursive Pulse
+A rhythmic oscillation produced by repeated fragments, mimicking heartbeat or emotional panic.
+
+### Rhythmic Torque
+The pressure created when fracture points or recursive spirals destabilize a line’s expected rhythm.
+
+### Breakbeat Line
+A line that introduces unexpected fragmentation or syncopation.
+
+---
+
+## Recursive Architecture Vocabulary
+
+### Recursive Chain
+A sequence of repeated echoes that creates vertical load and intensifies emotional pressure.
+
+### Recursive Turbulence
+Irregular or destabilized recursion that produces anxiety, confusion, or emotional rupture.
+
+### Recursive Collapse
+Intentional or accidental breaking of a recursion chain—either by the Poet or because of redline conflict.
+
+### Double-Return
+When a line returns twice with different force (e.g., second echo weaker or stronger than the first).
+
+### Recursive Knot
+A structurally dense location where multiple recursions converge, producing cognitive overload or emotional intensification.
+
+---
+
+## Violence / Rupture Vocabulary
+
+### Fracture Line
+A line deliberately broken at a pivot, producing rupture, hesitation, or emotional shock.
+
+### Rupture Vector
+The directionality created by a fracture—whether it pulls upward, downward, or laterally.
+
+### Impact Line
+A line whose structural form is designed to hit with maximal force—often short, indented, or isolated.
+
+### Controlled Burn
+A stanza where recursion and rupture are allowed to intensify but remain bounded by architectural symmetry.
+
+---
+
+## Cognitive / Psychological Architecture Vocabulary
+
+### Cognitive Drag
+The slowing effect of recursive density or spatial descent on interpretive processing.
+
+### Attention Funnel
+The narrowing of reader attention through indentation, echoing, or stutter-patterns.
+
+### Emotional Load-Bearing
+The weight a line must carry after being made responsible for anchoring multiple recursive or fractured structures.
+
+### Perceptual Drift
+A shift in reader attention caused by structural asymmetry, often intentionally introduced by the Architect.
+
+### Memory Shadow
+The effect produced when repeated fragments function as echoes of prior emotional states.
+
+---

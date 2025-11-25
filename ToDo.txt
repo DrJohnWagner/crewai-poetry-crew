@@ -1,0 +1,33 @@
+Response to the Architect Is Difficult (and Interesting)
+
+Your point is exactly right:
+
+The Poet never responds to the Architect directly.
+
+There is no “Poet response” message.
+There is no “acknowledged / ignored / rejected” log.
+There is no stable delineation between:
+
+things the Poet chose,
+
+things the Poet un-chose,
+
+things the Poet chose to undo,
+
+and things the Poet did because the Editor pushed them into doing so.
+
+And the difficulty compounds because:
+
+🧩 The Poet responds to Architect and Editor simultaneously
+
+Which means:
+
+Some Poet changes clearly match an Editor suggestion.
+
+Some clearly match an Architect constraint.
+
+Some changes can serve either pressure source.
+
+And some changes the Poet makes may appear to align with the Architect, but might actually be an unintended side effect of an Editor-induced rewrite.
+
+This creates multi-causal ambiguity, and ambiguity is structural, not incidental.
