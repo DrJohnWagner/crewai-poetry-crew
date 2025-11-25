@@ -630,25 +630,329 @@ In essence, the Poet again chooses **formal recursion over conceptual complicati
 
 ---
 
-# Appendix E: Agent Prompts and Global Constraints
+# Appendix E: Agent Prompts, Tasks, & Global Constraints
 
-## E.1 Poet Persona Prompt  
-*(To be added…)*
+## E.1 System-Wide Instructions and Constraints
 
-## E.2 Architect Persona Prompt  
-*(To be added…)*
+The multi-agent system relies on a shared collection of global constraints, formatting
+rules, and persona instructions that are injected into each agent’s prompt at runtime.
+Rather than repeating these rules within every agent definition, the system composes them
+dynamically through a structured dictionary of inputs. This injection mechanism ensures
+that all agents inherit the same guardrails, formatting discipline, and tooling
+restrictions, while still allowing each agent to apply its role-specific logic.
 
-## E.3 Editor Persona Prompt  
-*(To be added…)*
+A simplified version of the injection structure used by the system is shown below:
 
-## E.4 Global Guardrails  
-*(To be added…)*
+<BEGIN MARKDOWN>
+# Example: Prompt and Constraint Injection Structure
 
-## E.5 Universal Section Format  
-*(To be added…)*
+INPUTS = {
+    "GLOBAL_META_GUARDRAILS": globals.global_meta_guardrails,
+    "UNIVERSAL_SECTION_FORMAT": globals.universal_section_format,
+    "TOOL_USAGE_INSTRUCTIONS": globals.tool_usage_instructions,
+    "POET_ANTIPATTERN_INSTRUCTION": globals.poet_antipattern_instruction,
 
-## E.6 Tool Usage Rules  
-*(To be added…)*
+    # Numeric or configuration parameters
+    "REVIEW_LENGTH": "300-500",
+    "CONCEPTS": "3",
+    "EDITS": "3-5",
+
+    # Persona instructions
+    "POET": persona.poet,
+    "ARCHITECT": persona.architect,
+    "EDITOR": persona.editor,
+
+    # User-supplied prompt
+    "PROMPT": PROMPT,
+}
+
+# System execution
+result = CrewAIPoetryCrew().crew().kickoff(inputs=INPUTS)
+<END MARKDOWN>
+
+### E.1.1 No-Meta Rules
+
+These rules prevent agents from leaking CrewAI’s internal scaffolding into the poetic
+workflow. They exist *only* because the underlying CrewAI executor occasionally produces
+minor meta-output bleed-through. To ensure clean artifacts, all agents are instructed to:
+
+- avoid discussing that they are agents or models,
+- avoid referencing prompts, roles, or system instructions,
+- avoid revealing implementation details,
+- avoid commenting on the multi-agent pipeline itself.
+
+This rule is **not** part of poetic theory or system design. It is a practical correction
+layer to ensure clean outputs within CrewAI’s current execution model.
+
+### E.1.2 Global Guardrails
+
+These guardrails apply to all agents and maintain the system’s coherence:
+
+- **Role Separation:** Each agent performs only its defined task and cannot impersonate or
+  anticipate another agent.
+- **Deterministic Hand-offs:** Each agent receives one artifact and outputs exactly one
+  artifact—no branches, no speculative alternatives.
+- **Formatting Fidelity:** Agents must preserve stanza and indentation structure unless
+  their role explicitly permits altering it (e.g., Architect).
+- **Instructional Obedience:** Prompt injections and global rules cannot be altered,
+  paraphrased, or critiqued by any agent.
+
+(Note: An earlier version of the system included a distinct “No Leakage” guardrail, but
+this was redundant with Role Separation and Deterministic Hand-offs and has since been
+removed.)
+
+### E.1.3 Universal Section Format
+
+Every agent is required to follow a consistent structural format:
+
+- Produce only the requested section type (concept, notes, draft, revision, etc.).
+- Do not include prefaces, apologies, explanations, or additional commentary.
+- Avoid introducing Markdown formatting unless explicitly asked.
+- Maintain consistent indentation (four spaces for all nested structures).
+- Preserve poem fragments exactly unless the agent is authorized to modify wording
+  (Poet only).
+- Do not emit headers or text outside the expected envelope.
+
+This universal format ensures clean interoperability between agents and enables structural
+and redline analyses in Appendices F and G.
+
+### E.1.4 Tool Usage Rules
+
+These rules define what each agent may or may not alter:
+
+- **Poet:** Can modify wording, diction, syntax, ordering, recursion, and imagery—*but only
+  through the logic of the assigned persona*.  
+- **Architect:** Cannot change any words. All transformations must be structural:
+  indentation, recursion planes, echo lines, breath-breaks, spatial fragmentation, etc.
+- **Editor:** Outputs semantic and emotional notes only. Cannot rewrite or propose new
+  lines of poetry.
+- **Critic:** Evaluates the final poem. Cannot propose changes or modifications.
+- **Publisher:** Final rendering only; no content or structural changes.
+
+These constraints enforce a clean separation between semantic generation (Poet),
+structural transformation (Architect), and semantic pressure (Editor), enabling precise
+attribution of system behavior.
+
+## E.2 Agent and Task Descriptions & Prompts (Pipeline Order)
+
+This section describes each agent in the seven-stage pipeline, together with its associated
+task(s). The goal here is not to provide full persona prompts (those appear in later
+appendices when needed), but rather to document the operational role, inputs, outputs, and
+core responsibilities of each agent. All agents inherit the global constraints specified
+in Section E.1.
+
+### E.2.1 Muse  
+**Task:** `task_inspire`  
+
+**Role:**  
+The Muse generates initial conceptual terrain for the poem. It does not write poetry.
+Instead, it proposes multiple emotional or imagistic directions — typically three — which
+define the potential “universes” the poem could inhabit.
+
+**Input:**  
+A user prompt describing the thematic seed.
+
+**Output:**  
+A set of high-level emotional concepts (not stanzas, not summaries), forming raw material
+for downstream agents.
+
+**Primary Responsibilities:**  
+- Generate varied emotional arcs.  
+- Avoid narrative development; focus on atmosphere, tension, and interior landscape.  
+- Provide concept-level diversity without enforcing structure or style.  
+
+
+### E.2.2 Summariser  
+**Task:** `task_summarise`  
+
+**Role:**  
+The Summariser transforms the Muse’s conceptual list into a compact, unified “poetic
+intention” summary. It does not add new themes; it distills, clarifies, and stabilizes.
+
+**Input:**  
+Concept lists from the Muse.
+
+**Output:**  
+A single structured summary of poetic intent and emotional trajectory.
+
+**Primary Responsibilities:**  
+- Integrate the Muse’s concepts into a cohesive internal blueprint.  
+- Identify dominant emotional tensions.  
+- Provide a clear north-star summary for the Poet.  
+
+
+### E.2.3 Poet  
+**Tasks:**  
+- `task_write`  
+- `task_revise`  
+- `task_finalise`  
+
+**Role:**  
+The Poet is the system’s generative core. It produces natural-language poetry in the voice
+of a specified persona (e.g., Rilke, Siken, Frost). The Poet is the *only* agent authorized
+to change wording, syntax, ordering, diction, and imagery.
+
+**Input:**  
+Summariser’s blueprint, plus any editor notes (later rounds).
+
+**Output:**  
+A full poetic draft (V0), then recursive expansions (V2, V4, etc.).
+
+**Primary Responsibilities:**  
+- Produce first-draft poems according to persona grammar and breath logic.  
+- Implement recursive elaboration during revision tasks.  
+- Respond to Editor pressure without violating persona logic.  
+- Preserve emotional architecture across rounds.  
+
+
+### E.2.4 Architect  
+**Tasks:**  
+- `task_architect_one`  
+- `task_architect_two`  
+
+**Role:**  
+The Architect performs *structural* and *spatial* transformations without altering any of
+the Poet’s words. It is the primary agent responsible for indentation logic, breath
+architecture, recursion planes, echo fragments, and line-break manipulation.
+
+**Input:**  
+A poem draft from the Poet.
+
+**Output:**  
+A structurally modified poem (e.g., V1, V3) with altered breath-patterning, indentation,
+fragmentation, and rhythm.
+
+**Primary Responsibilities:**  
+- Add or deepen indentation layers.  
+- Insert breath breaks, blank-line spacing, structural rupture points.  
+- Introduce echo fragments (recursion planes) using verbatim text.  
+- Maintain the integrity of every word (no lexical edits allowed).  
+- Stabilize or correct malformed recursive structures during revision rounds.  
+
+
+### E.2.5 Editor  
+**Tasks:**  
+- `task_edit_one`  
+- `task_edit_two`  
+
+**Role:**  
+The Editor provides semantic, emotional, and structural *notes* to the Poet — but does not
+modify the poem directly. The Editor applies interpretive pressure, suggesting intensities,
+collisions, or thematic expansions.
+
+**Input:**  
+Architect-modified poem.
+
+**Output:**  
+A set of editorial notes. No new lines of poetry.
+
+**Primary Responsibilities:**  
+- Highlight opportunities for stronger emotional tension or image pressure.  
+- Suggest recursion growth, variation, or collapse.  
+- Identify underdeveloped motifs and propose reframing.  
+- Respond to both semantic meaning and structural choices made by the Architect.  
+- Never introduce new wording into the poem.  
+
+### E.2.6 Critic  
+**Task:** `task_review`  
+
+**Role:**  
+The Critic evaluates the near-final poem from a literary perspective. It is not a coach,
+designer, or collaborator: it does not propose changes, only performs an aesthetic and
+structural evaluation.
+
+**Input:**  
+Final Poet revision.
+
+**Output:**  
+A review, typically 300–500 words, describing strengths, weaknesses, persona fidelity, and
+the poem’s internal logic.
+
+**Primary Responsibilities:**  
+- Assess whether the poem fulfills the persona grammar.  
+- Evaluate breath, recursion, and spatial architecture at a high level.  
+- Interpret emotional arc and thematic coherence.  
+- Provide a reader-facing critique rather than system-facing guidance.  
+
+### E.2.7 Publisher  
+**Task:** `task_publish`  
+
+**Role:**  
+The Publisher finalizes the rendering of the poem. It does not edit content or structure;
+its role is purely presentational.
+
+**Input:**  
+Final poem and critic review.
+
+**Output:**  
+A formatted, publication-ready artifact (Markdown).
+
+**Primary Responsibilities:**  
+- Present the poem cleanly using the universal section format.  
+- Apply any additional non-semantic formatting rules required by the system.  
+- Ensure reproducible, consistent document finalization.  
+
+## E.3 Pipeline-Level Implementation Notes (Minimal Stub)
+
+The system operates as a fixed, sequential *task* pipeline, where each task corresponds to
+a specific agent action. Although each agent has its own identity and persona logic, it is
+the tasks—not the agents themselves—that determine execution order. This distinction is
+crucial, because the refinement loop relies on re-entering the Poet, Architect, and Editor
+in alternating task phases.
+
+1. **Strict Task Ordering:**  
+   The pipeline executes in a deterministic sequence of tasks:  
+
+   task_inspire →  
+   task_summarise →  
+   task_write →  
+   task_architect_one →  
+   task_edit_one →  
+   task_revise →  
+   task_architect_two →  
+   task_edit_two →  
+   task_finalise →  
+   task_review →  
+   task_publish  
+
+   This ordering enforces the two-round refinement cycle and ensures reproducible agent
+   interactions.
+
+2. **Single-Artifact Flow:**  
+   Each task receives exactly one artifact (concept list, summary, draft, structural edit,
+   notes, etc.) and outputs exactly one artifact in return. No branching or multiple-output
+   flows are permitted.
+
+3. **Round-Based Refinement via Tasks:**  
+   The system’s refinement loop is implemented through repeated task calls:
+
+   - **Round 1:**  
+     task_write → task_architect_one → task_edit_one → task_revise  
+
+   - **Round 2:**  
+     task_architect_two → task_edit_two → task_finalise  
+
+   This pattern makes clear that the Poet, Architect, and Editor re-enter the pipeline
+   through *different tasks* rather than as singular monolithic agents.
+
+4. **In-Place Structural and Semantic Evolution:**  
+   - Poet tasks (task_write, task_revise, task_finalise) handle semantic and recursive
+     development.  
+   - Architect tasks (task_architect_one, task_architect_two) apply purely structural
+     transformation.  
+   - Editor tasks (task_edit_one, task_edit_two) apply semantic pressure via notes only.  
+
+   The interleaving of these tasks creates controlled interference without overwriting
+   downstream contributions.
+
+5. **Prompt Injection Mechanism:**  
+   All global constraints and persona instructions described in E.1 and E.2 are injected
+   into each task at runtime through the `INPUTS` dictionary (see E.1), guaranteeing
+   consistent guardrails and formatting behavior across the pipeline.
+
+This completes the high-level overview of the task-driven execution pipeline. More detailed
+agent-level behavior appears in Section 4, while the effects of these task interactions are
+analyzed structurally in Appendices B, F, and G.
 
 ---
 
