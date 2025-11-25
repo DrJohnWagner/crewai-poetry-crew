@@ -632,3 +632,5 @@ deformations** rather than the product of a single authorial will.
 Together, these dynamics create the system’s “behavioral ecology.”  
 The poem is not a collaboration of agents but the result of their **pressures, refusals,
 and collisions**—the architectural physics through which poetic form emerges.
+
+---

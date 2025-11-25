@@ -7,8 +7,9 @@
 1. **Motivation**  
 2. **Persona Selection and Rationale**  
     - 2.1 Why Richard Siken?  
-    - 2.2 Why not alternative personas (e.g., Frost)?  
-    - 2.3 Genotype vs Phenotype in poetic modeling  
+    - 2.2 Why Not Alternative Personas (Frost, Glück) — and Why Rilke Is Next
+    - 2.3 Genotype vs Phenotype in poetic modeling
+    - 2.4 The Siken Persona: Genotype, Interior Physics, and Multi-Agent Expression
 3. **System Overview (“Litany of Things Not Crossed Out”)**  
 ## 4. Architectural and Behavioral Analysis of the Seven-Agent System
     - 4.1 Overview of the Seven-Agent System
@@ -143,112 +144,22 @@
 
 ---
 
-# 1. Motivation
-*(To be drafted…)*
+!include "Section-1.md"
 
----
+!include "Section-2.md"
 
-# 2. Persona Selection and Rationale
+!include "Section-3.md"
 
-## 2.1 Why Richard Siken?
-*(To be drafted…)*
+!include "Section-4.md"
 
-## 2.2 Why not alternative personas (e.g., Frost)?
-*(To be drafted…)*
+!include "Section-5.md"
 
-## 2.3 Genotype vs Phenotype in poetic modeling
-*(To be drafted…)*
+!include "Section-6.md"
 
----
+!include "Section-7.md"
 
-# 3. System Overview (“Litany of Things Not Crossed Out”)
-*(High-level description of the pipeline; to be drafted…)*
+!include "Section-8.md"
 
----
-
-## 4. Architectural and Behavioral Analysis of the Seven-Agent System
-
-> **“In the end, it’s all collisions. Everything is collisions.”**  
-> — Richard Siken, *Crush*
-
-[!insert Section-4]
-
----
-
-# 5. The Run (Case Evidence)
-*(To be drafted…)*
-
-## 5.1 The three seeds (options presented to the Poet)
-*(To be drafted…)*
-
-## 5.2 Consciously choosing Seed #3
-*(To be drafted…)*
-
-## 5.3 The contamination of Seed #2
-*(To be drafted…)*
-
-## 5.4 Round 1: Poet → Architect → Editor → Poet
-*(To be drafted…)*
-### 5.4.1 Poet’s first draft (implicit within Seed #3)
-*(To be drafted…)*
-### 5.4.2 Architect’s Round 1 revision (V1)
-*(To be drafted…)*
-### 5.4.3 Editor’s Round 1 suggestions
-*(To be drafted…)*
-### 5.4.4 Poet’s Round 1 revision (V2)
-*(To be drafted…)*
-
-## 5.5 Round 2: Poet → Architect → Editor → Poet
-*(To be drafted…)*
-### 5.5.1 Architect’s Round 2 stabilization (V3)
-*(To be drafted…)*
-### 5.5.2 Editor’s Round 2 suggestions
-*(To be drafted…)*
-### 5.5.3 Poet’s final round revision (V4)
-*(To be drafted…)*
-
-## 5.6 Structural and Stylistic Evolution Across Rounds
-*(To be drafted…)*
-### 5.6.1 Emergence of recursive echo architecture
-*(To be drafted…)*
-### 5.6.2 Breath-pattern intensification
-*(To be drafted…)*
-### 5.6.3 Indentation and spatial stabilization
-*(To be drafted…)*
-### 5.6.4 Contamination dynamics (Seed #2 bleed-through)
-*(To be drafted…)*
-### 5.6.5 Emergence of the "horizon." boundary-collapse
-*(To be drafted…)*
-
----
-
-# 6. Results (“Saying Your Names”)
-*(To be drafted…)*
-
----
-
-# 7. Discussion (“1001 Things to Discuss”)
-*(To be drafted…)*
-
----
-
-# 8. Future Work
-
-## Future Work
-
-The case study highlights several limitations in the current multi-agent architecture that directly motivate avenues for future development. First, the Poet never responds to the Architect directly. All Poet revisions occur in a single recursive pass that merges pressures from both the Architect and the Editor. As a result, any attempt to recover which architectural constraints were accepted, resisted, or undone is necessarily inferential and often ambiguous. Future versions of the system should incorporate explicit diagnostic channels or provenance markers that allow the Poet to declare when an edit is in response to an architectural intervention, an editorial suggestion, or an internal persona-driven impulse. Such visibility would enable more precise reconstruction of agent influence and strengthen interpretability.
-
-Second, because the Poet responds to the Architect and Editor simultaneously, their revisions conflate structural and semantic pressures. This entanglement obscures the true flow of influence within the pipeline. A promising direction for future work is the development of instrumentation or logging hooks that trace, in real time, which agent-originated signals the Poet is incorporating or rejecting. These diagnostics could take the form of edit-type metadata, structural diff tags, or explicit self-reporting from the Poet about constraint alignments during revision.
-
-Third, we observe that the Editor frequently proposes structural or architectural modifications—despite this not being the Editor’s formal mandate. In the current system design, these suggestions belong neither to the Architect nor to the Poet and therefore enter the pipeline without a clear place to land. A more principled approach would allow the Poet to pass Editor-derived structural suggestions upstream to the Architect as candidate architectural modifications in the next iteration cycle. This would transform the Architect from a strictly top-down structural agent into a participant in a collaborative negotiation loop, better reflecting the reciprocal dynamics of real-world editorial practice.
-
-Collectively, these directions suggest a richer, more transparent multi-agent system in which structural, semantic, and persona-driven pressures remain distinguishable, traceable, and intentionally negotiated. Implementing such enhancements would not only improve interpretability but would provide a framework for studying agent entanglement as an expressive force in machine-generated poetics.
-
----
-
-# 9. Conclusion
-*(To be drafted…)*
-
----
+!include "Section-9.md"
 
 !include "Appendix.md"
