@@ -13,12 +13,14 @@ from .read_globals import read_globals
 from .create_logger import create_logger
 from .create_logger import create_log_file
 
-from prompts import PROMPT
+# from prompts import PROMPT
 
 logger = create_logger("crewai")
 
 globals = read_globals(Path("src/crewai_poetry_crew/config/globals.yaml"))
 globals = globals.globals_
+
+PROMPT = "Your name is a knot I can't untie in my chest."
 
 persona = get_persona(name="Richard-Siken")
 # persona = get_persona(name="Rainer-Maria-Rilke")
