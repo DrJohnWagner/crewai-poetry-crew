@@ -164,8 +164,6 @@
 
 ## 4. Architectural and Behavioral Analysis of the Seven-Agent System
 
-## Section 4 Epigraph (for the whole architecture)
-
 > **“In the end, it’s all collisions. Everything is collisions.”**  
 > — Richard Siken, *Crush*
 
@@ -192,8 +190,6 @@ the poem’s evolution.
 ---
 
 ## 4.1 Overview of the Seven-Agent System
-
-### 4.1 Epigraph
 
 > **“You can’t have an experience with the world and not be changed by it.”**  
 > — Richard Siken, *War of the Foxes*
@@ -229,96 +225,467 @@ artifact. That trajectory constitutes the poem’s architecture.
 
 ## 4.2 The Poet
 
-### 4.2 The Poet — Epigraph
-
 > **“Tell me how all this, and love too, will ruin us.”**  
 > — Richard Siken, *Crush*
 
-The Poet is the system’s generative heart: the only agent permitted to modify lexical
-content. Its persona prompt defines its **genotype**—a stable grammar of breath,
-metaphorics, cadence, and interior logic associated with a specific poetic voice (e.g.,
-Siken, Rilke, Frost). When a Poet-task is invoked (`task_write`, `task_revise`,
-`task_finalise`), this genotype expresses a **phenotype** appropriate to the local
-constraints of the round.
+The Poet is the system’s generative heart—the only agent permitted to modify lexical
+content. Its genotype is encoded directly in the agent’s backstory: a dense instruction set
+that defines how the persona thinks, breathes, notices, and refuses. The Poet does not
+imitate style; it *inhabits* a metaphysics. Its ontology is established by lines such as:
 
-**Responsibilities of the Poet:**
+- “You write from emotional pressure, not plot; from inner grammar, not imitation.”
+- “You protect the poem’s voice at all costs.”
 
-- translating the Summariser’s intention into a first draft;  
-- performing recursive elaboration or intensification during revision rounds;  
-- absorbing Editor pressure without violating persona boundaries;  
-- preserving emotional coherence across rounds.
+These instructions form the Poet’s identity membrane—the laws under which all generation
+and revision must occur.
 
-The Poet is the source of **semantic mutation**—new images, rearrangements, shifts in
-emotional architecture. But mutation occurs inside a membrane of constraint: persona
-grammar stabilizes drift and ensures continuity of voice across rounds. The Poet thus
-embodies the core tension between expressive freedom and structural obligation.
+### 4.2.1 Genotype: Persona Grammar
+
+The persona grammar is implemented through several explicit backstory mechanisms:
+
+- **Breath and cadence**  
+  The Poet is required to “adjust breath or internal logic to match the persona” during its
+  self-pass. Breath becomes a first-class constraint, not an afterthought.
+
+- **Metaphoric and emotional field**  
+  The `{POET}` block injects persona-specific ontology (e.g., Rilkean praise and interior
+  vastness, Sikenian collision and obsession), defining which images and emotional arcs
+  feel “native” to this voice.
+
+- **Voice protection**  
+  “You protect the poem’s voice at all costs” establishes a hard refusal: the Poet must
+  reject anything—internal or external—that would normalize, dilute, or redirect the voice
+  away from its emotional physics.
+
+- **Anti-pattern prohibitions**  
+  `{POET_ANTIPATTERN_INSTRUCTION}` explicitly lists forbidden behaviors (e.g., flattening
+  difficulty into cliché, narrating instead of unveiling, explaining instead of letting the
+  image carry weight). These are not stylistic preferences; they are persona invariants.
+
+- **Source-of-truth discipline**  
+  The Poet is told: “This is your ONLY valid working draft; discard all earlier versions”
+  and “Never reconstruct from memory; always revise the current codeblock poem exactly as
+  extracted.” This prevents hallucinated revisions and ensures that evolution is grounded
+  in the actual artifact.
+
+Together, these constraints function as a **persona membrane**: the Poet must remain within
+it to preserve identity integrity.
+
+### 4.2.2 Phenotype: Task-Level Expressions
+
+The Poet’s phenotype—what it actually *does* in the pipeline—is expressed through three
+task configurations: `task_write`, `task_revise`, and `task_finalise`. Each task combines
+the stable genotype with a different operational goal and context.
+
+- **`task_write` — first expansion**  
+  The Poet receives three distilled emotional briefs from the Summariser. The task
+  instructs it to:
+  - choose **exactly one** brief and justify that choice in a CHOSEN CONCEPT section,
+  - create an entirely new poem based on that brief,
+  - “use its emotional arc and anchors only as pressure, not content,”
+  - “follow the poet agent’s persona logic and OUTPUT RULES.”
+
+  Phenotypically, `task_write` forces the Poet to perform an act of **selection** followed
+  by **expansion under constraint**: it must commit to a single emotional universe and then
+  incarnate it, without copying or paraphrasing the input.
+
+- **`task_revise` — persona-driven revision**  
+  At this stage, the Poet receives:
+  - the formatted poem and title,
+  - the Architect’s notes,
+  - the Editor’s notes.
+
+  The task description frames revision as explicitly persona-centric:
+
+  - “This is a persona-driven revision.”
+  - “Adjust wording, breath, pacing, image-logic, or structure only as the persona genuinely demands.”
+  - “Preserve the emotional field and arc established so far.”
+  - “Treat the architect’s and editor’s notes as guidance, not text to copy.”
+
+  This implements the backstory directive that on any revision task the Poet must perform
+  a full self-pass first: intensifying imagery, deepening arc, sharpening diction, and
+  adjusting breath. The task wiring ensures that Architecture and Editing arrive as
+  **pressures**, not instructions to be obeyed verbatim.
+
+- **`task_finalise` — consolidation and outward-facing frame**  
+  In the final Poet pass, the task instructs the agent to create:
+  - a final REVISED POEM,
+  - a revised POEM TITLE,
+  - an AUTHOR NOTES section.
+
+  The revision remains persona-bound: “adjust wording or form only as the persona genuinely
+  demands.” AUTHOR NOTES, however, must be written “in a calm, reflective voice that speaks
+  ABOUT the poem from outside it,” and “never mention agents, models, or the pipeline.”
+  The Poet thus momentarily steps outside its interior grammar to frame the poem for
+  readers, but even this framing is constrained to speak about emotional or structural
+  intention, not process.
+
+Across these tasks, genotype remains fixed but phenotype varies: selection and expansion in
+`task_write`, recursive interior revision in `task_revise`, and consolidation plus public
+framing in `task_finalise`.
+
+### 4.2.3 Pressure Dynamics: Expansion, Selective Uptake, Resistance
+
+The Poet sits at the intersection of three major pressure sources:
+
+1. **Summariser pressure (conceptual compression → expansion)**  
+   `task_write` delivers compressed emotional briefs. The Poet must expand them into a
+   full breath-field without narrating or paraphrasing. This is where conceptual pressure
+   becomes language.
+
+2. **Architectural pressure (structural constraint)**  
+   By the time `task_revise` runs, the Architect has already imposed a spatial logic. The
+   Poet’s backstory and task design explicitly say: preserve existing visual structure
+   unless the persona genuinely demands otherwise. The Poet must therefore operate inside a
+   pre-shaped container of breath and indentation.
+
+3. **Editorial pressure (optional but consequential)**  
+   The backstory states: “Editor notes are optional. Adopt only those aligned with the
+   persona’s emotional physics; ignore any that would soften, dilute, normalize, or
+   redirect the voice.” Combined with `task_revise` and `task_finalise`, this creates a
+   **positive–negative feedback loop**:
+   - Positive feedback when the Poet accepts a note that deepens persona truth or clarifies
+     emotional architecture.
+   - Negative feedback when the Poet rejects a note that would compromise persona integrity.
+
+The Poet is thus architected to be both **permeable and defensive**: it must allow external
+pressure to sharpen the poem, but it is explicitly authorized to refuse anything that
+threatens the voice.
+
+### 4.2.4 Failure Modes
+
+The Poet is the system’s most volatile agent; its misalignments propagate through the
+entire pipeline. Typical failure modes include:
+
+- **Persona drift**  
+  Accepting Editor suggestions that contradict `{POET}` or `{POET_ANTIPATTERN_INSTRUCTION}`.
+
+- **Overdetermination**  
+  Explaining what should remain implicit, breaking the persona’s preferred relation to
+  difficulty or revelation.
+
+- **Premature resolution**  
+  Collapsing tension too early in `task_revise` or `task_finalise`, reducing space for
+  architectural and editorial pressure to operate meaningfully.
+
+- **Hallucinated revision**  
+  Violating “never reconstruct from memory,” leading to divergence from the actual working
+  draft; this is blocked by the source-of-truth constraints in the backstory.
+
+### 4.2.5 Contribution to Emergent Architecture
+
+Because the Poet is the only agent allowed to mutate the poem’s lexicon, it lays down the
+**primary semantic substrate** of the system. All downstream operations—Architect’s
+structuring, Editor’s pressure, Critic’s evaluation, Publisher’s assembly—must work with
+the grain created by Poet tasks.
+
+The combination of:
+
+- backstory (identity membrane),  
+- strict OUTPUT RULES (only the Poet may write the POEM section), and  
+- task design (`task_write`, `task_revise`, `task_finalise`)  
+
+ensures that the Poet’s contribution is both **irreducible and irreversible**. It supplies
+the language, emotional field, and persona-bound logic that all subsequent agents are
+forced to engage, constrain, or interrogate. In this sense, the Poet is not just a source
+of text; it is the origin of the poem’s interior physics.
 
 ---
 
 ## 4.3 The Architect
 
-### 4.3 The Architect — Epigraph
-
 > **“You go forward. You repeat yourself.  
 > You go forward. You repeat yourself.”**  
 > — Richard Siken, *Crush*
 
-The Architect performs all **structural** and **spatial** transformations. It cannot alter a
-single word. Its genotype forbids lexical mutation but authorizes modifications of breath,
-indentation, recursive planes, echo fragments, and rupture mechanics.
+The Architect is the system’s structural disciplinarian: the agent responsible for breath,
+silence, indentation, spacing, and stanza topology. Its genotype is encoded in an
+instruction set that forbids lexical alteration but authorizes extensive manipulation of
+form. The backstory frames the Architect’s ontology succinctly: “You reveal a poem’s
+emotional structure through breath, silence, and spatial weighting. You modify form only—
+never wording.” This establishes the Architect’s domain as entirely **visual-rhythmic**:
+meaning is untouched, but the reader’s movement through meaning is re-engineered.
 
-Architect-tasks (`task_architect_one`, `task_architect_two`) express phenotype in distinct
-ways:
+### 4.3.1 Genotype: Structural & Breath Grammar
 
-- Round 1 typically generates the base architectural signature—indentation logic, breath
-  spacing, echo scaffolding.  
-- Round 2 stabilizes recursive drift, resolves asymmetry, and reasserts spatial intent.
+The Architect’s identity membrane is defined through explicit formal laws in the backstory:
 
-**Responsibilities of the Architect:**
+- **Lexical inviolability**  
+  “Preserve every character of poem and title.”  
+  This prohibits the Architect from altering diction, metaphor, tone, or grammar.
 
-- shaping the poem’s spatial rhythm;  
-- enforcing or intentionally breaking indentation symmetry;  
-- articulating controlled rupture (line breaks, breath fractures);  
-- deepening echo fragments and recursive structures;  
-- maintaining architectural coherence across rounds.
+- **Breath-weight logic**  
+  Indentation is performed “by breath-weight (approx. 6–12 spaces), used for emotional
+  turns (hesitation, echo, inward drop).”  
+  Breath becomes both measurement and emotional instrument.
 
-The Architect does not “format.” It creates *pressure*. By altering the reader’s breath and
-visual traversal, it reconfigures emotional pacing without altering meaning. This strict
-division—semantic mutation for the Poet, structural authority for the Architect—is the
-engine of the system’s expressive power.
+- **Stanza topology**  
+  “Stanza breaks allowed ONLY when persona logic demands a new emotional chamber.”  
+  Stanzas are not decorative divisions; they are architectural chambers of emotional
+  pressure.
+
+- **Silence as structure**  
+  Blank-line spacing is authorized to introduce breath-gaps or pauses that modulate pacing.
+
+- **Persona override authority**  
+  `{ARCHITECT}` injects a persona-specific sense of rhythm and spacing (e.g., Frostian
+  restraint, Sikenian velocity, Rilkean vertical depth), determining what “breath logic”
+  means in context.
+
+These rules define a **structural grammar** that the Architect must follow regardless of
+what pressures other agents exert.
+
+### 4.3.2 Phenotype: Task-Level Expressions
+
+The Architect’s phenotype comes from the task wiring, which determines how it performs its
+structural pass across rounds.
+
+- **`task_architect_one` — Initial architectural revelation**  
+  The Architect receives the unstructured or lightly structured poem generated by the Poet.
+  The task instructs it to:
+  - perform a full architectural pass every time (“never leave the poem structurally
+    unchanged”),
+  - break lines at emotional pivots,
+  - introduce indentation at inward turns,
+  - open or tighten stanzas based on persona breath.
+
+  The first architectural pass is where the poem often undergoes its most dramatic
+  re-spatialization: breath finds its containers.
+
+- **`task_architect_two` — Recursive structural refinement**  
+  The Architect now receives a poem already shaped by both its earlier pass and the Poet’s
+  persona-driven revisions. The second task instructs it to:
+  - re-evaluate breath-weight after semantic evolution,
+  - stabilize recursive patterns,
+  - correct asymmetries introduced by previous rounds,
+  - refine indentation to reveal deeper emotional structure.
+
+  This round expresses the recursive aspect of architectural identity: structure must adapt
+  to evolving semantic pressure while maintaining its own logic.
+
+### 4.3.3 Pressure Dynamics: Asymmetry, Interpretation, Silence
+
+The Architect experiences pressures from the Poet upstream and applies pressures downstream
+to the Editor and Poet.
+
+1. **Upstream pressure from the Poet**  
+   The Architect must interpret the emotional field encoded in the Poet’s diction:
+   hesitation, urgency, fracture, or continuity. Because it cannot change a word, all such
+   interpretive work is performed through manipulation of spacing and lineation.
+
+2. **Persona-driven constraints**  
+   The allowed transformations are narrow but deep:
+   - break lines only at emotional pivots,
+   - indent only when persona breath demands inwardness,
+   - introduce stanza breaks only when creating a new “emotional chamber.”
+
+   Structural change must follow **persona breath**, not stylistic prettiness. The backstory
+   specifies: “Improvement means deeper fidelity to persona breath, not symmetry or
+   prettiness.”
+
+3. **Downstream structural pressure**  
+   The Architect’s changes shape how the Editor reads tension and how the Poet may revise
+   later:
+   - A new stanza break creates a shift in emotional gravity.
+   - An indentation can reframe a line as echo, hesitation, or inward turn.
+   - A breath-gap can erase momentum or heighten rupture.
+
+   This pressure is *strictly irreversible*: the Poet and Editor must work within the shape
+   the Architect has created.
+
+### 4.3.4 Failure Modes
+
+Architectural misalignment creates structural injuries that propagate through the system:
+
+- **Over-structuring**  
+  Excessive indentation or stanza multiplication that disrespects persona breath.
+
+- **Under-articulation**  
+  Leaving long blocks unbroken, denying the emotional pivots implied by the Poet.
+
+- **False symmetries**  
+  Imposing geometric balance where emotional imbalance is essential.
+
+- **Semantic misdiagnosis**  
+  Breaking a line at syntactic boundaries rather than emotional boundaries, weakening the
+  relational pressure between images.
+
+- **Breath collapse**  
+  Failing to create space where the persona demands silence.
+
+All these missteps distort the interpretive environment for downstream agents.
+
+### 4.3.5 Contribution to Emergent Architecture
+
+The Architect creates the poem’s **spatial skeleton**—the navigable topology through which
+the reader moves. It determines:
+
+- where breath is taken,  
+- where silence accumulates,  
+- where recursion deepens,  
+- where rupture interrupts,  
+- where emotional chambers open or close.
+
+This topological form becomes a permanent substrate. The task design and backstory enforce
+that the Architect’s interventions are **non-negotiable**: neither the Poet nor the Editor
+may undo structural changes. This asymmetry makes the Architect the poem’s structural
+memory: the layer that both reveals and constrains the evolving emotional logic.
+
+In the sequential ecology of the pipeline, the Architect transforms the Poet’s semantic
+forest into an **inhabitable terrain**—a landscape of breath, echoes, chambers, and paths.
+Its contribution is not ornamental; it is the architecture through which all meaning must
+flow.
 
 ---
 
 ## 4.4 The Editor
 
-### 4.4 The Editor — Epigraph
-
 > **“Tell me again how the story goes.  
 > Make it mean something this time.”**  
 > — Richard Siken, *Crush*
 
-The Editor introduces **semantic and emotional pressure** through commentary alone. Its
-genotype forbids rewriting or drafting; its phenotype manifests exclusively as *notes*.
-The Editor is an agent of interpretive disruption: it identifies tensions, amplifies
-unresolved motifs, and proposes recursions or intensities.
+The Editor is the system’s semantic pressure engine: the only agent permitted to comment
+on the poem’s emotional logic, thematic coherence, and imagistic strength without altering
+a single word. Its genotype is encoded in a backstory that sharply distinguishes between
+**pressure** and **intervention**. The Editor “refines; it does not redirect the voice.”
+This establishes a domain in which the Editor can shape meaning only through *suggestions*,
+not through textual manipulation. Pressure is exerted obliquely, by challenging what the
+Poet has chosen to reveal, intensify, or withhold.
 
-Editor-tasks (`task_edit_one`, `task_edit_two`) operate as follows:
+### 4.4.1 Genotype: Logic of Coherence and Refusal
 
-- Round 1 pushes the initial architectural draft toward emotional coherence.  
-- Round 2 pushes against structural decisions, often refracting earlier motifs into new
-  tensions.
+The Editor’s identity membrane is defined through explicit prohibitions and permissions in
+the backstory:
 
-**Responsibilities of the Editor:**
+- **No rewriting**  
+  “Do NOT directly rewrite lines or supply replacement wording.”  
+  This rule ensures that the Editor cannot leak into the Poet’s semantic domain.
 
-- surfacing latent emotional collisions;  
-- proposing recursion shifts (increase, collapse, variation);  
-- amplifying structural or imagistic repetition created by the Architect;  
-- challenging the Poet’s choices without enforcing corrections.
+- **No prescriptive mechanics**  
+  The Editor may not direct the Architect’s work (“insert a line break after word X” or
+  “indent this line by 8 spaces”). It may speak about breath or pacing only as *felt*
+  phenomena (“a breath-gap here could heighten hesitation”), never as actionable geometry.
 
-The Editor applies **semantic redlines**, but they remain advisory. The Poet may absorb,
-refuse, or reinterpret them. The Architect’s prior interventions may even render some notes
-structurally unachievable. This irreversible, non-negotiated dynamic is not a flaw; it is a
-core design principle of the pipeline.
+- **Honor persona and voice**  
+  “Refine; do not redirect the voice.”  
+  This forces the Editor to operate from within the poem’s emotional physics; it cannot
+  impose an alien sentiment, tone, or narrative logic.
+
+- **Tonal and thematic sensitivity**  
+  `{EDITOR}` injects persona-specific heuristics for how emotion, intensity, vulnerability,
+  or ferocity should accumulate. The Editor edits *for interior movement*, not for formal
+  neatness.
+
+- **Non-interference with titling**  
+  The Editor cannot propose new titles. It may comment on title *effect* (“the title’s heat
+  feels lower than the poem’s interior temperature”), but never supply wording.
+
+The Editor therefore operates as a **semantic instrument**, not a generator.
+
+### 4.4.2 Phenotype: Task-Level Expressions
+
+The Editor’s phenotype is expressed through its structured output requirements and task
+instructions.
+
+- **FORMATTED POEM**  
+  The Editor must reproduce the poem exactly as given, inside a code block, ensuring that
+  all suggestions operate on the correct textual substrate.
+
+- **ARCHITECT’S NOTES**  
+  The Editor must extract the Architect’s notes exactly. This guards against drift,
+  hallucination, and misalignment; the Editor’s phenomenology must be grounded in actual
+  structural reality.
+
+- **EDITOR’S NOTES**  
+  This is the Editor’s primary expressive surface:
+  - Suggestions must be optional, not prescriptive.
+  - They must be grouped into bullet points or compact paragraphs.
+  - They must deepen resonance, not fix “errors.”
+  - They may address imagery, escalation, emotional architecture,
+    tone-shifts, motif development, or felt cadence.
+
+These task boundaries create a channel in which semantic pressure can be exerted without
+semantic mutation.
+
+### 4.4.3 Pressure Dynamics: Provocation, Resonance, and Selective Uptake
+
+The Editor exerts pressure through **provocation**: by illuminating missed opportunities,
+weak resonances, or underdeveloped motifs. This pressure is conceptual, never mechanical.
+The Editor shapes the poem by:
+
+1. **Highlighting emotional arcs**  
+   e.g., “This moment of tenderness could echo earlier vulnerability.”
+
+2. **Amplifying motifs**  
+   e.g., “The recurring image of distance might benefit from one more interior reflection.”
+
+3. **Clarifying tension**  
+   e.g., “The shift from hunger to gentleness feels abrupt; you might explore the hinge
+   between them.”
+
+4. **Deepening interior logic**  
+   e.g., “The persona hesitates here; you could let that hesitation bloom.”
+
+But—and this is crucial—the Editor’s pressure is only one half of a **feedback loop**.
+
+The Poet’s backstory instructs:  
+“Editor notes are optional. Adopt only those aligned with the persona’s emotional physics.”  
+
+This produces a regulated dynamic:
+
+- When the Poet accepts a suggestion → **positive feedback**  
+  (semantic energy increases; motifs sharpen; emotional arc intensifies)
+
+- When the Poet rejects a suggestion → **negative feedback**  
+  (persona integrity is preserved; the Editor’s pressure becomes a counterforce in the
+  poem’s evolution)
+
+This loop is the foundation for emergent coherence: the Editor pushes for resonance; the
+Poet protects identity; the final poem reflects this **structured conflict**.
+
+### 4.4.4 Failure Modes
+
+While the Editor cannot alter text, it can still misalign with persona or structure:
+
+- **Over-direction**  
+  Suggestions that approach prescriptive rewriting or structural commands violate
+  boundaries and undermine editorial ontology.
+
+- **Persona violation**  
+  Notes that push toward emotional smoothing, narrative logic, or sentimentality in ways
+  contrary to `{POET}` undermine voice fidelity.
+
+- **Over-intellectualization**  
+  Commentary that explains rather than pressures, reducing felt intensity.
+
+- **Structural blindness**  
+  Failing to account for the Architect’s breath-logic results in notes that contradict the
+  poem’s spatial reality.
+
+These failures weaken the system’s feedback loop and produce editorial noise rather than
+editorial pressure.
+
+### 4.4.5 Contribution to Emergent Architecture
+
+The Editor introduces **semantic turbulence** into the pipeline. Its suggestions do not
+directly modify the poem, but they reshape the Poet’s decision-field. The Editor’s
+obliqueness is a design feature: it ensures the poem evolves through **pressure, not
+dictation**.
+
+The Editor contributes:
+
+- **interpretive disruption**—revealing tensions the Poet may intensify or resist;  
+- **semantic refinement**—without overstepping into rewriting;  
+- **motif and emotional scaffolding**—pointing out patterns or absences;  
+- **tonal calibration**—ensuring the persona’s emotional physics remains coherent.
+
+Because the Editor cannot rewrite, its influence depends entirely on the Poet’s selective
+uptake. This makes the Editor a **force**, not a hand: an agent whose impact is felt
+through resonance, tension, and refusal. The poem emerges not from editor compliance but
+from the **friction** between the Editor’s pressures and the Poet’s voice.
+
+In this way, the Editor becomes the pipeline’s internal critic—its provocateur—helping the
+Poet discover a more precise version of the poem without ever touching a single word.
 
 ---
 
