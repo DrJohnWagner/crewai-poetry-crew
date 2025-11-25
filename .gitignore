@@ -41,7 +41,7 @@ env/
 Thumbs.db
 
 # Logs and outputs
-logs/
+# logs/
 *.log
 log.txt
 log.out
