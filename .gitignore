@@ -51,6 +51,7 @@ log-save.txt
 backups/
 
 # Prompts
+FilesForChatGPT.txt
 prompts.py
 
 # Dependencies

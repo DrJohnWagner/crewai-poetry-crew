@@ -37,13 +37,12 @@
 6. **Results (“Saying Your Names”)**  
 7. **Discussion (“1001 Things to Discuss”)**  
 8. **Conclusion**  
-9. **Appendix**  
-    - Appendix A: Poet Artefacts  
-    - Appendix B: Architect Artefacts  
-    - Appendix C: Editor Artefacts  
-    - Appendix D: System Logs  
-    - Appendix E: Agent Prompts and Global Constraints  
-    - Appendix F: Glossary of Technical Concepts
+**Appendix** A: Poet Artefacts  
+**Appendix** B: Architect Artefacts  
+**Appendix** C: Editor Artefacts  
+**Appendix** D: System Logs  
+**Appendix** E: Agent Prompts and Global Constraints  
+**Appendix** F: Glossary of Technical Concepts
 
 ---
 
