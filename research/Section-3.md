@@ -134,6 +134,12 @@ allowing for controlled, scientifically interpretable comparisons across persona
 
 ---
 
+### 3.2.2 Implementation Note: Why CrewAI
+
+Although this paper emphasizes conceptual architecture rather than software tooling, the system’s behavior depends on a framework capable of orchestrating **persistent, identity-bound agents** across recursive rounds. We use **CrewAI** because it provides a stable and transparent mechanism for maintaining system-prompt genotypes, dispatching task-prompt phenotypes, and passing artifacts cleanly between agents. CrewAI does not determine the content or style of the poems; it determines the *ordering*, *isolation*, and *interaction pattern* of the agents. Its role is architectural: ensuring that each agent acts with its own stable identity, that outputs become pressure-inputs for subsequent agents, and that recursive rounds proceed without prompt leakage or role collapse. In short, CrewAI provides the scaffolding required for the multi-agent ecology described in this section.
+
+---
+
 ### 3.3 Recursive Rounds as the Fundamental Unit of Computation
 
 The system operates in **two rounds** in the case study and can support additional rounds if desired. Each round contains:

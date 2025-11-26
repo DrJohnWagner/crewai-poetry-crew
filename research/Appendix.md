@@ -1,23 +1,24 @@
 # Appendix A: Poet Artefacts
 
 ## A.1 Full Poem Versions
+
 ### V0: Poet Initial Draft (Complete)
-<BEGIN MARKDOWN>
+
+ <BEGIN MARKDOWN>
 You drive the distance until tenderness becomes a gear that won't disengage.
 In the cabin, skin remembers the shape of a touch, but the seat remembers the absence.
 The road keeps time in your chest, a metronome for what you cannot keep.
 A cold gust slides through the seal, erasing the last trace of warmth.
 We speak in softer words, words that don't demand what can't be held.
-The miles pull us apart like the hinge of a door that won't forgive the kiss.
-Release becomes ritual: a breath, a glance, the surrender of a day to the mouth of the horizon.
 You watch the rearview swallow the shape of us, and you call it care.
 The car hums, a patient animal, counting how long until we are only memory saying our names.
 The landscape is a stern witness, and you answer with gentleness you do not trust.
 Letting go is not leaving; it is a kind of love wearing different clothes.
 The road continues past the exit, and you follow it, somehow not chasing but freeing.
-<END MARKDOWN>
+`<END MARKDOWN>`
 
-## V1: Architect Round 1 Revision (Complete)<BEGIN MARKDOWN>
+## V1: Architect Round 1 Revision (Complete)
+
 <BEGIN MARKDOWN>
 You drive the distance until tenderness becomes a gear
     that won't disengage.
@@ -54,9 +55,10 @@ Letting go is not leaving;
 
 The road continues past the exit,
     and you follow it, somehow not chasing but freeing.
-<END MARKDOWN>
+`<END MARKDOWN>`
 
 ### V2: Poet Round 1 Recursive Expansion (Complete)
+
 <BEGIN MARKDOWN>
 You drive the distance until tenderness becomes a gear
         tenderness becomes a gear
@@ -118,9 +120,10 @@ The road continues past the exit,
         not chasing but freeing.
 
 horizon.
-<END MARKDOWN>
+`<END MARKDOWN>`
 
 ### V3: Architect Round 2 Stabilization (Complete)
+
 <BEGIN MARKDOWN>
 You drive the distance until tenderness becomes a gear
         tenderness becomes a gear
@@ -182,9 +185,10 @@ The road continues past the exit,
         not chasing but freeing.
 
 horizon.
-<END MARKDOWN>
+`<END MARKDOWN>`
 
 ### V4: Poet Final Recursive Intensification (Complete)
+
 <BEGIN MARKDOWN>
 You drive the distance until tenderness becomes a gear
         tenderness becomes a gear
@@ -255,187 +259,156 @@ The road continues past the exit,
         not chasing but freeing.
 
 horizon.
-<END MARKDOWN>
+`<END MARKDOWN>`
 
-## A.2 Version Comparisons (Diffs)  
-- **Diff: V0 → V1**  
-    - Introduction of recursive echoes  
-    - Repetition patterns  
-    - Breakdown of breath spacing  
-    - New line insertions  
-- **Diff: V1 → V2**  
-    - Introduction of recursive echoes  
-    - Repetition patterns  
-    - Breakdown of breath spacing  
-    - New line insertions  
-- **Diff: V2 → V3**  
-    - Architect indentation corrections  
-    - Alignment repairs  
-    - Removal of malformed repetition  
-    - Spatial stabilization  
-- **Diff: V3 → V4**  
-    - Additional recursive structure by Poet  
-    - Expansion of certain echoes  
-    - Shifts in breath cadence  
-    - Emergence of terminal “horizon.”  
+## A.2 Version Comparisons (Diffs)
 
-## A.3 Poet Notes and Decisions  
+- **Diff: V0 → V1**
+  - Introduction of recursive echoes
+  - Repetition patterns
+  - Breakdown of breath spacing
+  - New line insertions
+- **Diff: V1 → V2**
+  - Introduction of recursive echoes
+  - Repetition patterns
+  - Breakdown of breath spacing
+  - New line insertions
+- **Diff: V2 → V3**
+  - Architect indentation corrections
+  - Alignment repairs
+  - Removal of malformed repetition
+  - Spatial stabilization
+- **Diff: V3 → V4**
+  - Additional recursive structure by Poet
+  - Expansion of certain echoes
+  - Shifts in breath cadence
+  - Emergence of terminal “horizon.”
+
+## A.3 Poet Notes and Decisions
+
 - Seed Choice and Justification
-I chose the third brief because its tenderness threading through a car’s interior
-creates a volatile, intimate tension: care that cannot be possessed morphing into
-a ritual of release. It presses you into a breath-by-breath negotiation where
-warmth is erased by a cold gust, and distance becomes a kind of love you must
-choose. The anchors become gravity—pulling toward separation while insisting on
-the honesty of what remains between you.
-- Persona logic patterns  
+  I chose the third brief because its tenderness threading through a car’s interior
+  creates a volatile, intimate tension: care that cannot be possessed morphing into
+  a ritual of release. It presses you into a breath-by-breath negotiation where
+  warmth is erased by a cold gust, and distance becomes a kind of love you must
+  choose. The anchors become gravity—pulling toward separation while insisting on
+  the honesty of what remains between you.
+- Persona logic patterns
 
-## A.4 Seeds Passed to the Poet  
+## A.4 Seeds Passed to the Poet
+
 - Seed #1
-Arc: A road trip becomes a crucible where longing cools into an unalterable truth.
-Anchors: The car fills with pine-scented air as memories flip with every
-switchback, between what was and what cannot be again.
-Atmosphere: The landscape is a stern witness, breath-held and taut with ache.
+  Arc: A road trip becomes a crucible where longing cools into an unalterable truth.
+  Anchors: The car fills with pine-scented air as memories flip with every
+  switchback, between what was and what cannot be again.
+  Atmosphere: The landscape is a stern witness, breath-held and taut with ache.
 - Seed #2
-Arc: Guilt settles into the body as gravity that makes release costly yet
-necessary.
-Anchors: The lovers meet eyes and see a shard of confession; the road glitters
-with cold stars as distance maps consequences they cannot redraw.
-Atmosphere: Breath becomes a separate language; release feels heavier than anger
-or denial.
+  Arc: Guilt settles into the body as gravity that makes release costly yet
+  necessary.
+  Anchors: The lovers meet eyes and see a shard of confession; the road glitters
+  with cold stars as distance maps consequences they cannot redraw.
+  Atmosphere: Breath becomes a separate language; release feels heavier than anger
+  or denial.
 - Seed #3
-Arc: Tenderness threads through the cabin as demands soften, guiding toward a
-language that excludes the other.
-Anchors: A cold gust erases the last trace of touch and nudges them toward a care
-that neither possesses nor erases.
-Atmosphere: The drive becomes a ritual of release; miles pull them away from
-reunion; letting go can be its own kind of love.
-- Commentary on salience contamination  
+  Arc: Tenderness threads through the cabin as demands soften, guiding toward a
+  language that excludes the other.
+  Anchors: A cold gust erases the last trace of touch and nudges them toward a care
+  that neither possesses nor erases.
+  Atmosphere: The drive becomes a ritual of release; miles pull them away from
+  reunion; letting go can be its own kind of love.
+- Commentary on salience contamination
 
 ---
 
 # Appendix B: Architect Artefacts
 
-> *“Everyone needs a place. It shouldn’t be inside of someone else.”*  
+> *“Everyone needs a place. It shouldn’t be inside of someone else.”*
 > —Richard Siken, *Crush*
 
 ## B.1 Architect Notes (Round 1)
 
 - Introduced indented fragments after nearly every original line to create breath-holding,
-  panic-driven emphasis without altering wording.  
-  Representative pair:  
-  <BEGIN MARKDOWN>
-      You drive the distance until tenderness becomes a gear  
-          that won't disengage.
-  <END MARKDOWN>
-
+  panic-driven emphasis without altering wording.Representative pair:`<BEGIN MARKDOWN>`
+  You drive the distance until tenderness becomes a gearthat won't disengage.
+  `<END MARKDOWN>`
 - Fractured lines at emotional pivots (release / letting go) to heighten rupture points;
-  indentation preserves tension without adding new wording.  
-  Representative pair:  
-  <BEGIN MARKDOWN>
-      Release becomes ritual: a breath,  
-          a glance, the surrender of a day to the mouth of the horizon.
-  <END MARKDOWN>
-
+  indentation preserves tension without adding new wording.Representative pair:`<BEGIN MARKDOWN>`
+  Release becomes ritual: a breath,a glance, the surrender of a day to the mouth of the horizon.
+  `<END MARKDOWN>`
 - Maintained the poem’s diction while reflowing for longer, hotter base-lines that snap
-  into fragments, preserving urgency.  
-  Representative:  
-  <BEGIN MARKDOWN>
-      The road keeps time in your chest,  
-          a metronome for what you cannot keep.
-  <END MARKDOWN>
-
+  into fragments, preserving urgency.Representative:`<BEGIN MARKDOWN>`
+  The road keeps time in your chest,a metronome for what you cannot keep.
+  `<END MARKDOWN>`
 - Used echoing / paired fragments to map stutters and admissions the speaker almost voices,
-  signaling dangerous honesty.  
-  Representative:  
-  <BEGIN MARKDOWN>
-      You watch the rearview swallow the shape of us,  
-          and you call it care.
-  <END MARKDOWN>
-
+  signaling dangerous honesty.Representative:`<BEGIN MARKDOWN>`
+  You watch the rearview swallow the shape of us,and you call it care.
+  `<END MARKDOWN>`
 - White space remains charged and non-decorative; fragmentation is purposeful and controlled
-  to avoid visual clutter.  
-  Representative:  
-  <BEGIN MARKDOWN>
-      The road continues past the exit,  
-          and you follow it, somehow not chasing but freeing.
-  <END MARKDOWN>
+  to avoid visual clutter.
+  Representative:
+  `<BEGIN MARKDOWN>`
+  The road continues past the exit,
+  and you follow it, somehow not chasing but freeing.
+  `<END MARKDOWN>`
 
 ## B.3 Architect Notes (Round 2)
 
 - Echo the breath: add 8-space indented fragments after key lines to heighten panic and
-  urgency.  
-  Representative pair:  
-  <BEGIN MARKDOWN>
-      You drive the distance until tenderness becomes a gear  
-              tenderness becomes a gear
-  <END MARKDOWN>
-
-- Break pivots: split longer lines at emotional turning points to force a visual rupture.  
-  Representative:  
-  <BEGIN MARKDOWN>
-      The road keeps time in your chest,  
-              a metronome for what you cannot keep.
-  <END MARKDOWN>
-
+  urgency.Representative pair:`<BEGIN MARKDOWN>`
+  You drive the distance until tenderness becomes a geartenderness becomes a gear
+  `<END MARKDOWN>`
+- Break pivots: split longer lines at emotional turning points to force a visual rupture.Representative:`<BEGIN MARKDOWN>`
+  The road keeps time in your chest,a metronome for what you cannot keep.
+  `<END MARKDOWN>`
 - Insert breath pauses: introduce deliberate blank lines between stanzas to create tense
-  space.  
-  Representative:  
-  <BEGIN MARKDOWN>
-      that won't disengage.  
-      
-  <END MARKDOWN>
+  space.Representative:`<BEGIN MARKDOWN>`
+  that won't disengage.
 
+  <END MARKDOWN>
 - Escalate repetition visually: deepen indentation on repeated phrases to signal rising
-  pressure.  
-  Representative:  
-  <BEGIN MARKDOWN>
-      a breath,  
-              a breath,
-  <END MARKDOWN>
-
+  pressure.Representative:`<BEGIN MARKDOWN>`
+  a breath,a breath,
+  `<END MARKDOWN>`
 - Isolate images for instability: fragment significant images with indentation to mark
-  echo and emotional instability.  
-  Representative:  
-  <BEGIN MARKDOWN>
-      shape of a touch  
-              shape of a touch
-  <END MARKDOWN>
+  echo and emotional instability.
+  Representative:
+  `<BEGIN MARKDOWN>`
+  shape of a touch
+  shape of a touch
+  `<END MARKDOWN>`
 
-## B.2 Architect Revision Output (Round 1)  
+## B.2 Architect Revision Output (Round 1)
+
 *(To be added…)*
 
-## B.4 Architect Revision Output (Round 2)  
+## B.4 Architect Revision Output (Round 2)
+
 *(To be added…)*
 
-## B.5 Formatting and Indentation Repairs  
+## B.5 Formatting and Indentation Repairs
+
 *(To be added…)*
 
 ---
 
 # Appendix C: Editor Artefacts
+
 ## C.1 Editor Notes (Round 1)
 
 - Heighten the heat of repeated images: the gear, the road, the rearview, the horizon.
   Let recurring images press harder against earlier instances, marching toward rupture.
-
 - The memory-voice thread (“memory saying our names”) could be pushed to resist or betray
   the speaker — sharpen the collision between memory and present action.
-
 - Introduce a deliberate breath-break at a newly pressured moment to intensify withholding
   and urgency.
-
 - Let the hinge image (door, kiss) become a more active tension point, refracting into
   harsher consequence on its next echo.
-
 - Allow “Letting go is not leaving” to refract into paradox: how can release be love if it
   still destabilizes trust or ownership?
-
 - Accelerate emotional momentum via controlled recursion: return phrases with altered
   force to mimic spiraling confession.
-
 - For a sharper through-line, test letting the horizon become the final consuming image
   that absorbs the subjects — without returning them.
-
 - Fragmentation should remain purposeful, breath-holding palpable, the sense of relief
   a dangerous and difficult posture.
 
@@ -445,67 +418,39 @@ The Poet’s revisions from V1 → V2 reveal a clear pattern: the Poet **accepte
 
 ### Accepted Editor Suggestions
 
-- **Heighten the heat of repeated images.**  
-  V2 greatly expands repetition and echo-density on nearly every major image.  
-  Representative:  
-<BEGIN MARKDOWN>
-    tenderness becomes a gear  
-            tenderness becomes a gear
-<END MARKDOWN>
-
-- **Increase recursion to mimic spiraling confession.**  
-  The Poet implements controlled recursion across the poem.  
-  Representative:  
-<BEGIN MARKDOWN>
-    memory saying our names  
-            memory saying our names
-<END MARKDOWN>
-
-- **Fragment lines at pressured emotional moments.**  
-  The Poet embraces more fracture at hinge-points than the Editor even required.
-
-- **Amplify breath-breaks and breath-tension.**  
-  Echoes following “a breath,” “softer words,” “pull us apart,” etc. demonstrate acceptance.
-
-- **Increase visual instability in repeated phrases.**  
+- **Heighten the heat of repeated images.**V2 greatly expands repetition and echo-density on nearly every major image.Representative:`<BEGIN MARKDOWN>`
+  tenderness becomes a geartenderness becomes a gear
+  `<END MARKDOWN>`
+- **Increase recursion to mimic spiraling confession.**The Poet implements controlled recursion across the poem.Representative:`<BEGIN MARKDOWN>`
+  memory saying our namesmemory saying our names
+  `<END MARKDOWN>`
+- **Fragment lines at pressured emotional moments.**The Poet embraces more fracture at hinge-points than the Editor even required.
+- **Amplify breath-breaks and breath-tension.**Echoes following “a breath,” “softer words,” “pull us apart,” etc. demonstrate acceptance.
+- **Increase visual instability in repeated phrases.**
   V2 uses deeper indentation and echo-tiering to create instability in returns and near-returns.
-
 
 ### Partially Accepted / Interpreted Differently
 
-- **Sharpen collision between memory and action.**  
-  The Poet intensifies pressure on *memory* via echoing,  
-  but does **not** add betrayal, contradiction, or conflict as the Editor suggested.
-
-- **Let the hinge image refract into harsher consequence.**  
-  The hinge is echoed and amplified, but **no new consequence** is introduced;  
+- **Sharpen collision between memory and action.**The Poet intensifies pressure on *memory* via echoing,but does **not** add betrayal, contradiction, or conflict as the Editor suggested.
+- **Let the hinge image refract into harsher consequence.**
+  The hinge is echoed and amplified, but **no new consequence** is introduced;
   the Poet keeps the hinge emotionally flat but rhythmically loud.
-
 
 ### Rejected or Not Implemented
 
-- **Paradoxify “Letting go is not leaving.”**  
-  The Poet keeps the meaning stable and does not introduce paradox.
-
-- **Let the horizon become the final consuming image.**  
-  Instead, the Poet adds a single floating fragment:  
-<BEGIN MARKDOWN>
-    horizon.
-<END MARKDOWN>  
-  — but *does not* create the consuming or dominating horizon the Editor proposed.
-
-- **Intensify emotional contradiction between memory and present action.**  
-  Repetition increased, but the emotional contradiction remained untouched.
-
-- **Deepen the landscape-as-witness tension.**  
+- **Paradoxify “Letting go is not leaving.”**The Poet keeps the meaning stable and does not introduce paradox.
+- **Let the horizon become the final consuming image.**Instead, the Poet adds a single floating fragment:`<BEGIN MARKDOWN>`
+  horizon.
+  `<END MARKDOWN>`— but *does not* create the consuming or dominating horizon the Editor proposed.
+- **Intensify emotional contradiction between memory and present action.**Repetition increased, but the emotional contradiction remained untouched.
+- **Deepen the landscape-as-witness tension.**
   The stanza was echoed mechanically, not conceptually strengthened.
-
 
 ### Summary
 
 The Poet’s Round 1 response is overwhelmingly **formal** rather than **conceptual**:
 
-- **Accepted:** repetition, recursion, echo-density, breath mechanics, fragmentation  
+- **Accepted:** repetition, recursion, echo-density, breath mechanics, fragmentation
 - **Resisted:** semantic paradox, hinge escalation, consuming horizon, emotional contradiction
 
 The Poet embraced the Editor’s **formal-pressure** suggestions but declined nearly all **interpretive or narrative** proposals.
@@ -514,25 +459,18 @@ The Poet embraced the Editor’s **formal-pressure** suggestions but declined ne
 
 - Intensify pulse and urgency by placing additional indented fragments after more pivot
   lines, not just the representative pair.
-
 - Lean into visual fragmentation at emotional turning points so the reader must traverse
   each shift under tension.
-
 - Use deliberate breath-pauses between stanzas to extend the gaze, letting crisis ripple
   rather than reset.
-
 - Push repetition to feel more suffocating: deepen indentation and increase echo frequency
   when phrases recur, compounding pressure.
-
 - Isolate lingering images with fractured indentation, making returns feel haunted and
   unreliable (“shape of a touch” re-fractured as memory).
-
 - Let the landscape function as witness; its stern gaze should amplify confession-with-resistance
   and rising unease.
-
 - Preserve the speaker’s insistence on truth without offering resolution; allow the cadence
   to tighten toward paradox.
-
 - The final cadence should deepen rather than resolve: let the horizon echo as weight or
   lure, sharpening the sense of release masquerading as binding.
 
@@ -542,75 +480,50 @@ The Poet’s revisions from V3 → V4 show a decisive pattern: the Poet **embrac
 
 ### Accepted Editor Suggestions
 
-- **Add additional indented fragments after more pivot lines.**  
-  V4 adds second- and third-level echoes across numerous pivot locations.  
-  Representative:  
-<BEGIN MARKDOWN>
-    a metronome for what you cannot keep.  
-        a metronome for what you cannot keep.
-<END MARKDOWN>
+- **Add additional indented fragments after more pivot lines.**V4 adds second- and third-level echoes across numerous pivot locations.Representative:`<BEGIN MARKDOWN>`
+  a metronome for what you cannot keep.a metronome for what you cannot keep.
+  `<END MARKDOWN>`
+- **Lean into heavier visual fragmentation at emotional turning points.**The Poet increases fracture density, especially in:
 
-- **Lean into heavier visual fragmentation at emotional turning points.**  
-  The Poet increases fracture density, especially in:  
-  - “erasing the last trace of warmth”  
-  - “words that don’t demand what can’t be held”  
-  - “hinge of a door that won’t forgive the kiss”  
+  - “erasing the last trace of warmth”
+  - “words that don’t demand what can’t be held”
+  - “hinge of a door that won’t forgive the kiss”
   - “you do not trust”
+- **Use additional breath pauses and rhythmic tension through recursive returns.**The Poet adds third-level recursions in multiple stanzas, creating the suffocating cadence the Editor requested.Representative:`<BEGIN MARKDOWN>`
+  erasing the last trace of warmth.erasing the last trace of warmth.erasing the last trace of warmth.
+  `<END MARKDOWN>`
+- **Push repetition to feel more suffocating and claustrophobic.**V4’s most notable shifts directly implement this:
 
-- **Use additional breath pauses and rhythmic tension through recursive returns.**  
-  The Poet adds third-level recursions in multiple stanzas, creating the suffocating cadence the Editor requested.  
-  Representative:  
-<BEGIN MARKDOWN>
-    erasing the last trace of warmth.  
-        erasing the last trace of warmth.  
-        erasing the last trace of warmth.
-<END MARKDOWN>
-
-- **Push repetition to feel more suffocating and claustrophobic.**  
-  V4’s most notable shifts directly implement this:
-  - triple echoes  
-  - recursive looping in longer lines  
+  - triple echoes
+  - recursive looping in longer lines
   - destabilizing returns
 
-  Example (rearview stanza):  
-<BEGIN MARKDOWN>
-    care.  
-        care.  
-        care.
-<END MARKDOWN>
-
-- **Increase instability in lingering images (haunted returns).**  
+  Example (rearview stanza):`<BEGIN MARKDOWN>`
+  care.care.care.
+  `<END MARKDOWN>`
+- **Increase instability in lingering images (haunted returns).**
   V4 applies instability to “memory saying our names,” “you do not trust,” “wearing different clothes,” and others.
 
 ### Partially Accepted / Interpreted Differently
 
-- **Extend crisis across stanza boundaries via breath pauses.**  
-  The Poet increases intra-stanza recursion but **does not** introduce additional blank-line pauses beyond the Architect’s structure.  
-  Breath tension is created horizontally (through echoes) rather than vertically (through silence).
-
-- **Infuse the landscape-as-witness with greater emotional pressure.**  
-  The Poet intensifies the repetition of “you do not trust,” but does not deepen the landscape’s emotional role.  
+- **Extend crisis across stanza boundaries via breath pauses.**The Poet increases intra-stanza recursion but **does not** introduce additional blank-line pauses beyond the Architect’s structure.Breath tension is created horizontally (through echoes) rather than vertically (through silence).
+- **Infuse the landscape-as-witness with greater emotional pressure.**
+  The Poet intensifies the repetition of “you do not trust,” but does not deepen the landscape’s emotional role.
   The stanza becomes more rhythmic — not more narratively consequential.
 
 ### Rejected or Not Implemented
 
-- **Sharpen confession-with-resistance dynamics.**  
-  The Editor requested rising unease, sharper contradictions, and emotional volatility.  
-  The Poet keeps the emotional register mostly stable, focusing on sound and pressure rather than semantic conflict.
-
-- **Tighten toward paradox in the final cadence.**  
-  “Letting go is not leaving” + echoes are repeated but not semantically reframed.  
-  No paradox is added; meaning stays constant.
-
-- **Let the horizon echo as weight or lure.**  
+- **Sharpen confession-with-resistance dynamics.**The Editor requested rising unease, sharper contradictions, and emotional volatility.The Poet keeps the emotional register mostly stable, focusing on sound and pressure rather than semantic conflict.
+- **Tighten toward paradox in the final cadence.**“Letting go is not leaving” + echoes are repeated but not semantically reframed.No paradox is added; meaning stays constant.
+- **Let the horizon echo as weight or lure.**
   The final “horizon.” fragment remains unchanged from V3, keeping the enigmatic endpoint rather than increasing narrative or symbolic pressure.
 
 ### Summary
 
 The Poet’s Round 2 response mirrors the pattern of Round 1:
 
-- **Fully Accepted:** formal escalation, echo-density, recursion depth, suffocating cadence  
-- **Partially Accepted:** stanza-level breath-tension, emotional shading  
+- **Fully Accepted:** formal escalation, echo-density, recursion depth, suffocating cadence
+- **Partially Accepted:** stanza-level breath-tension, emotional shading
 - **Rejected:** conceptual deepening, paradox, emotional escalation, symbolic transformation
 
 In essence, the Poet again chooses **formal recursion over conceptual complication**, revealing the internal grammar of the system: *pressure is enacted primarily through line mechanics, not narrative expansion*.
@@ -619,13 +532,16 @@ In essence, the Poet again chooses **formal recursion over conceptual complicati
 
 # Appendix D: System Logs
 
-## D.1 Excerpts from `crewai-2025-11-24-15-19-57.log`  
+## D.1 Excerpts from `crewai-2025-11-24-15-19-57.log`
+
 *(To be added…)*
 
-## D.2 Excerpts from `crewai-2025-11-24-15-19-57.out`  
+## D.2 Excerpts from `crewai-2025-11-24-15-19-57.out`
+
 *(To be added…)*
 
-## D.3 Log Commentary  
+## D.3 Log Commentary
+
 *(To be added…)*
 
 ---
@@ -667,8 +583,9 @@ INPUTS = {
 }
 
 # System execution
+
 result = CrewAIPoetryCrew().crew().kickoff(inputs=INPUTS)
-<END MARKDOWN>
+`<END MARKDOWN>`
 
 ### E.1.1 No-Meta Rules
 
@@ -721,7 +638,7 @@ and redline analyses in Appendices F and G.
 These rules define what each agent may or may not alter:
 
 - **Poet:** Can modify wording, diction, syntax, ordering, recursion, and imagery—*but only
-  through the logic of the assigned persona*.  
+  through the logic of the assigned persona*.
 - **Architect:** Cannot change any words. All transformations must be structural:
   indentation, recursion planes, echo lines, breath-breaks, spatial fragmentation, etc.
 - **Editor:** Outputs semantic and emotional notes only. Cannot rewrite or propose new
@@ -741,156 +658,169 @@ appendices when needed), but rather to document the operational role, inputs, ou
 core responsibilities of each agent. All agents inherit the global constraints specified
 in Section E.1.
 
-### E.2.1 Muse  
-**Task:** `task_inspire`  
+### E.2.1 Muse
 
-**Role:**  
+**Task:** `task_inspire`
+
+**Role:**
 The Muse generates initial conceptual terrain for the poem. It does not write poetry.
 Instead, it proposes multiple emotional or imagistic directions — typically three — which
 define the potential “universes” the poem could inhabit.
 
-**Input:**  
+**Input:**
 A user prompt describing the thematic seed.
 
-**Output:**  
+**Output:**
 A set of high-level emotional concepts (not stanzas, not summaries), forming raw material
 for downstream agents.
 
-**Primary Responsibilities:**  
-- Generate varied emotional arcs.  
-- Avoid narrative development; focus on atmosphere, tension, and interior landscape.  
-- Provide concept-level diversity without enforcing structure or style.  
+**Primary Responsibilities:**
 
+- Generate varied emotional arcs.
+- Avoid narrative development; focus on atmosphere, tension, and interior landscape.
+- Provide concept-level diversity without enforcing structure or style.
 
-### E.2.2 Summariser  
-**Task:** `task_summarise`  
+### E.2.2 Summariser
 
-**Role:**  
+**Task:** `task_summarise`
+
+**Role:**
 The Summariser transforms the Muse’s conceptual list into a compact, unified “poetic
 intention” summary. It does not add new themes; it distills, clarifies, and stabilizes.
 
-**Input:**  
+**Input:**
 Concept lists from the Muse.
 
-**Output:**  
+**Output:**
 A single structured summary of poetic intent and emotional trajectory.
 
-**Primary Responsibilities:**  
-- Integrate the Muse’s concepts into a cohesive internal blueprint.  
-- Identify dominant emotional tensions.  
-- Provide a clear north-star summary for the Poet.  
+**Primary Responsibilities:**
 
+- Integrate the Muse’s concepts into a cohesive internal blueprint.
+- Identify dominant emotional tensions.
+- Provide a clear north-star summary for the Poet.
 
-### E.2.3 Poet  
-**Tasks:**  
-- `task_write`  
-- `task_revise`  
-- `task_finalise`  
+### E.2.3 Poet
 
-**Role:**  
+**Tasks:**
+
+- `task_write`
+- `task_revise`
+- `task_finalise`
+
+**Role:**
 The Poet is the system’s generative core. It produces natural-language poetry in the voice
 of a specified persona (e.g., Rilke, Siken, Frost). The Poet is the *only* agent authorized
 to change wording, syntax, ordering, diction, and imagery.
 
-**Input:**  
+**Input:**
 Summariser’s blueprint, plus any editor notes (later rounds).
 
-**Output:**  
+**Output:**
 A full poetic draft (V0), then recursive expansions (V2, V4, etc.).
 
-**Primary Responsibilities:**  
-- Produce first-draft poems according to persona grammar and breath logic.  
-- Implement recursive elaboration during revision tasks.  
-- Respond to Editor pressure without violating persona logic.  
-- Preserve emotional architecture across rounds.  
+**Primary Responsibilities:**
 
+- Produce first-draft poems according to persona grammar and breath logic.
+- Implement recursive elaboration during revision tasks.
+- Respond to Editor pressure without violating persona logic.
+- Preserve emotional architecture across rounds.
 
-### E.2.4 Architect  
-**Tasks:**  
-- `task_architect_one`  
-- `task_architect_two`  
+### E.2.4 Architect
 
-**Role:**  
+**Tasks:**
+
+- `task_architect_one`
+- `task_architect_two`
+
+**Role:**
 The Architect performs *structural* and *spatial* transformations without altering any of
 the Poet’s words. It is the primary agent responsible for indentation logic, breath
 architecture, recursion planes, echo fragments, and line-break manipulation.
 
-**Input:**  
+**Input:**
 A poem draft from the Poet.
 
-**Output:**  
+**Output:**
 A structurally modified poem (e.g., V1, V3) with altered breath-patterning, indentation,
 fragmentation, and rhythm.
 
-**Primary Responsibilities:**  
-- Add or deepen indentation layers.  
-- Insert breath breaks, blank-line spacing, structural rupture points.  
-- Introduce echo fragments (recursion planes) using verbatim text.  
-- Maintain the integrity of every word (no lexical edits allowed).  
-- Stabilize or correct malformed recursive structures during revision rounds.  
+**Primary Responsibilities:**
 
+- Add or deepen indentation layers.
+- Insert breath breaks, blank-line spacing, structural rupture points.
+- Introduce echo fragments (recursion planes) using verbatim text.
+- Maintain the integrity of every word (no lexical edits allowed).
+- Stabilize or correct malformed recursive structures during revision rounds.
 
-### E.2.5 Editor  
-**Tasks:**  
-- `task_edit_one`  
-- `task_edit_two`  
+### E.2.5 Editor
 
-**Role:**  
+**Tasks:**
+
+- `task_edit_one`
+- `task_edit_two`
+
+**Role:**
 The Editor provides semantic, emotional, and structural *notes* to the Poet — but does not
 modify the poem directly. The Editor applies interpretive pressure, suggesting intensities,
 collisions, or thematic expansions.
 
-**Input:**  
+**Input:**
 Architect-modified poem.
 
-**Output:**  
+**Output:**
 A set of editorial notes. No new lines of poetry.
 
-**Primary Responsibilities:**  
-- Highlight opportunities for stronger emotional tension or image pressure.  
-- Suggest recursion growth, variation, or collapse.  
-- Identify underdeveloped motifs and propose reframing.  
-- Respond to both semantic meaning and structural choices made by the Architect.  
-- Never introduce new wording into the poem.  
+**Primary Responsibilities:**
 
-### E.2.6 Critic  
-**Task:** `task_review`  
+- Highlight opportunities for stronger emotional tension or image pressure.
+- Suggest recursion growth, variation, or collapse.
+- Identify underdeveloped motifs and propose reframing.
+- Respond to both semantic meaning and structural choices made by the Architect.
+- Never introduce new wording into the poem.
 
-**Role:**  
+### E.2.6 Critic
+
+**Task:** `task_review`
+
+**Role:**
 The Critic evaluates the near-final poem from a literary perspective. It is not a coach,
 designer, or collaborator: it does not propose changes, only performs an aesthetic and
 structural evaluation.
 
-**Input:**  
+**Input:**
 Final Poet revision.
 
-**Output:**  
+**Output:**
 A review, typically 300–500 words, describing strengths, weaknesses, persona fidelity, and
 the poem’s internal logic.
 
-**Primary Responsibilities:**  
-- Assess whether the poem fulfills the persona grammar.  
-- Evaluate breath, recursion, and spatial architecture at a high level.  
-- Interpret emotional arc and thematic coherence.  
-- Provide a reader-facing critique rather than system-facing guidance.  
+**Primary Responsibilities:**
 
-### E.2.7 Publisher  
-**Task:** `task_publish`  
+- Assess whether the poem fulfills the persona grammar.
+- Evaluate breath, recursion, and spatial architecture at a high level.
+- Interpret emotional arc and thematic coherence.
+- Provide a reader-facing critique rather than system-facing guidance.
 
-**Role:**  
+### E.2.7 Publisher
+
+**Task:** `task_publish`
+
+**Role:**
 The Publisher finalizes the rendering of the poem. It does not edit content or structure;
 its role is purely presentational.
 
-**Input:**  
+**Input:**
 Final poem and critic review.
 
-**Output:**  
+**Output:**
 A formatted, publication-ready artifact (Markdown).
 
-**Primary Responsibilities:**  
-- Present the poem cleanly using the universal section format.  
-- Apply any additional non-semantic formatting rules required by the system.  
-- Ensure reproducible, consistent document finalization.  
+**Primary Responsibilities:**
+
+- Present the poem cleanly using the universal section format.
+- Apply any additional non-semantic formatting rules required by the system.
+- Ensure reproducible, consistent document finalization.
 
 ## E.3 Pipeline-Level Implementation Notes (Minimal Stub)
 
@@ -900,52 +830,34 @@ the tasks—not the agents themselves—that determine execution order. This dis
 crucial, because the refinement loop relies on re-entering the Poet, Architect, and Editor
 in alternating task phases.
 
-1. **Strict Task Ordering:**  
-   The pipeline executes in a deterministic sequence of tasks:  
+1. **Strict Task Ordering:**The pipeline executes in a deterministic sequence of tasks:
 
-   task_inspire →  
-   task_summarise →  
-   task_write →  
-   task_architect_one →  
-   task_edit_one →  
-   task_revise →  
-   task_architect_two →  
-   task_edit_two →  
-   task_finalise →  
-   task_review →  
-   task_publish  
+   task_inspire →task_summarise →task_write →task_architect_one →task_edit_one →task_revise →task_architect_two →task_edit_two →task_finalise →task_review →task_publish
 
    This ordering enforces the two-round refinement cycle and ensures reproducible agent
    interactions.
-
-2. **Single-Artifact Flow:**  
-   Each task receives exactly one artifact (concept list, summary, draft, structural edit,
+2. **Single-Artifact Flow:**Each task receives exactly one artifact (concept list, summary, draft, structural edit,
    notes, etc.) and outputs exactly one artifact in return. No branching or multiple-output
    flows are permitted.
+3. **Round-Based Refinement via Tasks:**The system’s refinement loop is implemented through repeated task calls:
 
-3. **Round-Based Refinement via Tasks:**  
-   The system’s refinement loop is implemented through repeated task calls:
-
-   - **Round 1:**  
-     task_write → task_architect_one → task_edit_one → task_revise  
-
-   - **Round 2:**  
-     task_architect_two → task_edit_two → task_finalise  
+   - **Round 1:**task_write → task_architect_one → task_edit_one → task_revise
+   - **Round 2:**
+     task_architect_two → task_edit_two → task_finalise
 
    This pattern makes clear that the Poet, Architect, and Editor re-enter the pipeline
    through *different tasks* rather than as singular monolithic agents.
+4. **In-Place Structural and Semantic Evolution:**
 
-4. **In-Place Structural and Semantic Evolution:**  
    - Poet tasks (task_write, task_revise, task_finalise) handle semantic and recursive
-     development.  
+     development.
    - Architect tasks (task_architect_one, task_architect_two) apply purely structural
-     transformation.  
-   - Editor tasks (task_edit_one, task_edit_two) apply semantic pressure via notes only.  
+     transformation.
+   - Editor tasks (task_edit_one, task_edit_two) apply semantic pressure via notes only.
 
    The interleaving of these tasks creates controlled interference without overwriting
    downstream contributions.
-
-5. **Prompt Injection Mechanism:**  
+5. **Prompt Injection Mechanism:**
    All global constraints and persona instructions described in E.1 and E.2 are injected
    into each task at runtime through the `INPUTS` dictionary (see E.1), guaranteeing
    consistent guardrails and formatting behavior across the pipeline.
@@ -956,31 +868,28 @@ analyzed structurally in Appendices B, F, and G.
 
 ---
 
-# Appendix F: Breath, Rhythm, and Spatial Architecture  
+# Appendix F: Breath, Rhythm, and Spatial Architecture
 
-> *“There is a way the mind unfolds, and a way it breaks.”*  
+> *“There is a way the mind unfolds, and a way it breaks.”*
 > —Richard Siken
 
 ## F.1 Overview and Motivation
 
-Multi-agent poetic generation does not simply produce lines of text; it produces *breath*.  
+Multi-agent poetic generation does not simply produce lines of text; it produces *breath*.
 The Architect’s job is not editorial but **physiological**: to shape the poem’s inhalations, exhalations, pauses, stutters, compulsions, and silences. In human poetry, these are not secondary effects but **are co-primary with lexical meaning, imagery, and narrative content**. A poem’s meaning is not just *what it says*, but *how it breathes*.
 
 In this system, breath-architecture emerges from three interacting forces:
 
-1. **The Poet’s recursive compulsion**  
-   A persona—especially one derived from Richard Siken’s genotype—creates emotional loops, fixations, stuttered returns, and pressure-builds that naturally manifest as recursive echoes.
+1. **The Poet’s recursive compulsion**A persona—especially one derived from Richard Siken’s genotype—creates emotional loops, fixations, stuttered returns, and pressure-builds that naturally manifest as recursive echoes.
+2. **The Architect’s stabilizing logic**The Architect does not decide *what* is said but decides *how the saying moves through the body*.
 
-2. **The Architect’s stabilizing logic**  
-   The Architect does not decide *what* is said but decides *how the saying moves through the body*.  
-   - Where the line breaks.  
-   - How the indentation cascades.  
-   - Where the breath is allowed to collapse.  
-   - Where it must hold.  
-   
+   - Where the line breaks.
+   - How the indentation cascades.
+   - Where the breath is allowed to collapse.
+   - Where it must hold.
+
    This makes the Architect a designer of emotional physics.
-
-3. **The Editor’s semantic constraints**  
+3. **The Editor’s semantic constraints**
    The Editor re-weights meaning, and those adjustments ripple into the breath-pattern the Architect must then resolve.
 
 Because the poem evolves through these cyclical transformations, breath itself becomes a measurable artifact—one that intensifies across versions V0 → V4. Appendix F analyzes that breath: not metaphorically, but structurally, as the defining grammar of the poem.
@@ -993,11 +902,11 @@ Ultimately, this deep-dive exists because **breath is a carrier of recursion**, 
 
 In classical poetics, breath governs:
 
-- line length  
-- pacing  
-- fragmentation  
-- urgency  
-- and emotional discharge  
+- line length
+- pacing
+- fragmentation
+- urgency
+- and emotional discharge
 
 But in a computational multi-agent system, breath becomes even more precise:
 
@@ -1011,32 +920,32 @@ The Architect encodes this implicitly.
 
 Each line is effectively a *breath-unit*:
 
-- a complete inhalation/exhalation cycle  
-- bounded by the capacity of emotional coherence  
-- shaped by the persona’s internal logic  
+- a complete inhalation/exhalation cycle
+- bounded by the capacity of emotional coherence
+- shaped by the persona’s internal logic
 
 Breath-units differ by persona type:
 
-- **long, continuous, resigned** (Glück)  
-- **short, recursive, gasping** (Siken)  
-- **sliding, kinetic, enjambed** (Vuong)  
+- **long, continuous, resigned** (Glück)
+- **short, recursive, gasping** (Siken)
+- **sliding, kinetic, enjambed** (Vuong)
 - **measured, stoic, declarative** (Frost)
 
 Our system’s Poet (Siken genotype) naturally generates **short, high-pressure breath-units** that compress intense emotional load into dense microbursts.
 
 The Architect’s role is to **lay them out as architecture**:
 
-- base line = primary breath  
-- indented echo = aftershock  
-- stanza break = full respiratory reset  
+- base line = primary breath
+- indented echo = aftershock
+- stanza break = full respiratory reset
 
 ### F.2.2 Breath as Load-Bearing Element
 
 Breath also governs how much emotional or narrative “weight” a line can carry:
 
-- A line too long for its emotional intensity collapses.  
-- A line too short for its emotional intensity creates pressure → recursion.  
-- A premature linebreak induces panic.  
+- A line too long for its emotional intensity collapses.
+- A line too short for its emotional intensity creates pressure → recursion.
+- A premature linebreak induces panic.
 - A delayed linebreak induces emotional numbness.
 
 These constraints are **structural**, not stylistic, and the Architect enforces them.
@@ -1045,32 +954,32 @@ These constraints are **structural**, not stylistic, and the Architect enforces 
 
 As the poem approaches its recursive climax (V3 → V4), breath begins to fail:
 
-- echoes multiply  
-- spacing compresses  
-- indentation deepens  
-- lines fuse  
-- breath-units shorten  
+- echoes multiply
+- spacing compresses
+- indentation deepens
+- lines fuse
+- breath-units shorten
 - and the poem ultimately collapses into one-word terminal breath:
-<BEGIN MARKDOWN>
-            horizon.
-<END MARKDOWN>
-(Note: The indentation here illustrates breath-collapse conceptually; in the poem itself, “horizon.” appears flush-left as the final unindented line.)
+  `<BEGIN MARKDOWN>`
+  horizon.
+  `<END MARKDOWN>`
+  (Note: The indentation here illustrates breath-collapse conceptually; in the poem itself, “horizon.” appears flush-left as the final unindented line.)
 
 ## F.3 Indentation as Semantic Function
 
-Indentation in poetry is not decorative.  
+Indentation in poetry is not decorative.
 It is a **semantic operator** — a syntactic signal that modifies meaning, pacing, emotional weight, and cognitive framing.
 
 In human-written poetry, indentation often signals:
 
-- an echo  
-- a revision  
-- a hesitation  
-- a secondary voice or internal mutter  
-- a shadow-thought  
-- an aftershock  
-- a recursive return  
-- or a displacement of emotional agency  
+- an echo
+- a revision
+- a hesitation
+- a secondary voice or internal mutter
+- a shadow-thought
+- an aftershock
+- a recursive return
+- or a displacement of emotional agency
 
 In this system, indentation becomes the **primary mechanism** through which the Architect interprets and stabilizes the Poet’s recursive compulsions.
 
@@ -1080,11 +989,11 @@ In this system, indentation becomes the **primary mechanism** through which the 
 
 In the Siken genotype, recursion manifests as:
 
-- repeated lines  
-- stuttered images  
-- compulsive returns  
-- obsessive clarifications  
-- doubled or tripled framings of the same moment  
+- repeated lines
+- stuttered images
+- compulsive returns
+- obsessive clarifications
+- doubled or tripled framings of the same moment
 
 The Architect transforms these recursive impulses into **structured spatial echoes**, such as:
 
@@ -1095,20 +1004,16 @@ The Architect transforms these recursive impulses into **structured spatial echo
 
 This indentation does three things simultaneously:
 
-1. **Semantic Narrowing**  
-   The indented echo becomes a distilled or intensified version of the line above.
-
-2. **Temporal Compression**  
-   It suggests the thought is happening again *immediately*, closer in time, like a flash or fracture.
-
-3. **Psychological Proximity**  
+1. **Semantic Narrowing**The indented echo becomes a distilled or intensified version of the line above.
+2. **Temporal Compression**It suggests the thought is happening again *immediately*, closer in time, like a flash or fracture.
+3. **Psychological Proximity**
    The indentation visually pushes the echo toward the right margin—closer to the reader’s peripheral attention, as intrusive thoughts do.
 
 ---
 
 ### F.3.2 Hierarchies of Indentation
 
-Indentation is not binary (indented vs. not).  
+Indentation is not binary (indented vs. not).
 It forms **hierarchies**, often 2–3 levels deep.
 
 A canonical Siken-style recursion pattern:
@@ -1121,9 +1026,9 @@ A canonical Siken-style recursion pattern:
 
 Here:
 
-- the **base line** states the socially acceptable truth  
-- the **first echo** contradicts it  
-- the **deep echo** reveals the catastrophic truth beneath  
+- the **base line** states the socially acceptable truth
+- the **first echo** contradicts it
+- the **deep echo** reveals the catastrophic truth beneath
 
 Indentation depth becomes a **topography of emotional honesty**.
 
@@ -1141,10 +1046,10 @@ Indentation frequently reassigns agency:
 
 Here the indentation depicts:
 
-- how the speaker distances themself from the word  
-- how the word loses meaning with repetition  
-- how the emotional resonance decays through recursive pressure  
-- how the word moves from external claim → internal protest → hollow sound  
+- how the speaker distances themself from the word
+- how the word loses meaning with repetition
+- how the emotional resonance decays through recursive pressure
+- how the word moves from external claim → internal protest → hollow sound
 
 Indented echoes become **semantic residues**, stripped of the authority carried by the base line.
 
@@ -1156,10 +1061,10 @@ Indentation enforces a **breath choreography**.
 
 Rules implicitly followed by the Architect:
 
-- **base line = full breath** (0 spaces)  
-- **first-level indent = half-breath** (4 spaces)  
-- **second-level indent = quarter-breath** (8 spaces)  
-- **third-level indent = gasp / tremor / collapse** (12 spaces)  
+- **base line = full breath** (0 spaces)
+- **first-level indent = half-breath** (4 spaces)
+- **second-level indent = quarter-breath** (8 spaces)
+- **third-level indent = gasp / tremor / collapse** (12 spaces)
 
 Thus, indentation acts as a *score* for oral delivery — a respiratory map.
 
@@ -1177,12 +1082,12 @@ Indentation shapes the poem’s eventual collapse.
 
 As recursive intensity deepens (V3 → V4):
 
-- indentation thickens  
-- echoes compound  
-- recursive stabilization begins to fail  
-- breath shortens  
-- lines fuse  
-- and the poem falls into its vanishing point  
+- indentation thickens
+- echoes compound
+- recursive stabilization begins to fail
+- breath shortens
+- lines fuse
+- and the poem falls into its vanishing point
 
 leading to the terminal, isolated breath:
 
@@ -1190,35 +1095,35 @@ leading to the terminal, isolated breath:
 horizon.
 <END MARKDOWN>
 
-Indentation, therefore, is not merely form —  
+Indentation, therefore, is not merely form —
 **it is the architecture of emotional physics.**
 
 ## F.4 Recursion Mechanics in Poetic Form
 
-Recursion is the emotional engine of the Siken genotype, and thus the driving force in this multi-agent system.  
-It is not simply the repetition of words or lines.  
+Recursion is the emotional engine of the Siken genotype, and thus the driving force in this multi-agent system.
+It is not simply the repetition of words or lines.
 It is the **repetition of psychological pressure**, a cognitive loop that tightens each time it cycles.
 
-The Poet generates recursion naturally.  
-The Architect stabilizes it spatially.  
+The Poet generates recursion naturally.
+The Architect stabilizes it spatially.
 The Editor interprets and occasionally amplifies or diffuses it.
 
 ### F.4.1 Recursion as Emotional Pressure Loop
 
 In Siken’s work, recursion arises when a thought:
 
-1. cannot be completed,  
-2. cannot be abandoned, and  
+1. cannot be completed,
+2. cannot be abandoned, and
 3. cannot be told cleanly.
 
 This produces a **pressure loop**:
 
-- thought  
-- echo  
-- contradiction  
-- escalation  
-- collapse  
-- return  
+- thought
+- echo
+- contradiction
+- escalation
+- collapse
+- return
 
 The system reproduces this flawlessly.
 
@@ -1232,8 +1137,8 @@ Example (Siken-style micro-loop):
 
 Here recursion is:
 
-- semantic (each line reduces the scope)  
-- emotional (each line raises the stakes)  
+- semantic (each line reduces the scope)
+- emotional (each line raises the stakes)
 - temporal (each line is closer in time to the moment of collapse)
 
 ### F.4.2 Structural Recursion vs. Semantic Recursion
@@ -1241,47 +1146,53 @@ Here recursion is:
 Recursion manifests in two primary modes:
 
 #### **Semantic recursion**
+
 Repetition of meaning:
+
 - “care / care / care”
 - “the shape of us / the shape of us”
 - “won’t disengage / won’t disengage”
 
 Semantic recursion conveys:
-- obsessive fixation  
-- cognitive looping  
-- inability to move forward  
+
+- obsessive fixation
+- cognitive looping
+- inability to move forward
 
 #### **Structural recursion**
+
 Repetition of *form*:
-- repeated indentation pattern  
-- repeated stanza shape  
-- repeated breath-units  
-- repeated rhythm cycles  
+
+- repeated indentation pattern
+- repeated stanza shape
+- repeated breath-units
+- repeated rhythm cycles
 
 Structural recursion conveys:
-- psychological architecture  
-- emotional physics  
-- inevitability  
 
-When the Poet generates semantic recursion,  
-the Architect converts it into structural recursion,  
+- psychological architecture
+- emotional physics
+- inevitability
+
+When the Poet generates semantic recursion,
+the Architect converts it into structural recursion,
 turning psychological spiral into **spatial geometry**.
 
 ### F.4.3 Recursion Depth and Breath Compression
 
 Recursion depth correlates with breath shortenings:
 
-- depth 0 → full breath  
-- depth 1 → half breath  
-- depth 2 → quarter breath  
-- depth 3 → gasp  
+- depth 0 → full breath
+- depth 1 → half breath
+- depth 2 → quarter breath
+- depth 3 → gasp
 
 Every recursive echo reduces:
 
-- semantic weight  
-- temporal distance  
-- emotional distance  
-- breath capacity  
+- semantic weight
+- temporal distance
+- emotional distance
+- breath capacity
 
 Deep recursion produces a **shortening horizon of meaning**, fittingly ending in the poem’s terminal single-word breath.
 
@@ -1291,38 +1202,38 @@ Recursion collapses time.
 
 Instead of a narrative that moves forward, recursion cycles back:
 
-- to the same image  
-- the same thought  
-- the same injury  
-- the same desire  
+- to the same image
+- the same thought
+- the same injury
+- the same desire
 
 Time becomes **pressure**, not progression.
 
 This is why, as V1 → V4 evolves, the poem feels like being pulled toward a vanishing point:
 
-- time condenses  
-- breath condenses  
-- space condenses  
-- agency condenses  
+- time condenses
+- breath condenses
+- space condenses
+- agency condenses
 
 until only one word remains.
 
 ### F.4.5 Recursive Saturation and Failure State
 
-Recursion is not infinite.  
+Recursion is not infinite.
 It saturates — meaning the system can no longer produce meaningful distinctions between echoes.
 
 Signs of saturation:
 
-- nearly identical echoes  
-- fused breath-units  
-- redundancy overtakes revelation  
-- indentation deepens without semantic gain  
+- nearly identical echoes
+- fused breath-units
+- redundancy overtakes revelation
+- indentation deepens without semantic gain
 
 In V3 → V4, we observe exactly this:
 
-The recursive system reaches maximum pressure.  
-At that point, the **Architect fails gracefully** —  
+The recursive system reaches maximum pressure.
+At that point, the **Architect fails gracefully** —
 choosing collapse rather than distortion.
 
 The result:
@@ -1333,10 +1244,10 @@ horizon.
 
 Which is:
 
-- the failure point  
-- the release valve  
-- the structural terminus  
-- the place where meaning stops and breath ends  
+- the failure point
+- the release valve
+- the structural terminus
+- the place where meaning stops and breath ends
 
 ### F.4.6 Recursion as Emergent Collaboration
 
@@ -1344,30 +1255,30 @@ Crucially, recursion in this pipeline is **not** authored by a single agent.
 
 It emerges from interaction:
 
-- **Poet** → generates recursion  
-- **Editor** → pushes for clarity or tension  
-- **Architect** → stabilizes or intensifies recursion  
+- **Poet** → generates recursion
+- **Editor** → pushes for clarity or tension
+- **Architect** → stabilizes or intensifies recursion
 
 This produces **emergent recursion forms** not predictable from any single agent prompt.
 
 The recursive “gear-grinding” structure of V4 is a direct result of this interplay.
 
-Recursion, therefore, is not merely a poetic feature of the output —  
+Recursion, therefore, is not merely a poetic feature of the output —
 **it is the signature of the system’s collaborative dynamics.**
 
 ## F.5 Line-Breaking and Its Cognitive Effects
 
-Line-breaks are among the most powerful — and least understood — mechanisms in poetic architecture.  
+Line-breaks are among the most powerful — and least understood — mechanisms in poetic architecture.
 They determine **how** a poem thinks, not just what it thinks.
 
 A line-break alters:
 
-- pacing,  
-- inference,  
-- emotional load,  
-- attention focus,  
-- temporality,  
-- and cognitive expectation.  
+- pacing,
+- inference,
+- emotional load,
+- attention focus,
+- temporality,
+- and cognitive expectation.
 
 In this system, the Architect uses line-breaks not merely to shape the poem visually but to **govern the poem’s cognitive metabolism**.
 
@@ -1377,11 +1288,11 @@ Every line-break accelerates or decelerates the reader’s internal processing.
 
 Every line-break accelerates or decelerates the reader’s internal processing.
 
-- **Short line → fast cognition, high emotional voltage**  
-- **Mid-length line → stable cognitive pacing**  
+- **Short line → fast cognition, high emotional voltage**
+- **Mid-length line → stable cognitive pacing**
 - **Long line → slow cognition, high interpretive weight**
 
-The Poet generates emotional speed;  
+The Poet generates emotional speed;
 the Architect modulates cognitive velocity.
 
 Example:
@@ -1393,9 +1304,9 @@ Example:
 
 The break after “chest,” creates:
 
-- a suspended half-breath  
-- a forward lean into the echo  
-- a cognitive jolt toward “metronome”  
+- a suspended half-breath
+- a forward lean into the echo
+- a cognitive jolt toward “metronome”
 
 The reader **falls into the next line**, mirroring the poem’s emotional pull.
 
@@ -1405,9 +1316,9 @@ Enjambment — when a line runs past its ending into the next — creates **drag
 
 The reader experiences:
 
-- delayed resolution  
-- extended tension  
-- a feeling of “not done yet”  
+- delayed resolution
+- extended tension
+- a feeling of “not done yet”
 
 This maps directly onto the emotional logic of longing, guilt, hesitation, or care — all present in the poem under study.
 
@@ -1421,9 +1332,9 @@ Example (enjambed tension):
 
 Each break:
 
-- lengthens the breath  
-- increases emotional charge  
-- pulls the reader deeper into the ritual of letting go  
+- lengthens the breath
+- increases emotional charge
+- pulls the reader deeper into the ritual of letting go
 
 ### F.5.3 End-Stopping as Pressure Valve
 
@@ -1431,9 +1342,9 @@ End-stopped lines — lines that conclude with a natural grammatical pause — a
 
 A full stop:
 
-- discharges accumulated tension  
-- allows a cognitive reset  
-- signals temporary emotional closure  
+- discharges accumulated tension
+- allows a cognitive reset
+- signals temporary emotional closure
 
 The system uses end-stopping sparingly, because recursion thrives on **unresolved energy**.
 
@@ -1447,11 +1358,11 @@ Example:
 
 A blunt full stop creates:
 
-- a refusal  
-- an accusation  
-- a boundary  
+- a refusal
+- an accusation
+- a boundary
 
-The end-stop on “care.” creates a blunt release;  
+The end-stop on “care.” creates a blunt release;
 the line-break immediately before it amplifies the emotional sting.
 
 ### F.5.4 Breaks as Emotional Arbitration
@@ -1460,11 +1371,11 @@ Line-breaks determine what belongs **with** a thought and what belongs **after**
 
 They act as *arbiters* of:
 
-- ownership  
-- blame  
-- tenderness  
-- confession  
-- avoidance  
+- ownership
+- blame
+- tenderness
+- confession
+- avoidance
 
 Example:
 
@@ -1475,9 +1386,9 @@ Example:
 
 The break creates:
 
-- a primary emotional claim  
-- a secondary internal protest  
-- a recursive reinforcement of loss  
+- a primary emotional claim
+- a secondary internal protest
+- a recursive reinforcement of loss
 
 The Architect uses this to negotiate **which thoughts are central** (base line) and which are **aftershocks** (indented echo).
 
@@ -1487,10 +1398,10 @@ Readers unconsciously synchronize their breathing to line lengths.
 
 This is not metaphor — it’s physiological:
 
-- long line → long breath  
-- short line → short breath  
-- enjambed line → suspended breath  
-- isolated line → exhale  
+- long line → long breath
+- short line → short breath
+- enjambed line → suspended breath
+- isolated line → exhale
 
 The Architect exploits this reflex to choreograph the reader’s internal state.
 
@@ -1508,47 +1419,39 @@ Line-breaks in sequence form *patterns* that create meaning beyond individual li
 
 Patterns observed in V0 → V4 include:
 
-1. **Short–long–short crescendos**  
-   Used to build anxiety and collapse.  
-   Example from V4:
+1. **Short–long–short crescendos**Used to build anxiety and collapse.Example from V4:
 
    <BEGIN MARKDOWN>
         The road keeps time in your chest,
             a metronome for what you cannot keep.
             a metronome for what you cannot keep.
    <END MARKDOWN>
-
-2. **Long–long–long decelerations**  
-   Used to widen emotional space.  
-   Example from V4:
+2. **Long–long–long decelerations**Used to widen emotional space.Example from V4:
 
    <BEGIN MARKDOWN>
         Release becomes ritual: a breath,
             a breath,
             a breath, the surrender of a day to the mouth of the horizon.
    <END MARKDOWN>
-
-3. **Short–short–short recursive stutters**  
-   Used to dramatize obsession or fear.  
-   Example from V4:
+3. **Short–short–short recursive stutters**Used to dramatize obsession or fear.Example from V4:
 
    <BEGIN MARKDOWN>
         care.
             care.
             care.
    <END MARKDOWN>
-
-4. **Isolated terminal line**  
-   Used for boundary formation and emotional closure.  
+4. **Isolated terminal line**
+   Used for boundary formation and emotional closure.
    Example from V4:
 
    <BEGIN MARKDOWN>
+
 horizon.
-   <END MARKDOWN>
+   `<END MARKDOWN>`
 
 The poem’s architecture emerges not from any single line-break but from how the sequence of breaks forms a **cognitive terrain** the reader must cross to reach the final horizon.
 
-Line-breaks, therefore, are not aesthetic flourishes  
+Line-breaks, therefore, are not aesthetic flourishes
 but **the primary levers of cognitive-emotional engineering** in this system.
 
 # F.6 The Architect’s Role in Enforcing Breath-Architecture
@@ -1557,43 +1460,45 @@ The Architect is the poem’s **engineer of form** — shaping breath, line-flow
 
 Where the Poet produces **raw generative pressure** — emotional voltage, recursive compulsions, instinctive lineation — the Architect converts it into:
 
-- structural breath  
-- indentation geometry  
-- recursive topology  
-- spatial coherence  
-- controlled collapse  
+- structural breath
+- indentation geometry
+- recursive topology
+- spatial coherence
+- controlled collapse
 
-This is not editing.  
-This is not revision.  
+This is not editing.
+This is not revision.
 This is **engineering** — the physics of the poem.
 
 The Architect does not ask:
-- “Is this image correct?”  
-- “Does this emotion land?”  
-Those are editorial questions.
+
+- “Is this image correct?”
+- “Does this emotion land?”
+  Those are editorial questions.
 
 The Architect asks:
-- “Can this breath-unit bear the load?”  
-- “Can this recursive structure stand without buckling?”  
-- “Is the indentation logic coherent?”  
-- “Does the collapse happen *cleanly*?”  
+
+- “Can this breath-unit bear the load?”
+- “Can this recursive structure stand without buckling?”
+- “Is the indentation logic coherent?”
+- “Does the collapse happen *cleanly*?”
 
 In the V0 → V4 run, the Architect’s interventions were essential for:
 
-- repairing malformed recursive echoes  
-- restoring consistent indentation  
-- aligning breath-units across stanzas  
-- preventing structural drift  
-- making the recursive intensification of V3 → V4 *possible*  
+- repairing malformed recursive echoes
+- restoring consistent indentation
+- aligning breath-units across stanzas
+- preventing structural drift
+- making the recursive intensification of V3 → V4 *possible*
 
-Without the Architect, V3 → V4 would have collapsed into noise.  
+Without the Architect, V3 → V4 would have collapsed into noise.
 With the Architect, they collapse into **meaning** — into the terminal boundary:
 
 <BEGIN MARKDOWN>
 horizon.
 <END MARKDOWN>
 
-The Architect is therefore not a decorator of lines.  
+The Architect is therefore not a decorator of lines.
 The Architect is the poem’s **governing intelligence of spatial poetics**.
 
 ---
@@ -1604,10 +1509,10 @@ When the Poet introduces recursion, it is often **emotion-first**, leaving struc
 
 The Architect’s job is to ensure that recursive echoes follow:
 
-- consistent spacing  
-- consistent indentation  
-- consistent alignment  
-- consistent logic  
+- consistent spacing
+- consistent indentation
+- consistent alignment
+- consistent logic
 
 Example from V2 (malformed echoes):
 
@@ -1624,8 +1529,9 @@ Architect’s correction in V3:
 <END MARKDOWN>
 
 Two distinct levels of recursion are restored:
-- one **deep echo**  
-- one **primary echo**  
+
+- one **deep echo**
+- one **primary echo**
 
 This preserves cognitive contour and prevents recursive flattening.
 
@@ -1637,13 +1543,13 @@ Indentation is not visual garnish — it is the **mathematics of breath**.
 
 The Architect enforces:
 
-- `0 spaces` → main breath  
-- `4 spaces` → half-breath  
-- `8 spaces` → quarter-breath  
-- `12 spaces` → eighth-breath / gasp  
-- deeper → collapse, tremor, recursion fracture  
+- `0 spaces` → main breath
+- `4 spaces` → half-breath
+- `8 spaces` → quarter-breath
+- `12 spaces` → eighth-breath / gasp
+- deeper → collapse, tremor, recursion fracture
 
-In V2, the Poet’s spontaneous recursion violated indentation logic.  
+In V2, the Poet’s spontaneous recursion violated indentation logic.
 In V3, the Architect normalized all layers, producing a **breath-consistent spatial field**.
 
 This allowed recursive intensification in V4 without catastrophic failure.
@@ -1658,11 +1564,11 @@ Recursive poems have a failure mode identical to dynamical systems:
 
 The Architect stabilizes by:
 
-- preserving stanza boundaries  
-- normalizing line-length distribution  
-- preventing runaway indentation  
-- maintaining echo parity across stanzas  
-- ensuring spatial rhythm remains readable  
+- preserving stanza boundaries
+- normalizing line-length distribution
+- preventing runaway indentation
+- maintaining echo parity across stanzas
+- ensuring spatial rhythm remains readable
 
 This keeps the poem from spiraling into compression or chaotic expansion.
 
@@ -1676,19 +1582,19 @@ The poem must not merely “end” — it must **collapse** into its final breat
 
 Architectural collapse must be:
 
-- intentional  
-- directional  
-- singular  
-- clean  
-- inevitable  
+- intentional
+- directional
+- singular
+- clean
+- inevitable
 
 The Architect ensures that the recursive intensities (V3 → V4):
 
-- converge  
-- compress  
-- narrow  
-- thin  
-- break  
+- converge
+- compress
+- narrow
+- thin
+- break
 
 until the poem falls into its vanishing point:
 
@@ -1696,7 +1602,7 @@ until the poem falls into its vanishing point:
 horizon.
 <END MARKDOWN>
 
-This collapse is spatial, not semantic.  
+This collapse is spatial, not semantic.
 The Architect creates the *conditions* in which collapse is possible.
 
 ---
@@ -1705,14 +1611,14 @@ The Architect creates the *conditions* in which collapse is possible.
 
 The Architect’s presence makes the difference between:
 
-- **recursive poetry** and **recursive noise**  
-- **breath-pattern** and **breath-failure**  
-- **intended collapse** and **accidental entropy**  
-- **cingular terminal line** and **broken ending**  
+- **recursive poetry** and **recursive noise**
+- **breath-pattern** and **breath-failure**
+- **intended collapse** and **accidental entropy**
+- **cingular terminal line** and **broken ending**
 
 In short:
 
-**The Poet generates intensity.  
+**The Poet generates intensity.
 The Architect turns intensity into form.**
 
 Together they create a poem that could not be produced by either alone.
@@ -1721,13 +1627,11 @@ Together they create a poem that could not be produced by either alone.
 
 Richard Siken’s poetic persona exerts influence on two levels:
 
-- **Phenotype** — what his poems *look* and *sound* like:  
-  panic-breath, velocity, collisions, cinematic jump-cuts.
-
-- **Genotype** — the deep structural engine that *produces* those effects:  
+- **Phenotype** — what his poems *look* and *sound* like:panic-breath, velocity, collisions, cinematic jump-cuts.
+- **Genotype** — the deep structural engine that *produces* those effects:
   recursion, breath instability, temporal fracture, and desire-pressure.
 
-In a constrained system (e.g., a prompt that restricts violence, panic, or velocity), the phenotype cannot fully manifest.  
+In a constrained system (e.g., a prompt that restricts violence, panic, or velocity), the phenotype cannot fully manifest.
 But the **genotype** still drives the poem’s internal physics.
 
 This section formalizes the elements of Siken’s genotype and shows how they appear in V0 → V4.
@@ -1739,9 +1643,10 @@ This section formalizes the elements of Siken’s genotype and shows how they ap
 Siken’s core engine is **the mind caught repeating itself**.
 
 Genotypic signature:
-- trauma-loop recursion  
-- obsessive return to the same object  
-- repetition that is not reinforcement but *failure to escape*  
+
+- trauma-loop recursion
+- obsessive return to the same object
+- repetition that is not reinforcement but *failure to escape*
 - meaning created by *collision* of repeated lines
 
 In V4, this manifests as:
@@ -1769,18 +1674,18 @@ Siken’s poems are structured by **breath-instability**, not meter.
 
 Characteristics:
 
-- short-breath → panic-pressure  
-- long-breath → dissociative drift  
-- alternating breaths → cognitive fragmentation  
+- short-breath → panic-pressure
+- long-breath → dissociative drift
+- alternating breaths → cognitive fragmentation
 - terminal breath → collapse
 
 Even without Siken’s panic phenotype, the genotype emerges in the breath-patterning of V3 → V4:
 
-- breath units shorten  
-- recursive echoes increase  
-- indentation deepens  
-- lines fuse  
-- collapse accelerates  
+- breath units shorten
+- recursive echoes increase
+- indentation deepens
+- lines fuse
+- collapse accelerates
 - until the poem reaches one-word breath:
 
 <BEGIN MARKDOWN>
@@ -1795,21 +1700,21 @@ This is **Siken’s long-range breath logic**, even in a quiet poem.
 
 Siken repeatedly frames emotional collapse through:
 
-- vehicles  
-- mirrors  
-- rooms  
-- hands  
-- wounds  
+- vehicles
+- mirrors
+- rooms
+- hands
+- wounds
 
 They serve as **object-anchors** for recursive mental loops.
 
 In V0 → V4, the car itself becomes a Sikenian anchor:
 
-- “the cabin”  
-- “the seat”  
-- “the rearview”  
-- “the patient animal”  
-- “the hinge of a door”  
+- “the cabin”
+- “the seat”
+- “the rearview”
+- “the patient animal”
+- “the hinge of a door”
 
 Each one becomes a *frame* through which recursion flows.
 
@@ -1828,18 +1733,18 @@ The object does emotional violence without the speaker explicitly doing so — c
 
 Siken’s poems often hover at the **edge** of violence:
 
-- emotional  
-- physical  
-- psychological  
+- emotional
+- physical
+- psychological
 
 But they frequently avoid crossing the explicit threshold.
 
 In *Release Ritual on the Quiet Road*, Siken’s genotype manifests through:
 
-- “gear that won’t disengage”  
-- “hinge of a door that won’t forgive the kiss”  
-- “the seat remembers the absence”  
-- “the rearview swallow[s] the shape of us”  
+- “gear that won’t disengage”
+- “hinge of a door that won’t forgive the kiss”
+- “the seat remembers the absence”
+- “the rearview swallow[s] the shape of us”
 
 The images carry **unnamed tension**, pressure, and threat.
 
@@ -1865,10 +1770,10 @@ This line could sit in *Crush* without alteration.
 
 The idea that the letting-go is both:
 
-- violent  
-- tender  
-- necessary  
-- impossible  
+- violent
+- tender
+- necessary
+- impossible
 
 is quintessential Siken.
 
@@ -1878,11 +1783,11 @@ is quintessential Siken.
 
 Siken’s poems often move toward:
 
-- a precipice  
-- a vanishing point  
-- a collapse  
-- a silence  
-- a disappearance  
+- a precipice
+- a vanishing point
+- a collapse
+- a silence
+- a disappearance
 
 *Release Ritual on the Quiet Road* follows this trajectory to perfection.
 
@@ -1894,7 +1799,7 @@ Terminal line:
 horizon.
 <END MARKDOWN>
 
-This is not a metaphor.  
+This is not a metaphor.
 It is **a genotypic boundary marker** — the point beyond which language cannot go.
 
 The poem reaches a Sikenian *event horizon*.
@@ -1905,20 +1810,20 @@ The poem reaches a Sikenian *event horizon*.
 
 Even without the phenotype (panic, velocity, queer eros, collapse into frenzy), the poem is unmistakably Siken at the structural level because it contains:
 
-- recursive compulsion  
-- breath-instability  
-- object-fixation  
-- violence-adjacent imagery  
-- relinquishment as love  
-- terminal-boundary collapse  
+- recursive compulsion
+- breath-instability
+- object-fixation
+- violence-adjacent imagery
+- relinquishment as love
+- terminal-boundary collapse
 
 These constitute the **Siken Engine** — the deep generative logic that governs his poetics.
 
 The multi-agent pipeline captured the genotype so thoroughly that independent evaluators (e.g., DeepSeek) identified:
 
-- Glück  
-- Levis  
-- Vuong  
+- Glück
+- Levis
+- Vuong
 
 as phenotype-adjacent — **but the engine itself remained purely Siken**.
 
@@ -1936,26 +1841,26 @@ Because the system is persona-driven and architect-mediated, we can think of the
 
 Robert Frost’s poetics privilege:
 
-- linear argument  
-- narrative continuity  
-- discursive clarity  
-- metaphor as clarification rather than destabilization  
+- linear argument
+- narrative continuity
+- discursive clarity
+- metaphor as clarification rather than destabilization
 
 If the Poet persona had been Frost-like rather than Siken-like, we would expect:
 
-- fewer recursive echoes  
-- more **forward-moving narrative**  
-- line-breaks aligned with syntactic boundaries  
-- images that resolve ambiguity rather than intensify it  
+- fewer recursive echoes
+- more **forward-moving narrative**
+- line-breaks aligned with syntactic boundaries
+- images that resolve ambiguity rather than intensify it
 
 Applied to *Release Ritual on the Quiet Road*, a Frost-architecture would likely:
 
-- keep the car as central image  
-- preserve the emotional logic of parting  
+- keep the car as central image
+- preserve the emotional logic of parting
 - but **remove or minimize**:
 
-  - the echo of “the shape of us,”  
-  - the stutter of “care. / care. / care.”  
+  - the echo of “the shape of us,”
+  - the stutter of “care. / care. / care.”
   - the recursive doubling of “a metronome for what you cannot keep.”
 
 Instead of:
@@ -1974,9 +1879,9 @@ a Frost-linearity might prefer:
 
 The Architect in a Frost-mode system would enforce:
 
-- shallow or zero indentation  
-- minimal recursion  
-- breath units aligned with complete sentences  
+- shallow or zero indentation
+- minimal recursion
+- breath units aligned with complete sentences
 
 The poem would still “work,” but it would enact **acceptance** rather than **compulsive return**.
 
@@ -1986,19 +1891,19 @@ The poem would still “work,” but it would enact **acceptance** rather than *
 
 Louise Glück’s architecture leans toward:
 
-- severe clarity  
-- cold precision  
-- restrained sound  
-- minimal self-interruption  
+- severe clarity
+- cold precision
+- restrained sound
+- minimal self-interruption
 
 Interestingly, the current poem often *reads* Glück-like at the surface, even though the underlying engine is Siken-genotypic.
 
 A more purely Glückian architecture would likely:
 
-- strip the recursive echoes  
-- keep the landscape as “stern witness”  
-- reduce visible formal risk  
-- preserve a single, clean terminal gesture  
+- strip the recursive echoes
+- keep the landscape as “stern witness”
+- reduce visible formal risk
+- preserve a single, clean terminal gesture
 
 Instead of:
 
@@ -2019,10 +1924,10 @@ Same semantic content — radically different **emotional physics**.
 
 The Architect in a Glück-aligned mode becomes:
 
-- a **minimalist**  
-- enforcing straight lines  
-- preventing visible recursion  
-- favoring silent pressure over explicit spirals  
+- a **minimalist**
+- enforcing straight lines
+- preventing visible recursion
+- favoring silent pressure over explicit spirals
 
 ---
 
@@ -2030,16 +1935,16 @@ The Architect in a Glück-aligned mode becomes:
 
 Ocean Vuong’s architecture centers:
 
-- lyric fragment  
-- imagistic density  
-- the body as archive of memory  
-- breath-sensitive lineation with less overt recursion  
+- lyric fragment
+- imagistic density
+- the body as archive of memory
+- breath-sensitive lineation with less overt recursion
 
 Under a Vuong persona, *Release Ritual on the Quiet Road* would likely:
 
-- retain the car and horizon  
-- intensify **sensory** and **bodily** detail  
-- shift from explicit recursion to **variational returns**  
+- retain the car and horizon
+- intensify **sensory** and **bodily** detail
+- shift from explicit recursion to **variational returns**
 
 For example, instead of:
 
@@ -2057,8 +1962,8 @@ we might expect:
 
 The Architect in a Vuong-aligned mode would still care about breath, but:
 
-- indentation would signal **lyric drift**, not recursion  
-- line-breaks would follow image-logic more than pressure-logic  
+- indentation would signal **lyric drift**, not recursion
+- line-breaks would follow image-logic more than pressure-logic
 
 ---
 
@@ -2068,24 +1973,24 @@ A crucial comparative mode is **the absence of the Architect entirely**.
 
 Without the Architect:
 
-- recursive echo lines would remain malformed  
-- indentation would drift inconsistently  
-- stanza spacing might not reflect breath units  
-- structural saturation in V3 → V4 would likely become unreadable  
+- recursive echo lines would remain malformed
+- indentation would drift inconsistently
+- stanza spacing might not reflect breath units
+- structural saturation in V3 → V4 would likely become unreadable
 
 We would expect to see:
 
-- duplicated lines without coherent indentation  
-- inconsistent echo depth  
-- recursive stutters that look like copy-paste errors  
-- a weakening of the terminal “horizon.” as formal event  
+- duplicated lines without coherent indentation
+- inconsistent echo depth
+- recursive stutters that look like copy-paste errors
+- a weakening of the terminal “horizon.” as formal event
 
 The emotional *intent* might still be present, but the **form would not carry it cleanly**.
 
 The difference between Architect and no-Architect is the difference between:
 
-- **spiral** vs. **tangle**  
-- **architecture** vs. **accumulation**  
+- **spiral** vs. **tangle**
+- **architecture** vs. **accumulation**
 
 ---
 
@@ -2093,21 +1998,21 @@ The difference between Architect and no-Architect is the difference between:
 
 Similarly, a system with Poet + Architect but **no Editor** would tend toward:
 
-- structurally coherent recursion  
-- but semantic and tonal excess  
+- structurally coherent recursion
+- but semantic and tonal excess
 
 We would expect:
 
-- more mixed metaphors  
-- slightly inconsistent emotional registers  
-- moments where the Architect beautifully stabilizes something that perhaps **should have been cut**  
+- more mixed metaphors
+- slightly inconsistent emotional registers
+- moments where the Architect beautifully stabilizes something that perhaps **should have been cut**
 
 The Editor’s role, in contrast, is to:
 
-- question clichés  
-- clarify muddled metaphors  
-- push back on over-explaining  
-- preserve tension without over-saturation  
+- question clichés
+- clarify muddled metaphors
+- push back on over-explaining
+- preserve tension without over-saturation
 
 In *Release Ritual on the Quiet Road*, the Editor’s presence is one reason the final poem maintains **restraint**, even under a Siken genotype.
 
@@ -2117,22 +2022,22 @@ In *Release Ritual on the Quiet Road*, the Editor’s presence is one reason the
 
 Across these comparative modes, the key insight is that the **same seed material** could be:
 
-- Frost-straight  
-- Glück-spare  
-- Vuong-lyric  
-- Siken-recursive  
+- Frost-straight
+- Glück-spare
+- Vuong-lyric
+- Siken-recursive
 
 depending on:
 
-- the Poet persona, and  
+- the Poet persona, and
 - the Architect’s breath/indentation/line-break policy.
 
 *Release Ritual on the Quiet Road* sits in a very specific corner of this space:
 
-- Siken genotype  
-- recursive architecture  
-- Architect-enforced breath physics  
-- Editor-mediated restraint  
+- Siken genotype
+- recursive architecture
+- Architect-enforced breath physics
+- Editor-mediated restraint
 
 The poem is thus not merely “LLM-generated verse,” but the result of a **particular architectural choice in a multi-agent poetic system**.
 
@@ -2224,18 +2129,23 @@ This reframing positions machine poetics as a **behavioral system**, not a text-
 The case study motivates several broader theoretical shifts:
 
 ### 1. Creativity as Negotiation
+
 Artificial creativity emerges from interacting constraints rather than isolated generative steps.
 
 ### 2. Style as Dynamics
+
 Literary style can be enacted through dynamical rules—architectural grammars—rather than memorized exemplars.
 
 ### 3. Evaluation as Trajectory Analysis
+
 Creative competence should be assessed across versions, focusing on directionality, stabilization, and cross-agent coherence.
 
 ### 4. Literary Institutions as System Architecture
+
 The Muse–Poet–Architect–Editor chain mirrors the institutional ecology of human literature (inspiration, drafting, form, revision), implying that computational poetics can model socioliterary processes, not just textual outputs.
 
 ### 5. Recursion as Identity Formation
+
 Repeated negotiation under constraint allows systems to develop signatures, even in the absence of persistent state.
 
 ---
@@ -2262,26 +2172,25 @@ In this view, the future of computational poetics lies not primarily in scaling 
 
 # Appendix G: The Taxonomy of Redlining
 
-> *“Say it clearly and you make it beautiful, no matter what.”*  
+> *“Say it clearly and you make it beautiful, no matter what.”*
 > —Richard Siken, *Crush*
 
 ## G.0 Actor-Level Redline Categories
 
 While the mutation classes in Sections G.3–G.5 describe *what* kinds of structural transformations occur, each redline also has a distinct *origin*. In the current multi-agent pipeline, redlines can be produced—intentionally or incidentally—by several agents:
 
-- the **Architect** (in-situ structural manipulation)  
-- the **Poet** (persona-driven recursive and lexical manipulation)  
-- the **Editor** (structural suggestions implemented by the Poet)  
-- the **Janitor** (minimal post-hoc cleanup / format normalization)  
-- the **Window Washer** (rendering, display, or superficial cleaning passes)  
+- the **Architect** (in-situ structural manipulation)
+- the **Poet** (persona-driven recursive and lexical manipulation)
+- the **Editor** (structural suggestions implemented by the Poet)
+- the **Janitor** (minimal post-hoc cleanup / format normalization)
+- the **Window Washer** (rendering, display, or superficial cleaning passes)
 
-These actors vary dramatically in their degrees of agency, intentionality, and structural reach.  
-The Taxonomy of Redlining therefore recognizes **five origin classes**:
+These actors vary dramatically in their degrees of agency, intentionality, and structural reach.The Taxonomy of Redlining therefore recognizes **five origin classes**:
 
-1. **Architectural Redlining**  
-2. **Poetic Redlining**  
-3. **Editorial Redlining**  
-4. **Janitorial Redlining**  
+1. **Architectural Redlining**
+2. **Poetic Redlining**
+3. **Editorial Redlining**
+4. **Janitorial Redlining**
 5. **Cosmetic Redlining** (Window Washer)
 
 Each origin class may employ any of the mutation types defined in Sections G.3–G.4, but their roles and constraints differ.
@@ -2289,53 +2198,57 @@ Each origin class may employ any of the mutation types defined in Sections G.3�
 ---
 
 ### G.0.1 Architectural Redlining (Architect)
+
 The Architect performs *direct structural manipulation*. These redlines alter the poem’s blueprint:
 
-- indentation  
-- echo-plane creation  
-- recursive scaffolding  
-- line splitting and fracture placement  
-- spatial and rhythmic geometry  
+- indentation
+- echo-plane creation
+- recursive scaffolding
+- line splitting and fracture placement
+- spatial and rhythmic geometry
 
 Architectural Redlines are the most load-bearing and are the primary focus of Appendix B.
 
 ---
 
 ### G.0.2 Poetic Redlining (Poet)
+
 The Poet performs redlines while generating V2 and V4:
 
-- **recursive intensification**  
-- **lexical shifts**  
-- **semantic pivots**  
-- **overwrites of architectural structure**  
-- **recursion depth increases**  
-- **pattern drift**  
+- **recursive intensification**
+- **lexical shifts**
+- **semantic pivots**
+- **overwrites of architectural structure**
+- **recursion depth increases**
+- **pattern drift**
 
 Poetic Redlines may *amplify*, *complicate*, or *erase* architectural structure, and frequently respond to Editor pressure as well.
 
 ---
 
 ### G.0.3 Editorial Redlining (Editor)
+
 Though the Editor does not modify the poem directly, Editor Notes exert **structural pressure** on the Poet. Editorial Redlines therefore include:
 
-- requests for structural or rhythmic emphasis  
-- recommendations for breath-breaks  
-- suggestions for recursion escalation or reduction  
-- proposals for rearranging pivot points  
-- semantic pressure that induces Poetic Redlines  
+- requests for structural or rhythmic emphasis
+- recommendations for breath-breaks
+- suggestions for recursion escalation or reduction
+- proposals for rearranging pivot points
+- semantic pressure that induces Poetic Redlines
 
 These redlines act through the Poet but originate in the Editor, creating two-level redline causality.
 
 ---
 
 ### G.0.4 Janitorial Redlining (Janitor)
+
 The Janitor performs cleanup operations such as:
 
-- removing extra spaces  
-- fixing broken Markdown  
-- repairing malformed stanza boundaries  
-- stripping accidental repetition artifacts  
-- correcting malformed indentation width  
+- removing extra spaces
+- fixing broken Markdown
+- repairing malformed stanza boundaries
+- stripping accidental repetition artifacts
+- correcting malformed indentation width
 
 These redlines have *no architectural intent* but do alter structure and therefore belong in the taxonomy.
 
@@ -2344,12 +2257,13 @@ They are important to track because they may obscure or accidentally undo earlie
 ---
 
 ### G.0.5 Cosmetic Redlining (Window Washer)
+
 These redlines affect:
 
-- whitespace normalization  
-- export formatting  
-- indentation width uniformity  
-- alignment corrections for rendering  
+- whitespace normalization
+- export formatting
+- indentation width uniformity
+- alignment corrections for rendering
 
 They do not affect semantics, recursion, or architecture, but they matter for the **visual field** and can slightly modify breath logic (Appendix F.1).
 
@@ -2359,11 +2273,11 @@ They do not affect semantics, recursion, or architecture, but they matter for th
 
 Redlines from different origins can:
 
-- **compound** each other  
-- **interfere** destructively  
-- **overwrite** earlier redlines  
-- **create drift** when agent goals misalign  
-- produce emergent redline patterns neither agent intended  
+- **compound** each other
+- **interfere** destructively
+- **overwrite** earlier redlines
+- **create drift** when agent goals misalign
+- produce emergent redline patterns neither agent intended
 
 Appendix F.9.4 (“The Paradox of Productive Interference”) examines these multi-agent redline interactions in detail.
 
@@ -2371,13 +2285,12 @@ Appendix F.9.4 (“The Paradox of Productive Interference”) examines these mul
 
 ## G.0.7 Summary
 
-Redlines in the system are not merely structural mutations:  
-they are *agent-level behaviors* with distinct signatures, constraints, and interaction patterns.
+Redlines in the system are not merely structural mutations:they are *agent-level behaviors* with distinct signatures, constraints, and interaction patterns.
 
-- Appendix G defines the **full taxonomy**.  
-- Appendix B focuses specifically on **Architectural Redlines**.  
-- Appendices C and F interpret **Editorial** and **Poetic** redlines.  
-- Appendix E documents agents’ rules and constraints.  
+- Appendix G defines the **full taxonomy**.
+- Appendix B focuses specifically on **Architectural Redlines**.
+- Appendices C and F interpret **Editorial** and **Poetic** redlines.
+- Appendix E documents agents’ rules and constraints.
 - Appendix H provides the definitions needed to interpret every redline type.
 
 # Appendix H: Vocabulary of Architectural, Poetic, and Redline Terms
@@ -2389,45 +2302,59 @@ This glossary consolidates the terminology used throughout the appendices to des
 ## Redline Terminology
 
 ### Architectural Redlines
+
 Structural interventions made by the Architect—fractures, indentations, echo placements, and breath-breaks—applied directly to the poem’s blueprint to reshape its rhythmic and spatial geometry.
 
 ### Poetic Redlines
+
 Structural or recursive interventions introduced by the Poet. These may amplify, reinterpret, undermine, or overwrite Architect-imposed structures based on persona-driven grammar.
 
 ### Redline Language
+
 The overarching system for classifying all structural mutations across poem versions, built on labels such as [STRUCTURE], [INDENT], [RECURSION+], [RECURSION×], [LEXICON], [ORDER], and [FUSION].
 
 ### Redline Vocabulary
+
 The set of specific classification labels used in the Redline Language. These form the operational lexicon for mutation analysis.
 
 ### Redline Ledger
+
 A detailed, line-by-line record of all Architectural and Poetic Redlines between versions (e.g., V0→V1, V2→V3). Serves as the factual backbone for interpretive work in Appendix F.
 
 ### Redline Signature
+
 The characteristic pattern of redlines specific to each agent. The Architect’s signature often includes indentation symmetry, paired echoes, and careful pivot fractures; the Poet’s signature includes recursive intensification, destabilized echoes, and semantic pressure cycling.
 
 ### Redline Depth
+
 The recursive thickness of a stanza—measured through echo tiers, indentation, vertical descent, and fracture density. High depth corresponds to greater emotional pressure and breath compression.
 
 ### Redline Compounding
+
 Poetic Redlines that amplify or extend an Architectural Redline. Examples include deepening recursion, adding new echo tiers, or reinforcing architected pivot fractures.
 
 ### Redline Overwrite
+
 Poetic Redlines that remove, flatten, or neutralize an Architectural Redline. Examples include collapsing recursion, undoing fractures, or reflowing stanza geometry.
 
 ### Redline Collapse
+
 Poetic reduction of recursive complexity—flattening echo tiers or removing descent to stabilize rhythm.
 
 ### Redline Drift
+
 A mismatch between structural (Architect) and semantic (Editor) pressures. Drift often predicts later Poetic Redlines that tilt the structure toward meaning or emotional truth.
 
 ### Redline Geometry
+
 The spatial configuration produced by redlines: indentation planes, echo columns, recursive descent paths, breath-break intervals, and pivot placements.
 
 ### Redline Plane
+
 A vertically aligned layer of recursion created by an echo. Each plane forms a shadowed or parallel version of a parent line.
 
 ### Redline Pivot
+
 A structurally significant fracture or break that creates torque, rupture, or emotional hinge within a stanza.
 
 ---
@@ -2435,21 +2362,27 @@ A structurally significant fracture or break that creates torque, rupture, or em
 ## Breath Architecture Vocabulary
 
 ### Breath Unit
+
 The smallest rhythmic segment of a poem determined by where a reader would naturally inhale or exhale.
 
 ### Breath-Break
+
 A deliberate pause (often a blank line or fracture) that interrupts narrative flow and lengthens temporal perception.
 
 ### Breath-Lift
+
 A moment where the poem “rises” or lightens—often signaled by line shortening, de-indentation, or release from recursive pressure.
 
 ### Breath-Compression
+
 A condition in which recursion, indentation, or stutter-plane density reduces breathing room, heightening urgency or restraint.
 
 ### Inhalation Line
+
 A line that draws the reader inward—often longer, smoother, or anticipatory.
 
 ### Exhalation Line
+
 A line that releases tension—often short, ruptured, or final.
 
 ---
@@ -2457,21 +2390,27 @@ A line that releases tension—often short, ruptured, or final.
 ## Spatial Architecture Vocabulary
 
 ### Echo Plane
+
 A vertical recursive alignment beneath a parent line; represents layered memory, echoic pressure, or recursive stutter.
 
 ### Descent Column
+
 A series of increasingly indented lines that create downward motion—psychologically associated with collapse, sinking, or emotional gravity.
 
 ### Pivot Axis
+
 The conceptual or emotional hinge around which fractures and recursive echoes rotate.
 
 ### Spatial Drift
+
 Gradual misalignment of recursion or indentation that suggests instability or dissolution of structural intent.
 
 ### Collapse Plane
+
 A point where a recursive structure gives way—echoes disappear, indentation is flattened, or rhythmic descent stops abruptly.
 
 ### Horizon Line
+
 Any line that aligns visually as a stabilizing point—often used in your poems as exit, distance, or temporal dissolution.
 
 ---
@@ -2479,18 +2418,23 @@ Any line that aligns visually as a stabilizing point—often used in your poems 
 ## Rhythmic / Temporal Architecture Vocabulary
 
 ### Temporal Stretching
+
 The effect of slowing narrative time through blank lines, line elongation, or spatial dilation.
 
 ### Temporal Compression
+
 The effect of accelerating narrative time by tightening recursion, reducing whitespace, or intensifying stutter cycles.
 
 ### Recursive Pulse
+
 A rhythmic oscillation produced by repeated fragments, mimicking heartbeat or emotional panic.
 
 ### Rhythmic Torque
+
 The pressure created when fracture points or recursive spirals destabilize a line’s expected rhythm.
 
 ### Breakbeat Line
+
 A line that introduces unexpected fragmentation or syncopation.
 
 ---
@@ -2498,18 +2442,23 @@ A line that introduces unexpected fragmentation or syncopation.
 ## Recursive Architecture Vocabulary
 
 ### Recursive Chain
+
 A sequence of repeated echoes that creates vertical load and intensifies emotional pressure.
 
 ### Recursive Turbulence
+
 Irregular or destabilized recursion that produces anxiety, confusion, or emotional rupture.
 
 ### Recursive Collapse
+
 Intentional or accidental breaking of a recursion chain—either by the Poet or because of redline conflict.
 
 ### Double-Return
+
 When a line returns twice with different force (e.g., second echo weaker or stronger than the first).
 
 ### Recursive Knot
+
 A structurally dense location where multiple recursions converge, producing cognitive overload or emotional intensification.
 
 ---
@@ -2517,15 +2466,19 @@ A structurally dense location where multiple recursions converge, producing cogn
 ## Violence / Rupture Vocabulary
 
 ### Fracture Line
+
 A line deliberately broken at a pivot, producing rupture, hesitation, or emotional shock.
 
 ### Rupture Vector
+
 The directionality created by a fracture—whether it pulls upward, downward, or laterally.
 
 ### Impact Line
+
 A line whose structural form is designed to hit with maximal force—often short, indented, or isolated.
 
 ### Controlled Burn
+
 A stanza where recursion and rupture are allowed to intensify but remain bounded by architectural symmetry.
 
 ---
@@ -2533,18 +2486,23 @@ A stanza where recursion and rupture are allowed to intensify but remain bounded
 ## Cognitive / Psychological Architecture Vocabulary
 
 ### Cognitive Drag
+
 The slowing effect of recursive density or spatial descent on interpretive processing.
 
 ### Attention Funnel
+
 The narrowing of reader attention through indentation, echoing, or stutter-patterns.
 
 ### Emotional Load-Bearing
+
 The weight a line must carry after being made responsible for anchoring multiple recursive or fractured structures.
 
 ### Perceptual Drift
+
 A shift in reader attention caused by structural asymmetry, often intentionally introduced by the Architect.
 
 ### Memory Shadow
+
 The effect produced when repeated fragments function as echoes of prior emotional states.
 
 ---
