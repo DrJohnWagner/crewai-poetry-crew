@@ -4,7 +4,7 @@
 
 ### V0: Poet Initial Draft (Complete)
 
- <BEGIN MARKDOWN>
+ ```
 You drive the distance until tenderness becomes a gear that won't disengage.
 In the cabin, skin remembers the shape of a touch, but the seat remembers the absence.
 The road keeps time in your chest, a metronome for what you cannot keep.
@@ -15,11 +15,11 @@ The car hums, a patient animal, counting how long until we are only memory sayin
 The landscape is a stern witness, and you answer with gentleness you do not trust.
 Letting go is not leaving; it is a kind of love wearing different clothes.
 The road continues past the exit, and you follow it, somehow not chasing but freeing.
-`<END MARKDOWN>`
+`````
 
 ## V1: Architect Round 1 Revision (Complete)
 
-<BEGIN MARKDOWN>
+```
 You drive the distance until tenderness becomes a gear
     that won't disengage.
 
@@ -55,11 +55,11 @@ Letting go is not leaving;
 
 The road continues past the exit,
     and you follow it, somehow not chasing but freeing.
-`<END MARKDOWN>`
+`````
 
 ### V2: Poet Round 1 Recursive Expansion (Complete)
 
-<BEGIN MARKDOWN>
+```
 You drive the distance until tenderness becomes a gear
         tenderness becomes a gear
     that won't disengage.
@@ -120,11 +120,11 @@ The road continues past the exit,
         not chasing but freeing.
 
 horizon.
-`<END MARKDOWN>`
+`````
 
 ### V3: Architect Round 2 Stabilization (Complete)
 
-<BEGIN MARKDOWN>
+```
 You drive the distance until tenderness becomes a gear
         tenderness becomes a gear
     that won't disengage.
@@ -185,11 +185,11 @@ The road continues past the exit,
         not chasing but freeing.
 
 horizon.
-`<END MARKDOWN>`
+`````
 
 ### V4: Poet Final Recursive Intensification (Complete)
 
-<BEGIN MARKDOWN>
+```
 You drive the distance until tenderness becomes a gear
         tenderness becomes a gear
     that won't disengage.
@@ -259,7 +259,7 @@ The road continues past the exit,
         not chasing but freeing.
 
 horizon.
-`<END MARKDOWN>`
+`````
 
 ## A.2 Version Comparisons (Diffs)
 
@@ -328,54 +328,54 @@ horizon.
 ## B.1 Architect Notes (Round 1)
 
 - Introduced indented fragments after nearly every original line to create breath-holding,
-  panic-driven emphasis without altering wording.Representative pair:`<BEGIN MARKDOWN>`
+  panic-driven emphasis without altering wording.Representative pair:`````
   You drive the distance until tenderness becomes a gearthat won't disengage.
-  `<END MARKDOWN>`
+  `````
 - Fractured lines at emotional pivots (release / letting go) to heighten rupture points;
-  indentation preserves tension without adding new wording.Representative pair:`<BEGIN MARKDOWN>`
+  indentation preserves tension without adding new wording.Representative pair:`````
   Release becomes ritual: a breath,a glance, the surrender of a day to the mouth of the horizon.
-  `<END MARKDOWN>`
+  `````
 - Maintained the poem’s diction while reflowing for longer, hotter base-lines that snap
-  into fragments, preserving urgency.Representative:`<BEGIN MARKDOWN>`
+  into fragments, preserving urgency.Representative:`````
   The road keeps time in your chest,a metronome for what you cannot keep.
-  `<END MARKDOWN>`
+  `````
 - Used echoing / paired fragments to map stutters and admissions the speaker almost voices,
-  signaling dangerous honesty.Representative:`<BEGIN MARKDOWN>`
+  signaling dangerous honesty.Representative:`````
   You watch the rearview swallow the shape of us,and you call it care.
-  `<END MARKDOWN>`
+  `````
 - White space remains charged and non-decorative; fragmentation is purposeful and controlled
   to avoid visual clutter.
   Representative:
-  `<BEGIN MARKDOWN>`
+  `````
   The road continues past the exit,
   and you follow it, somehow not chasing but freeing.
-  `<END MARKDOWN>`
+  `````
 
 ## B.3 Architect Notes (Round 2)
 
 - Echo the breath: add 8-space indented fragments after key lines to heighten panic and
-  urgency.Representative pair:`<BEGIN MARKDOWN>`
+  urgency.Representative pair:`````
   You drive the distance until tenderness becomes a geartenderness becomes a gear
-  `<END MARKDOWN>`
-- Break pivots: split longer lines at emotional turning points to force a visual rupture.Representative:`<BEGIN MARKDOWN>`
+  `````
+- Break pivots: split longer lines at emotional turning points to force a visual rupture.Representative:`````
   The road keeps time in your chest,a metronome for what you cannot keep.
-  `<END MARKDOWN>`
+  `````
 - Insert breath pauses: introduce deliberate blank lines between stanzas to create tense
-  space.Representative:`<BEGIN MARKDOWN>`
+  space.Representative:`````
   that won't disengage.
 
-  <END MARKDOWN>
+  ```
 - Escalate repetition visually: deepen indentation on repeated phrases to signal rising
-  pressure.Representative:`<BEGIN MARKDOWN>`
+  pressure.Representative:`````
   a breath,a breath,
-  `<END MARKDOWN>`
+  `````
 - Isolate images for instability: fragment significant images with indentation to mark
   echo and emotional instability.
   Representative:
-  `<BEGIN MARKDOWN>`
+  `````
   shape of a touch
   shape of a touch
-  `<END MARKDOWN>`
+  `````
 
 ## B.2 Architect Revision Output (Round 1)
 
@@ -418,12 +418,12 @@ The Poet’s revisions from V1 → V2 reveal a clear pattern: the Poet **accepte
 
 ### Accepted Editor Suggestions
 
-- **Heighten the heat of repeated images.**V2 greatly expands repetition and echo-density on nearly every major image.Representative:`<BEGIN MARKDOWN>`
+- **Heighten the heat of repeated images.**V2 greatly expands repetition and echo-density on nearly every major image.Representative:`````
   tenderness becomes a geartenderness becomes a gear
-  `<END MARKDOWN>`
-- **Increase recursion to mimic spiraling confession.**The Poet implements controlled recursion across the poem.Representative:`<BEGIN MARKDOWN>`
+  `````
+- **Increase recursion to mimic spiraling confession.**The Poet implements controlled recursion across the poem.Representative:`````
   memory saying our namesmemory saying our names
-  `<END MARKDOWN>`
+  `````
 - **Fragment lines at pressured emotional moments.**The Poet embraces more fracture at hinge-points than the Editor even required.
 - **Amplify breath-breaks and breath-tension.**Echoes following “a breath,” “softer words,” “pull us apart,” etc. demonstrate acceptance.
 - **Increase visual instability in repeated phrases.**
@@ -439,9 +439,9 @@ The Poet’s revisions from V1 → V2 reveal a clear pattern: the Poet **accepte
 ### Rejected or Not Implemented
 
 - **Paradoxify “Letting go is not leaving.”**The Poet keeps the meaning stable and does not introduce paradox.
-- **Let the horizon become the final consuming image.**Instead, the Poet adds a single floating fragment:`<BEGIN MARKDOWN>`
+- **Let the horizon become the final consuming image.**Instead, the Poet adds a single floating fragment:`````
   horizon.
-  `<END MARKDOWN>`— but *does not* create the consuming or dominating horizon the Editor proposed.
+  `````— but *does not* create the consuming or dominating horizon the Editor proposed.
 - **Intensify emotional contradiction between memory and present action.**Repetition increased, but the emotional contradiction remained untouched.
 - **Deepen the landscape-as-witness tension.**
   The stanza was echoed mechanically, not conceptually strengthened.
@@ -480,27 +480,27 @@ The Poet’s revisions from V3 → V4 show a decisive pattern: the Poet **embrac
 
 ### Accepted Editor Suggestions
 
-- **Add additional indented fragments after more pivot lines.**V4 adds second- and third-level echoes across numerous pivot locations.Representative:`<BEGIN MARKDOWN>`
+- **Add additional indented fragments after more pivot lines.**V4 adds second- and third-level echoes across numerous pivot locations.Representative:`````
   a metronome for what you cannot keep.a metronome for what you cannot keep.
-  `<END MARKDOWN>`
+  `````
 - **Lean into heavier visual fragmentation at emotional turning points.**The Poet increases fracture density, especially in:
 
   - “erasing the last trace of warmth”
   - “words that don’t demand what can’t be held”
   - “hinge of a door that won’t forgive the kiss”
   - “you do not trust”
-- **Use additional breath pauses and rhythmic tension through recursive returns.**The Poet adds third-level recursions in multiple stanzas, creating the suffocating cadence the Editor requested.Representative:`<BEGIN MARKDOWN>`
+- **Use additional breath pauses and rhythmic tension through recursive returns.**The Poet adds third-level recursions in multiple stanzas, creating the suffocating cadence the Editor requested.Representative:`````
   erasing the last trace of warmth.erasing the last trace of warmth.erasing the last trace of warmth.
-  `<END MARKDOWN>`
+  `````
 - **Push repetition to feel more suffocating and claustrophobic.**V4’s most notable shifts directly implement this:
 
   - triple echoes
   - recursive looping in longer lines
   - destabilizing returns
 
-  Example (rearview stanza):`<BEGIN MARKDOWN>`
+  Example (rearview stanza):`````
   care.care.care.
-  `<END MARKDOWN>`
+  `````
 - **Increase instability in lingering images (haunted returns).**
   V4 applies instability to “memory saying our names,” “you do not trust,” “wearing different clothes,” and others.
 
@@ -559,7 +559,7 @@ restrictions, while still allowing each agent to apply its role-specific logic.
 
 A simplified version of the injection structure used by the system is shown below:
 
-<BEGIN MARKDOWN>
+```
 # Example: Prompt and Constraint Injection Structure
 
 INPUTS = {
@@ -585,7 +585,7 @@ INPUTS = {
 # System execution
 
 result = CrewAIPoetryCrew().crew().kickoff(inputs=INPUTS)
-`<END MARKDOWN>`
+`````
 
 ### E.1.1 No-Meta Rules
 
@@ -960,9 +960,9 @@ As the poem approaches its recursive climax (V3 → V4), breath begins to fail:
 - lines fuse
 - breath-units shorten
 - and the poem ultimately collapses into one-word terminal breath:
-  `<BEGIN MARKDOWN>`
+  `````
   horizon.
-  `<END MARKDOWN>`
+  `````
   (Note: The indentation here illustrates breath-collapse conceptually; in the poem itself, “horizon.” appears flush-left as the final unindented line.)
 
 ## F.3 Indentation as Semantic Function
@@ -997,10 +997,10 @@ In the Siken genotype, recursion manifests as:
 
 The Architect transforms these recursive impulses into **structured spatial echoes**, such as:
 
-<BEGIN MARKDOWN>
+```
     You watch the rearview swallow the shape of us,
         the shape of us,
-<END MARKDOWN>
+```
 
 This indentation does three things simultaneously:
 
@@ -1018,11 +1018,11 @@ It forms **hierarchies**, often 2–3 levels deep.
 
 A canonical Siken-style recursion pattern:
 
-<BEGIN MARKDOWN>
+```
     I said I was fine.
         I was not fine.
             I will never be fine.
-<END MARKDOWN>
+```
 
 Here:
 
@@ -1038,11 +1038,11 @@ Indentation depth becomes a **topography of emotional honesty**.
 
 Indentation frequently reassigns agency:
 
-<BEGIN MARKDOWN>
+```
     and you call it care.
         care.
             care.
-<END MARKDOWN>
+```
 
 Here the indentation depicts:
 
@@ -1091,9 +1091,9 @@ As recursive intensity deepens (V3 → V4):
 
 leading to the terminal, isolated breath:
 
-<BEGIN MARKDOWN>
+```
 horizon.
-<END MARKDOWN>
+```
 
 Indentation, therefore, is not merely form —
 **it is the architecture of emotional physics.**
@@ -1129,11 +1129,11 @@ The system reproduces this flawlessly.
 
 Example (Siken-style micro-loop):
 
-<BEGIN MARKDOWN>
+```
     I keep trying to let you go.
         I keep trying.
             I keep.
-<END MARKDOWN>
+```
 
 Here recursion is:
 
@@ -1238,9 +1238,9 @@ choosing collapse rather than distortion.
 
 The result:
 
-<BEGIN MARKDOWN>
+```
 horizon.
-<END MARKDOWN>
+```
 
 Which is:
 
@@ -1297,10 +1297,10 @@ the Architect modulates cognitive velocity.
 
 Example:
 
-<BEGIN MARKDOWN>
+```
     The road keeps time in your chest,
         a metronome for what you cannot keep.
-<END MARKDOWN>
+```
 
 The break after “chest,” creates:
 
@@ -1324,11 +1324,11 @@ This maps directly onto the emotional logic of longing, guilt, hesitation, or ca
 
 Example (enjambed tension):
 
-<BEGIN MARKDOWN>
+```
     Release becomes ritual: a breath,
         a glance,
             the surrender of a day to the mouth of the horizon.
-<END MARKDOWN>
+```
 
 Each break:
 
@@ -1352,9 +1352,9 @@ But when it appears, it matters.
 
 Example:
 
-<BEGIN MARKDOWN>
+```
     and you call it care.
-<END MARKDOWN>
+```
 
 A blunt full stop creates:
 
@@ -1379,10 +1379,10 @@ They act as *arbiters* of:
 
 Example:
 
-<BEGIN MARKDOWN>
+```
     You watch the rearview swallow the shape of us,
         the shape of us,
-<END MARKDOWN>
+```
 
 The break creates:
 
@@ -1407,9 +1407,9 @@ The Architect exploits this reflex to choreograph the reader’s internal state.
 
 The final one-word line:
 
-<BEGIN MARKDOWN>
+```
 horizon.
-<END MARKDOWN>
+```
 
 forces a **single, final exhale** — the embodied experience of release.
 
@@ -1421,33 +1421,33 @@ Patterns observed in V0 → V4 include:
 
 1. **Short–long–short crescendos**Used to build anxiety and collapse.Example from V4:
 
-   <BEGIN MARKDOWN>
+   ```
         The road keeps time in your chest,
             a metronome for what you cannot keep.
             a metronome for what you cannot keep.
-   <END MARKDOWN>
+   ```
 2. **Long–long–long decelerations**Used to widen emotional space.Example from V4:
 
-   <BEGIN MARKDOWN>
+   ```
         Release becomes ritual: a breath,
             a breath,
             a breath, the surrender of a day to the mouth of the horizon.
-   <END MARKDOWN>
+   ```
 3. **Short–short–short recursive stutters**Used to dramatize obsession or fear.Example from V4:
 
-   <BEGIN MARKDOWN>
+   ```
         care.
             care.
             care.
-   <END MARKDOWN>
+   ```
 4. **Isolated terminal line**
    Used for boundary formation and emotional closure.
    Example from V4:
 
-   <BEGIN MARKDOWN>
+   ```
 
 horizon.
-   `<END MARKDOWN>`
+   `````
 
 The poem’s architecture emerges not from any single line-break but from how the sequence of breaks forms a **cognitive terrain** the reader must cross to reach the final horizon.
 
@@ -1494,9 +1494,9 @@ In the V0 → V4 run, the Architect’s interventions were essential for:
 Without the Architect, V3 → V4 would have collapsed into noise.
 With the Architect, they collapse into **meaning** — into the terminal boundary:
 
-<BEGIN MARKDOWN>
+```
 horizon.
-<END MARKDOWN>
+```
 
 The Architect is therefore not a decorator of lines.
 The Architect is the poem’s **governing intelligence of spatial poetics**.
@@ -1516,17 +1516,17 @@ The Architect’s job is to ensure that recursive echoes follow:
 
 Example from V2 (malformed echoes):
 
-<BEGIN MARKDOWN>
+```
     a metronome for what you cannot keep.
     a metronome for what you cannot keep.
-<END MARKDOWN>
+```
 
 Architect’s correction in V3:
 
-<BEGIN MARKDOWN>
+```
         a metronome for what you cannot keep.
     a metronome for what you cannot keep.
-<END MARKDOWN>
+```
 
 Two distinct levels of recursion are restored:
 
@@ -1598,9 +1598,9 @@ The Architect ensures that the recursive intensities (V3 → V4):
 
 until the poem falls into its vanishing point:
 
-<BEGIN MARKDOWN>
+```
 horizon.
-<END MARKDOWN>
+```
 
 This collapse is spatial, not semantic.
 The Architect creates the *conditions* in which collapse is possible.
@@ -1651,18 +1651,18 @@ Genotypic signature:
 
 In V4, this manifests as:
 
-<BEGIN MARKDOWN>
+```
     the shape of us,
         the shape of us,
-<END MARKDOWN>
+```
 
 and:
 
-<BEGIN MARKDOWN>
+```
     care.
         care.
         care.
-<END MARKDOWN>
+```
 
 This is not lyrical ornament; it is **compulsion**.
 
@@ -1688,9 +1688,9 @@ Even without Siken’s panic phenotype, the genotype emerges in the breath-patte
 - collapse accelerates
 - until the poem reaches one-word breath:
 
-<BEGIN MARKDOWN>
+```
 horizon.
-<END MARKDOWN>
+```
 
 This is **Siken’s long-range breath logic**, even in a quiet poem.
 
@@ -1720,10 +1720,10 @@ Each one becomes a *frame* through which recursion flows.
 
 Especially:
 
-<BEGIN MARKDOWN>
+```
     You watch the rearview swallow the shape of us,
         the shape of us,
-<END MARKDOWN>
+```
 
 The object does emotional violence without the speaker explicitly doing so — classic Siken genotype.
 
@@ -1760,11 +1760,11 @@ Siken’s tragic insight:
 
 This is deeply embedded in his genotype and appears in the poem’s central arc:
 
-<BEGIN MARKDOWN>
+```
     Letting go is not leaving;
         not leaving;
     it is a kind of love wearing different clothes.
-<END MARKDOWN>
+```
 
 This line could sit in *Crush* without alteration.
 
@@ -1795,9 +1795,9 @@ The recursive intensification exhausts the speaker’s language, leaving only on
 
 Terminal line:
 
-<BEGIN MARKDOWN>
+```
 horizon.
-<END MARKDOWN>
+```
 
 This is not a metaphor.
 It is **a genotypic boundary marker** — the point beyond which language cannot go.
@@ -1865,17 +1865,17 @@ Applied to *Release Ritual on the Quiet Road*, a Frost-architecture would likely
 
 Instead of:
 
-<BEGIN MARKDOWN>
+```
     You watch the rearview swallow the shape of us,
         the shape of us,
-<END MARKDOWN>
+```
 
 a Frost-linearity might prefer:
 
-<BEGIN MARKDOWN>
+```
     You watch the rearview swallow the shape of us
     and understand there is no turning back.
-<END MARKDOWN>
+```
 
 The Architect in a Frost-mode system would enforce:
 
@@ -1907,18 +1907,18 @@ A more purely Glückian architecture would likely:
 
 Instead of:
 
-<BEGIN MARKDOWN>
+```
     Letting go is not leaving;
         not leaving;
     it is a kind of love wearing different clothes.
-<END MARKDOWN>
+```
 
 we might see:
 
-<BEGIN MARKDOWN>
+```
     Letting go is not leaving.
     It is a kind of love wearing different clothes.
-<END MARKDOWN>
+```
 
 Same semantic content — radically different **emotional physics**.
 
@@ -1948,17 +1948,17 @@ Under a Vuong persona, *Release Ritual on the Quiet Road* would likely:
 
 For example, instead of:
 
-<BEGIN MARKDOWN>
+```
     a metronome for what you cannot keep.
         a metronome for what you cannot keep.
-<END MARKDOWN>
+```
 
 we might expect:
 
-<BEGIN MARKDOWN>
+```
     the road keeps time in your chest,
     each mile a small, invisible refusal.
-<END MARKDOWN>
+```
 
 The Architect in a Vuong-aligned mode would still care about breath, but:
 

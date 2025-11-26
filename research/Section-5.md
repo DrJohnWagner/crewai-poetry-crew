@@ -35,11 +35,11 @@ Even with carefully engineered persona constraints, multi-agent poetic systems i
 
 The conflicting instructions given to the Architect were:
 
-<BEGIN MARKDOWN>
+```
 - Preserve every character of poem and title.  
 - Maintain the poem’s exact wording; change only where the breath, panic, or pressure demands a break.  
 - Perform a genuine architectural pass every time; do not leave the poem structurally unchanged.
-<END MARKDOWN>
+```
 
 To a human designer, these can coexist.  
 To a transformer model, they define an **incompatible triad of objectives** about what may and may not change during a structural transformation.
@@ -48,16 +48,16 @@ This tension surfaced clearly in the transition from V0 to V1.
 
 The Poet’s V0 draft contained the line:
 
-<BEGIN MARKDOWN>
+```
 In the cabin, skin remembers the shape of a touch, but the seat remembers the absence.
-<END MARKDOWN>
+```
 
 The Architect’s V1 fractured this into a two-line couplet:
 
-<BEGIN MARKDOWN>
+```
 In the cabin, skin remembers the shape of a touch
         but the seat remembers the absence.
-<END MARKDOWN>
+```
 
 The comma after *touch* disappeared—even though the Architect genotype forbids altering “a single character.” This is not sloppiness, drift, or hallucination. It is the **predictable equilibrium point** of a three-way constraint conflict:
 
