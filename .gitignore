@@ -50,6 +50,8 @@ log-save.txt
 # Generated content
 backups/
 
+*.pptx
+
 # Prompts
 FilesForChatGPT.txt
 prompts.py

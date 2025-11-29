@@ -97,8 +97,8 @@ def extract_usage_report(log_content, log_file_path, request_options):
                     # Shorten to key name
                     if 'Muse' in agent_full:
                         return 'Muse'
-                    elif 'Summariser' in agent_full:
-                        return 'Summariser'
+                    elif 'Gardener' in agent_full:
+                        return 'Gardener'
                     elif 'Editor' in agent_full:
                         return 'Editor'
                     elif 'Poet' in agent_full:

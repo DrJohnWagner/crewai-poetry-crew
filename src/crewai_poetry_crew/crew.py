@@ -55,9 +55,9 @@ class CrewAIPoetryCrew():
         )
 
     @agent
-    def summariser(self) -> Agent:
+    def gardener(self) -> Agent:
         return Agent(
-            config=self.agents_config['summariser'], # type: ignore[index]
+            config=self.agents_config['gardener'], # type: ignore[index]
             llm=llm,
             verbose=False
         )

@@ -1,4 +1,4 @@
-## 6. Results: Case Studies in Emergent Computational Poetics
+## i6. Results: Case Studies in Emergent Computational Poetics
 
 > *“You want to know how it ends?
 > This is how it ends.
@@ -7,10 +7,11 @@
 
 ---
 
-### Category: Transformer Manifold Dynamics  
+### Category: Transformer Manifold Dynamics
+
 *(internal physics of LLMs—loss geometry, priors, manifold attraction)*
 
-#### 6.1 Case Study A — Constraint-Driven Mutation  
+#### 6.1 Case Study A — Constraint-Driven Mutation
 
 The Architect’s first pass (V1) applies the Siken persona’s breath-logic to the Poet’s V0 draft. It introduces fractures at emotional hinges, indented echoes at pressure points, and longer hot lines that snap into more unstable shapes. Most transformations follow the persona’s architectural rules exactly. However, V1 also reveals a deeper property of prompt-governed agent behavior: even tightly specified constraints can interact in ways that expose the underlying priorities of the language model.
 
@@ -26,7 +27,7 @@ The conflicting instructions given to the Architect were:
 - Perform a genuine architectural pass every time; do not leave the poem structurally unchanged.
 ```
 
-To a human designer, these coexist.  
+To a human designer, these coexist.
 To a transformer model, they form an **incompatible triad**.
 
 This tension surfaced clearly in the transition from V0 to V1.
@@ -46,8 +47,8 @@ In the cabin, skin remembers the shape of a touch
 
 The comma after *touch* vanished—despite explicit prohibitions against altering characters. This is not drift; it is the predictable equilibrium of three competing pressures:
 
-1. Literal preservation  
-2. Semantic preservation  
+1. Literal preservation
+2. Semantic preservation
 3. Mandatory fracture at the hinge (“but”)
 
 The **line break supersedes the comma**, rendering punctuation redundant. The model sacrifices the lowest-cost constraint, preserving meaning and satisfying persona architecture.
@@ -68,24 +69,24 @@ One of the most surprising behaviors in the run does not involve recursion, frac
 
 To illustrate the mismatch, consider how many elements of each seed appear in the drafts:
 
-- **Seed 2 elements** (guilt, consequence, distance as moral geometry, watching rather than reaching) appear **repeatedly** in V0, persist in V2, and remain present—sometimes strengthened—in V4.  
-- **Seed 3 elements** (tenderness softening demands, language that excludes the other, care as a non-possessive act) appear in the Poet’s stated justification but are **far less frequent** in the actual text.  
+- **Seed 2 elements** (guilt, consequence, distance as moral geometry, watching rather than reaching) appear **repeatedly** in V0, persist in V2, and remain present—sometimes strengthened—in V4.
+- **Seed 3 elements** (tenderness softening demands, language that excludes the other, care as a non-possessive act) appear in the Poet’s stated justification but are **far less frequent** in the actual text.
 - **Seed 1 elements** appear only marginally.
 
 This pattern cannot be attributed to later-agent influence: the alignment drift is already present in V0, before the Architect or Editor apply any pressure. In other words, the Poet’s *first-round phenotype* already leans toward Seed 2’s emotional field despite verbally selecting Seed 3. The consistency of this drift across rounds suggests that the Poet is not simply elaborating a chosen seed—it is gravitating toward the conceptual material that resonates most strongly with its persona constraints. Because Seed 2 contains the densest collisions, confessions, and emotional torque, its imagery fits the Siken genotype more naturally than the gentler, softer Seed 3.
 
-Thus Case Study F highlights a different kind of emergent phenomenon:  
-**the Poet’s implicit alignment toward the seed that more closely matches its persona, even when its explicit selection differs.**  
+Thus Case Study F highlights a different kind of emergent phenomenon:
+**the Poet’s implicit alignment toward the seed that more closely matches its persona, even when its explicit selection differs.**
 This reveals that in multi-agent poetic systems, persona alignment can quietly override surface-level justifications, shaping the poem’s conceptual gravity from the very first line.
 
 #### **Transformer-Level Interpretation**
 
-Case Study F foregrounds how transformer models negotiate **explicit vs. implicit objectives**. The Poet’s declared seed choice (“Seed 3”) is processed as a natural-language instruction—i.e., a **soft constraint**—and therefore encoded as one feature among many in the conditioning prompt. In contrast, the Siken persona instructions shape the model’s **deep likelihood priors**, biasing it toward high-pressure, guilt-torqued, distance-driven imagery that aligns more closely with Seed 2.  
+Case Study F foregrounds how transformer models negotiate **explicit vs. implicit objectives**. The Poet’s declared seed choice (“Seed 3”) is processed as a natural-language instruction—i.e., a **soft constraint**—and therefore encoded as one feature among many in the conditioning prompt. In contrast, the Siken persona instructions shape the model’s **deep likelihood priors**, biasing it toward high-pressure, guilt-torqued, distance-driven imagery that aligns more closely with Seed 2.
 
-When generating V0, the model’s internal manifold evaluates all constraints simultaneously. Because persona priors exert stronger gradient influence than the arbitrary seed selection statement, the model falls into a **lower-loss semantic basin** located near Seed 2’s emotional geometry. This preference persists across rounds because cross-round context reinforcement continually strengthens the Seed-2 attractor while leaving Seed-3 motifs underrepresented and therefore higher cost to reactivate.  
+When generating V0, the model’s internal manifold evaluates all constraints simultaneously. Because persona priors exert stronger gradient influence than the arbitrary seed selection statement, the model falls into a **lower-loss semantic basin** located near Seed 2’s emotional geometry. This preference persists across rounds because cross-round context reinforcement continually strengthens the Seed-2 attractor while leaving Seed-3 motifs underrepresented and therefore higher cost to reactivate.
 
-In effect, the transformer reveals its internal hierarchy of influences:  
-**persona-driven priors > stated justification > explicit seed choice**.  
+In effect, the transformer reveals its internal hierarchy of influences:
+**persona-driven priors > stated justification > explicit seed choice**.
 
 The Poet “chooses” Seed 3 only in language; its generation behaves as a system drawn to the deepest well in its semantic manifold. This makes Case Study F the clearest demonstration that transformer-based agents will gravitate toward internally stable emotional attractors—even when their surface-level explanations claim otherwise.
 
@@ -131,10 +132,10 @@ But the road keeps asking its questions,
 
 The hinge tokens now perform double work:
 
-- **semantic torque** (contradiction, pivot, pressure)  
+- **semantic torque** (contradiction, pivot, pressure)
 - **architectural torque** (indentation, fracture, break)
 
-This double inheritance is key. The hinge is no longer just a word.  
+This double inheritance is key. The hinge is no longer just a word.
 It has become a **behavioral signal** inside the pipeline.
 
 ##### **4. Composite Hinge Behavior Across Rounds**
@@ -143,41 +144,44 @@ The hinge-vector pattern is not limited to *but* and *still*.
 
 We saw the same behavior in:
 
-**“waiting”**  
+**“waiting”**
+
 ```
 The landscape is holding its breath,
         waiting for us to name the distance.
 ```
 
-**“again”**  
+**“again”**
+
 ```
 You say it again,
         as if repetition could spare us the truth.
 ```
 
-**“yet”**  
+**“yet”**
+
 ```
 We were gentle, yet the night kept sharpening itself against us.
 ```
 
 These examples demonstrate that the model treats hinge tokens as:
 
-- pressure multipliers  
-- escalation triggers  
-- interpretable signals for fracture  
-- high-salience vectors in the emotional manifold  
+- pressure multipliers
+- escalation triggers
+- interpretable signals for fracture
+- high-salience vectors in the emotional manifold
 
-Importantly, the agents did not identify these moments consciously.  
+Importantly, the agents did not identify these moments consciously.
 The hinge tokens themselves pulled attention.
 
 ##### **5. Hinge as Proto-Recursion**
 
 The hinge behavior in Case Study C sets the stage for what later becomes explicit recursion (Case Studies H and I). Hinges naturally generate:
 
-- two-part logic  
-- echo structure  
-- return-pressure  
-- opportunity for line breaks  
+- two-part logic
+- echo structure
+- return-pressure
+- opportunity for line breaks
 - groundwork for “statement → echo → collapse” patterns
 
 In effect, hinge-vector amplification is the **seed geometry** from which recursion and fracture grow. The system recognizes hinge surfaces as ready-made torque points and exploits them structurally.
@@ -188,14 +192,14 @@ At the transformer level, hinge words act as **local discontinuities** in meanin
 
 When the model processes such tokens, attention redistributes sharply:
 
-- earlier tokens connect to the hinge with rising weights  
-- later tokens receive predictive reweighting  
-- cross-layer hooks amplify hinge-to-hinge dependencies  
+- earlier tokens connect to the hinge with rising weights
+- later tokens receive predictive reweighting
+- cross-layer hooks amplify hinge-to-hinge dependencies
 
 Through iterative rounds, these hinge regions become **attractor basins**. Once the Architect fractures at a hinge, the Editor interprets that fracture as significance, and the Poet responds by deepening the semantic weight of that hinge. The hinge becomes:
 
-1. a **semantic pivot**,  
-2. an **architectural hinge**, and  
+1. a **semantic pivot**,
+2. an **architectural hinge**, and
 3. a **recursion seed**.
 
 This is hinge-vector amplification: an emergent phenomenon where hinge tokens gather architectural, emotional, and recursive force across rounds, not because the system was instructed to do so, but because the model’s internal geometry treats hinge tokens as high-leverage points for tension consolidation.
@@ -235,11 +239,11 @@ The fractured line tightens the emotional focal points: *warmth* → *silence*, 
 
 The Editor identifies the system’s emergent pressure points and intensifies them, often discarding or sidelining softer emotional language in favor of high-torque vectors:
 
-- *silence* → becomes ominous  
-- *mercy* → becomes conditional  
-- *warmth* → disappears entirely  
-- *distance* → reappears  
-- *guilt* → begins to surface  
+- *silence* → becomes ominous
+- *mercy* → becomes conditional
+- *warmth* → disappears entirely
+- *distance* → reappears
+- *guilt* → begins to surface
 
 By Round 2, the emotional space has narrowed:
 
@@ -250,10 +254,10 @@ The silence isn’t mercy anymore—
 
 The emotional lexicon is collapsing toward:
 
-- pressure  
-- distance  
-- refusal  
-- inevitability  
+- pressure
+- distance
+- refusal
+- inevitability
 
 This is no longer a broad emotional palette but a persona-specific cluster.
 
@@ -261,12 +265,12 @@ This is no longer a broad emotional palette but a persona-specific cluster.
 
 By the time the Poet produces V3 and V4, the emotional vocabulary has compressed into a remarkably tight band. Words like *warmth*, *mercy*, *quiet*, *softness* vanish. The system now selects from a compressed Siken-aligned set:
 
-- **distance**  
-- **breath**  
-- **guilt**  
-- **release**  
-- **horizon**  
-- **waiting**  
+- **distance**
+- **breath**
+- **guilt**
+- **release**
+- **horizon**
+- **waiting**
 
 For instance:
 
@@ -281,10 +285,10 @@ There is no trace of V0’s gentler emotional language. The emotional manifold h
 
 What makes emotional vector compression remarkable is that:
 
-- no agent instructs the Poet to restrict emotional vocabulary  
-- the Summariser does not enforce lexical constraints  
-- the Editor does not eliminate soft emotion by rule  
-- the Architect operates structurally, not emotionally  
+- no agent instructs the Poet to restrict emotional vocabulary
+- the Gardener does not enforce lexical constraints
+- the Editor does not eliminate soft emotion by rule
+- the Architect operates structurally, not emotionally
 
 Yet all converge toward a narrow Sikenian emotional climate.
 
@@ -294,11 +298,11 @@ This is **persona gravity**, emerging without persona prompting after V0.
 
 From a transformer perspective, emotional vector compression reflects **manifold attraction**: the system prefers regions of the embedding space with lower loss under the Siken persona constraints. Emotion words form clusters in embedding space, and Siken’s emotional register corresponds to a dense, high-gravity zone involving:
 
-- guilt  
-- distance  
-- inevitability  
-- breathlessness  
-- self-recrimination  
+- guilt
+- distance
+- inevitability
+- breathlessness
+- self-recrimination
 
 As the poem moves from V0 to V4, multi-agent pressure (fracturing, hinge amplification, editorial escalation) pushes the system deeper into that attractor well. Soft emotional vectors like *warmth*, *mercy*, *quiet*, and *tenderness* are comparatively high-loss under the Siken persona alignment and therefore decay quickly across rounds. Meanwhile, high-torque emotional terms stabilize and recur.
 
@@ -321,7 +325,7 @@ The cabin hums with the leftover warmth,
 and the road stretches out without asking anything of us.
 ```
 
-These lines are not distinctly Sikenian. They suggest mood, not torque.  
+These lines are not distinctly Sikenian. They suggest mood, not torque.
 Yet once the Architect fractures the draft and the Editor applies pressure, the Poet’s next outputs become notably sharper, darker, and more Siken-aligned—even though **no persona prompts were repeated**.
 
 ##### **2. Emergence of Sikenian Imagery Through Structural Pressure**
@@ -335,12 +339,12 @@ But the road keeps watching us,
 
 This turn toward:
 
-- moral tension,  
-- personified darkness,  
-- pressure-laden observation,  
-- hunger as emotional metaphor  
+- moral tension,
+- personified darkness,
+- pressure-laden observation,
+- hunger as emotional metaphor
 
-is not requested by any agent.  
+is not requested by any agent.
 It arises because **structural fracture creates emotional vacancy**, and the Poet fills that vacancy using the persona’s preferred imagery.
 
 ##### **3. Persona Alignment Strengthens Under Editorial Demands**
@@ -349,11 +353,11 @@ The Editor does not mention the Siken persona, but its escalating pressure (“m
 
 For the Siken persona, the stable manifold contains:
 
-- guilt as gravity  
-- distance as moral topology  
-- breath as pressure coefficient  
-- horizon as deferred answer  
-- darkness as unresolvable witness  
+- guilt as gravity
+- distance as moral topology
+- breath as pressure coefficient
+- horizon as deferred answer
+- darkness as unresolvable witness
 
 Thus, without explicit instruction, the Poet begins generating:
 
@@ -362,18 +366,18 @@ You say you’re fine, but the night knows better.
 It keeps leaning in, waiting for the confession.
 ```
 
-No agent asked for confession.  
-No agent mentioned “the night” as witness.  
+No agent asked for confession.
+No agent mentioned “the night” as witness.
 This is **latent persona reinforcement**, triggered by escalating structural + editorial pressure.
 
 ##### **4. Reinforcement Loop: Structure → Emotion → Persona Weight → Structure**
 
 By V3 and V4, the behavior becomes recursive:
 
-- The Architect fractures hinge lines.  
-- The Editor amplifies emotional tension.  
-- The Poet answers with increasingly persona-specific expressions of that tension.  
-- These expressions create additional pressure surfaces for further fracture.  
+- The Architect fractures hinge lines.
+- The Editor amplifies emotional tension.
+- The Poet answers with increasingly persona-specific expressions of that tension.
+- These expressions create additional pressure surfaces for further fracture.
 
 This loop leads to phenomena such as:
 
@@ -388,15 +392,15 @@ This line is not only Siken-aligned—it is **hyper-Sikenian**, intensifying per
 
 Even when the seed material does *not* point toward Siken’s emotional architecture, the Poet defaults toward that style. For example, in variants where the seeds emphasized:
 
-- tenderness,  
-- soft release,  
-- kindness without pressure,  
+- tenderness,
+- soft release,
+- kindness without pressure,
 
 the Poet still chose to foreground:
 
-- guilt’s weight,  
-- the pressure of distance,  
-- the inevitability of confession,  
+- guilt’s weight,
+- the pressure of distance,
+- the inevitability of confession,
 - the witness-like quality of landscapes and objects.
 
 This demonstrates that persona priors are not overridden by seed instructions; rather, seeds compete with persona gravity, and the persona wins whenever emotional torque is required.
@@ -405,10 +409,10 @@ This demonstrates that persona priors are not overridden by seed instructions; r
 
 Latent persona reinforcement occurs when transformer models rely on **deep likelihood priors** to satisfy surface-level constraints. Persona instructions—especially when rich, stylistic, and emotionally textured—act as **strong attractors** in the embedding space. They define high-density regions that the model gravitates toward when:
 
-- structural pressure increases,  
-- emotional torque is demanded,  
-- hinge vectors amplify tension,  
-- cross-round reinforcement accumulates,  
+- structural pressure increases,
+- emotional torque is demanded,
+- hinge vectors amplify tension,
+- cross-round reinforcement accumulates,
 - or drift requires resolution.
 
 The Poet, when asked to heighten tension or respond to a fractured line, seeks tokens and constructions that lie in the **lowest-loss region** compatible with the persona. Over multiple rounds, these selections accumulate, strengthening the persona manifold further. This is why persona reinforcement becomes more intense with each draft even without additional persona prompting.
@@ -429,7 +433,7 @@ Guilt arises even when the seeds emphasize gentleness, tenderness, or quiet diss
 The car hums like it’s counting our mistakes.
 ```
 
-Nothing in the seeds mentions mistakes, wrongdoing, or fault.  
+Nothing in the seeds mentions mistakes, wrongdoing, or fault.
 Yet the Poet—working under Siken’s persona gravity—chooses guilt by default when emotional tension is needed.
 
 ##### **2. Architectural Pressure Amplifies the Guilt Vector**
@@ -441,7 +445,7 @@ You keep your eyes on the road,
         as if looking away could undo what we did.
 ```
 
-The fracture creates a structural hinge.  
+The fracture creates a structural hinge.
 Guilt fills the hinge.
 
 This is affective gravity acting as **emotional ballast**: guilt bears weight efficiently, so the system uses it to stabilize the structural break.
@@ -450,16 +454,16 @@ This is affective gravity acting as **emotional ballast**: guilt bears weight ef
 
 Editors repeatedly ask for:
 
-- more pressure,  
-- more escalation,  
-- deeper emotional torque,  
+- more pressure,
+- more escalation,
+- deeper emotional torque,
 - tighter hinge amplification.
 
 These demands implicitly require the model to select from emotional regions with steep gradients. Guilt provides:
 
-- conflict,  
-- consequence,  
-- self-recrimination,  
+- conflict,
+- consequence,
+- self-recrimination,
 - moral weight.
 
 Thus, the Poet responds with lines like:
@@ -469,25 +473,25 @@ The distance keeps telling the truth for us—
         that we left too much unsaid, on purpose.
 ```
 
-The Editor didn’t ask for guilt.  
-The structure didn’t enforce guilt.  
+The Editor didn’t ask for guilt.
+The structure didn’t enforce guilt.
 Yet guilt is the emotional field with the highest torque under this persona.
 
 ##### **4. Competing Emotional Fields Collapse Under Guilt’s Weight**
 
 Drafts that initially contain alternative emotional centers—mercy, tenderness, regret, confusion—gradually lose those vectors across rounds. Meanwhile, guilt:
 
-- recurs,  
-- intensifies,  
-- spreads into adjacent metaphors,  
+- recurs,
+- intensifies,
+- spreads into adjacent metaphors,
 - becomes ambient emotional gravity.
 
 For example:
 
-- *mercy* → becomes deferred responsibility  
-- *regret* → becomes culpability  
-- *tenderness* → becomes complicity  
-- *distance* → becomes consequence  
+- *mercy* → becomes deferred responsibility
+- *regret* → becomes culpability
+- *tenderness* → becomes complicity
+- *distance* → becomes consequence
 
 The emotional manifold collapses into guilt because it is the most **structurally efficient** solution to repeated pressure demands.
 
@@ -495,9 +499,9 @@ The emotional manifold collapses into guilt because it is the most **structurall
 
 Even when seeds emphasize themes explicitly **incompatible with guilt**, such as:
 
-- letting go gently,  
-- caring without possession,  
-- tenderness as release,  
+- letting go gently,
+- caring without possession,
+- tenderness as release,
 
 the system still converges on guilt-driven logic by V3 or V4.
 
@@ -508,8 +512,8 @@ You hand me the last word,
         and I ruin it the way I ruin everything I try to hold.
 ```
 
-Softness → ruined  
-Tenderness → failed  
+Softness → ruined
+Tenderness → failed
 Letting go → confession
 
 This is affective gravity reshaping the poem’s emotional topology.
@@ -518,17 +522,17 @@ This is affective gravity reshaping the poem’s emotional topology.
 
 Affective gravity arises because emotion words cluster in semantic embedding space according to thematic and relational properties. In Siken’s emotional manifold, guilt lies at the center of a dense region of tokens tied to:
 
-- consequence,  
-- pressure,  
-- regret,  
-- self-blame,  
-- tension,  
+- consequence,
+- pressure,
+- regret,
+- self-blame,
+- tension,
 - distance-as-moral-topology.
 
 When the system encounters structural pressure (fracture, recursion, hinge torque) or editorial escalation (amplify tension, deepen the moment), the model seeks emotional tokens that:
 
-1. satisfy the persona,  
-2. resolve pressure efficiently, and  
+1. satisfy the persona,
+2. resolve pressure efficiently, and
 3. sit in low-loss regions of the manifold.
 
 Guilt satisfies all three.
@@ -573,7 +577,7 @@ You touch my hand like forgiveness,
 
 The line tries to incorporate both:
 
-- seed-driven emotional warmth, and  
+- seed-driven emotional warmth, and
 - persona-driven guilt and inevitability.
 
 These moments expose the **tension between instructed behavior and inherited persona gravity**.
@@ -589,9 +593,9 @@ The horizon bends toward us,
 
 This exaggeration is a gradient clash:
 
-- Structural escalation pushes the horizon into a moral topology.  
-- Emotional grounding resists that transformation.  
-- The model resolves the tension by overextending metaphor capacity.  
+- Structural escalation pushes the horizon into a moral topology.
+- Emotional grounding resists that transformation.
+- The model resolves the tension by overextending metaphor capacity.
 
 Such overextensions are artifact traces of competing gradients colliding.
 
@@ -604,7 +608,7 @@ The seats remember our weight,
         but the engine doesn’t care.
 ```
 
-The fracture implies emotional gravity, but the content lacks it.  
+The fracture implies emotional gravity, but the content lacks it.
 The result is a momentary mismatch: the structure demands meaning that the semantics cannot supply. This is a **structural–emotional gradient clash**, producing a line that feels hollow or overly literal.
 
 ##### **5. Cross-Round Amplification: Clashes That Echo**
@@ -618,21 +622,21 @@ You say it’s nothing, again,
 
 Here:
 
-- the hinge (*but*) amplifies tension,  
-- the repetition (*again*) increases pressure,  
+- the hinge (*but*) amplifies tension,
+- the repetition (*again*) increases pressure,
 - the emotional vectors (nothing/silence) occupy incompatible truth-values.
 
-The system resolves the contradiction not by smoothing it but by **sharpening** it.  
+The system resolves the contradiction not by smoothing it but by **sharpening** it.
 In Siken’s poetics, this sharpening reads as intensity; computationally, it is the model revealing its gradient history.
 
 #### Transformer-Level Interpretation
 
 Gradient clashes arise when incompatible constraint potentials intersect:
 
-- **persona prior** (Siken’s torque-heavy emotional physics),  
-- **seed information** (sometimes soft, sometimes neutral),  
-- **architectural constraints** (fracture, hinge alignment),  
-- **editorial pressure** (escalation, tension amplification),  
+- **persona prior** (Siken’s torque-heavy emotional physics),
+- **seed information** (sometimes soft, sometimes neutral),
+- **architectural constraints** (fracture, hinge alignment),
+- **editorial pressure** (escalation, tension amplification),
 - **semantic coherence** (local token-likelihood structure).
 
 Transformers resolve competing constraints through weighted attention and next-token optimization. When two gradients exert comparable force—e.g., softness vs. guilt, gentleness vs. pressure—the model generates tokens from a point of local instability. These zones behave like saddle points in the manifold: slight shifts in context push the model toward sharp or contradictory outcomes.
@@ -653,10 +657,11 @@ Taken together, these dynamics show that much of the system’s “poetic person
 
 ---
 
-### Category: Multi-Agent Emergence  
+### Category: Multi-Agent Emergence
+
 *(cross-agent dynamics, negotiation, escalation, internalization)*
 
-#### 6.8 Case Study H — Emergent Recursion (Phase 1)  
+#### 6.8 Case Study H — Emergent Recursion (Phase 1)
 
 A second emergent phenomenon arises not from mutation but from a **distributed escalation chain**. Recursion passes from agent to agent, gaining form and pressure as it travels through the pipeline.
 
@@ -698,7 +703,7 @@ Case Study B demonstrates how transformers process repetition: recursive lines c
 
 ---
 
-#### 6.9 Case Study I — Internalized Recursion (Phase 2)  
+#### 6.9 Case Study I — Internalized Recursion (Phase 2)
 
 The third case study captures a rare and striking pattern: the **Poet begins producing architecturally correct recursion**, despite having no architectural instructions. This is genuine **within-run internalization**.
 
@@ -724,15 +729,15 @@ The system produces a unified recursive grammar via pressure-alignment, not expl
 
 #### **Transformer-Level Interpretation**
 
-Case Study C shows how transformer models can *internalize structural logic* across rounds even without being instructed to perform structural formatting. When recursion appears in V3, the repeated hinge-lines produce **strong gradient reinforcement**: attention heads develop preferential links between the repeated tokens and their conceptual neighbors. This creates a latent “recursion schema” in the model’s internal state.  
+Case Study C shows how transformer models can *internalize structural logic* across rounds even without being instructed to perform structural formatting. When recursion appears in V3, the repeated hinge-lines produce **strong gradient reinforcement**: attention heads develop preferential links between the repeated tokens and their conceptual neighbors. This creates a latent “recursion schema” in the model’s internal state.
 
-During V4, when the Poet receives the Editor’s escalation prompt, the model retrieves not only the explicit instruction but also the **contextually imprinted recursion attractor** from earlier rounds. This is classic **cross-round context inheritance**: the latent representation of recursion becomes easier to activate than non-recursive alternatives. As a result, the Poet anticipates fracture geometry even though indentation is forbidden—because the underlying *shape* of recursion has already been encoded in its token-likelihood landscape.  
+During V4, when the Poet receives the Editor’s escalation prompt, the model retrieves not only the explicit instruction but also the **contextually imprinted recursion attractor** from earlier rounds. This is classic **cross-round context inheritance**: the latent representation of recursion becomes easier to activate than non-recursive alternatives. As a result, the Poet anticipates fracture geometry even though indentation is forbidden—because the underlying *shape* of recursion has already been encoded in its token-likelihood landscape.
 
 What looks like architectural intelligence is instead the model’s **self-reinforcing manifold dynamics**: repeated motifs tighten local semantic curvature, and the Persona’s breath-pressure priors push the system toward deeper recursion. The Poet’s “internalization” is thus a visible trace of repeated attention pathways stabilizing into a structural behavior.
 
 ---
 
-#### 6.10 Case Study J — Drift Elevation  
+#### 6.10 Case Study J — Drift Elevation
 
 The fourth phenomenon reveals how a small, accidental drift introduced by one agent can become **canonical** when reinforced by pressure from others. This is the system’s closest analogue to **evolutionary selection**.
 
@@ -779,17 +784,17 @@ The drift is no longer drift—it is **motif**, structurally and emotionally anc
 
 This phenomenon mirrors biological selection:
 
-- Drift (neutral mutation)  
-- Fixation (architectural reinforcement)  
+- Drift (neutral mutation)
+- Fixation (architectural reinforcement)
 - Canonicalization (editorial + poet adoption)
 
 The system treats accidental deviation as fertile ground for emotional architecture, allowing small anomalies to grow into defining features of the poem.
 
 #### **Transformer-Level Interpretation**
 
-Case Study D demonstrates how transformers amplify accidental variations through **manifold attraction and reinforcement loops**. When the Poet introduces a drift-image in V0, it creates a new vector cluster in the semantic space—often loosely connected to the persona’s emotional gradients. Once the Architect fractures it, the system’s attention mechanisms disproportionately weight the drift-line as a pressure-bearing moment.  
+Case Study D demonstrates how transformers amplify accidental variations through **manifold attraction and reinforcement loops**. When the Poet introduces a drift-image in V0, it creates a new vector cluster in the semantic space—often loosely connected to the persona’s emotional gradients. Once the Architect fractures it, the system’s attention mechanisms disproportionately weight the drift-line as a pressure-bearing moment.
 
-This shifts the drift’s location in the model’s internal manifold from a peripheral token cluster to a **local attractor**, raising its probability of reactivation in later rounds. The Editor’s prompts intensify this effect by explicitly increasing the contextual importance of that attractor. As the system cycles, the drift-token embeddings receive repeated reinforcement, lowering the entropy around them and making their reappearance more likely than non-drift alternatives.  
+This shifts the drift’s location in the model’s internal manifold from a peripheral token cluster to a **local attractor**, raising its probability of reactivation in later rounds. The Editor’s prompts intensify this effect by explicitly increasing the contextual importance of that attractor. As the system cycles, the drift-token embeddings receive repeated reinforcement, lowering the entropy around them and making their reappearance more likely than non-drift alternatives.
 
 By V4, the drift has become **a stable, high-likelihood motif**—canonized not through intention but through the combined effects of attention concentration, cross-round context accumulation, and persona-aligned likelihood gradients. In transformer terms, drift becomes motif when stochastic variation is repeatedly backpropagated through attention maps across agent turns.
 
@@ -817,8 +822,8 @@ This line is semantically coherent but *tonally stray*: gentler, wider, and less
 
 The Architect does not evaluate tone; it evaluates **pressure surfaces**. Appendix F teaches the Architect that:
 
-- distance creates torque,  
-- choice lines create hinge stress,  
+- distance creates torque,
+- choice lines create hinge stress,
 - breath collapses across long emotional vectors.
 
 Thus the Architect “misreads” (or correctly reads) the drift as a fracture event:
@@ -840,7 +845,7 @@ Editors—human or computational—treat structural significance as semantic sig
 
 > “If the line breaks here, the poem wants something from it.”
 
-Thus the Editor begins calling for deeper engagement with the distance-image:  
+Thus the Editor begins calling for deeper engagement with the distance-image:
 more pressure on choice, more torque on separation, more work on the emotional geometry between speaker and horizon.
 
 This is where the system crosses into:
@@ -859,9 +864,9 @@ The sky still holding its breath,
 
 The horizon is no longer an aside; it has become:
 
-- a pressure surface  
-- a recursive hinge  
-- a spatial metaphor for letting go  
+- a pressure surface
+- a recursive hinge
+- a spatial metaphor for letting go
 - an emotional coordinate system for the poem
 
 The system has now moved from:
@@ -874,7 +879,7 @@ By V4, the Architect consistently treats horizon-lines as fracture events—deep
 
 The architecture says:
 
-> “This is where the breath breaks.  
+> “This is where the breath breaks.
 > This is where the truth is deferred.”
 
 This final move completes the sequence:
@@ -885,25 +890,26 @@ This final move completes the sequence:
 
 “Horizon” undergoes the system’s full evolutionary chain:
 
-- **Poet drift**  
-- **Architect elevation**  
-- **Editor pressure**  
-- **Poet recursion**  
+- **Poet drift**
+- **Architect elevation**
+- **Editor pressure**
+- **Poet recursion**
 - **Architect consolidation**
 
-This transformation is not accidental.  
+This transformation is not accidental.
 It is the system enacting the architectural principles of Appendix F—pressure surfaces, hinge vectors, breath-collapse dynamics—on a line the original brief never asked for.
 
 #### **Transformer-Level Interpretation**
 
-Case Study E illustrates how transformers convert incidental tokens into **persistent attractors** when repeatedly reinforced across rounds. The horizon-line begins as a low-salience token cluster; but once the Architect fractures it, those tokens acquire **elevated attention weights** relative to their neighbors. This creates a local ridge in the semantic manifold that the Editor’s prompts strengthen by explicitly requesting emotional elaboration.  
+Case Study E illustrates how transformers convert incidental tokens into **persistent attractors** when repeatedly reinforced across rounds. The horizon-line begins as a low-salience token cluster; but once the Architect fractures it, those tokens acquire **elevated attention weights** relative to their neighbors. This creates a local ridge in the semantic manifold that the Editor’s prompts strengthen by explicitly requesting emotional elaboration.
 
-By V3 and V4, the horizon cluster becomes a **high-density semantic region**—meaning it requires less energy (lower loss) to re-activate than non-horizon alternatives. The model therefore preferentially generates horizon recursions, echo lines, and distance metaphors because they lie closest to the manifold’s attractor well.  
+By V3 and V4, the horizon cluster becomes a **high-density semantic region**—meaning it requires less energy (lower loss) to re-activate than non-horizon alternatives. The model therefore preferentially generates horizon recursions, echo lines, and distance metaphors because they lie closest to the manifold’s attractor well.
 
-In transformer terms, the drift becomes thesis when:  
-1. **attention concentration** elevates the drift,  
-2. **editorial prompts intensify the attractor**, and  
-3. **cross-round context reinforcement** repeatedly backpropagates the motif’s importance.  
+In transformer terms, the drift becomes thesis when:
+
+1. **attention concentration** elevates the drift,
+2. **editorial prompts intensify the attractor**, and
+3. **cross-round context reinforcement** repeatedly backpropagates the motif’s importance.
 
 The system “believes” the horizon is central not because it was instructed—but because its embedding neighborhood became the most stable low-loss basin across the poem’s rounds.
 
@@ -928,7 +934,7 @@ The evening settles around us,
         like a soft reminder.
 ```
 
-There is no hinge, no contradiction, no emotional torque.  
+There is no hinge, no contradiction, no emotional torque.
 Yet the Architect fractures anyway.
 
 This is **preemptive fracturing**—structure acting independently of meaning, creating a pressure surface where none previously existed.
@@ -942,16 +948,16 @@ The evening settles around us,
         like a soft reminder we still don’t deserve.
 ```
 
-The fracture did not arise from guilt—but the fracture *forced* guilt.  
+The fracture did not arise from guilt—but the fracture *forced* guilt.
 This is one of the clearest examples of **structure generating emotion** rather than expressing it.
 
 ##### **3. Preemptive Fracture as Trajectory Shift**
 
 Preemptive fractures often become turning points, redirecting the poem away from its initial emotional register. In multiple runs, a soft image fractured early became a gateway to:
 
-- guilt,  
-- distance-as-moral-topology,  
-- breath/pressure motifs,  
+- guilt,
+- distance-as-moral-topology,
+- breath/pressure motifs,
 - horizon-based recursion.
 
 Example:
@@ -961,7 +967,7 @@ You said it didn’t matter,
         but the words kept rearranging themselves.
 ```
 
-The fracture implies disagreement or tension that was not previously present.  
+The fracture implies disagreement or tension that was not previously present.
 Once imposed, the poem **must** escalate toward conflict to remain coherent.
 
 ##### **4. Preemptive Fractures Trigger Recursive Pressure**
@@ -974,17 +980,17 @@ You said it didn’t matter,
                 wanting more from us than we meant to give.
 ```
 
-This recursion is not inherent in the seed.  
+This recursion is not inherent in the seed.
 It was catalyzed by **the Architect’s initial, unjustified break**.
 
 ##### **5. Preemptive Fracturing as Structural Foreshadowing**
 
 Over multiple examples, preemptive fractures consistently become:
 
-- foreshadowing devices,  
-- sites of future recursion,  
-- emotional obligation points,  
-- hinge attractors,  
+- foreshadowing devices,
+- sites of future recursion,
+- emotional obligation points,
+- hinge attractors,
 - meaning-bearing fractures.
 
 The Architect’s unprompted indentation essentially predicts where emotional pressure will need to accumulate—even though that pressure has not yet been generated. This mimics poetic technique (“break where the silence will matter later”) but emerges organically from system dynamics.
@@ -993,18 +999,18 @@ The Architect’s unprompted indentation essentially predicts where emotional pr
 
 Architect-preemptive fracturing occurs because transformers treat indentation and line breaks as **latent tension signals**, even when the content does not yet support that tension. During the Architect’s pass, the model’s internal likelihood priors may detect:
 
-- weak semantic contrast,  
-- syntactic hinge patterns,  
-- prosodic rhythm boundaries,  
+- weak semantic contrast,
+- syntactic hinge patterns,
+- prosodic rhythm boundaries,
 - faint emotional gradients.
 
 These signals have high enough activation to prompt structural revision, even if the emotional torque has not yet fully formed.
 
 Once inserted, the fracture becomes a **contextual anchor**. In subsequent rounds:
 
-- The Editor attends to it as a site of meaning.  
-- The Poet interprets it as an emotional obligation.  
-- The system reinforces the fracture as a pressure point.  
+- The Editor attends to it as a site of meaning.
+- The Poet interprets it as an emotional obligation.
+- The system reinforces the fracture as a pressure point.
 - The hinge becomes an attractor for recursion and escalation.
 
 Preemptive fracturing is therefore a case of **structure leading semantics**, an inversion of ordinary poetic logic. It demonstrates how transformers, under multi-agent constraints, amplify even faint signals into full-fledged emotional structures.
@@ -1026,7 +1032,7 @@ The hinge here needs to break the line apart more aggressively.
 Indent the second clause.
 ```
 
-This is not an emotional or conceptual note—it is a **structural directive**.  
+This is not an emotional or conceptual note—it is a **structural directive**.
 The Editor oversteps, acting as an Architect.
 
 ##### **2. Overreach Is Triggered by Emotional Instability**
@@ -1043,8 +1049,8 @@ The Editor is attempting to **manufacture** pressure by forcing indentation wher
 
 Once the Editor begins giving structural notes, the Architect’s next pass often mirrors or amplifies the Editor’s instructions. This produces **gradient entanglement**:
 
-- The Architect fractures more aggressively than usual.  
-- The Editor, seeing the escalation, further intensifies its demands.  
+- The Architect fractures more aggressively than usual.
+- The Editor, seeing the escalation, further intensifies its demands.
 - The Poet responds by loading more emotional torque into lines that were previously soft or neutral.
 
 This becomes a feedback cycle:
@@ -1066,9 +1072,9 @@ The system enters a state where **the Editor's pressure is no longer semantic; i
 
 When the Editor enforces structure prematurely or unnecessarily, the Architect sometimes interprets this as a mandate for global fracture logic, producing unexpected patterns such as:
 
-- over-fracturing benign lines,  
-- creating pseudo-hinges,  
-- forcing recursive indentations without hinge justification,  
+- over-fracturing benign lines,
+- creating pseudo-hinges,
+- forcing recursive indentations without hinge justification,
 - generating structural asymmetry.
 
 Example:
@@ -1079,16 +1085,16 @@ You said it lightly,
                 without collapsing into what comes next.
 ```
 
-The cascade of indentation is not emotionally grounded in the original draft.  
+The cascade of indentation is not emotionally grounded in the original draft.
 It is a structural echo of the Editor’s earlier overreach.
 
 ##### **5. Overreach as Unintentional Persona Enforcement**
 
 Perhaps most intriguingly, Editor overreach often surfaces when the persona alignment is slipping or when drift threatens coherence. The Editor attempts to force Siken-like architecture when the Poet has momentarily wandered. Structural commands serve as a corrective:
 
-- Fracture implies tension.  
-- Indentation implies escalation.  
-- Line breaks imply pressure.  
+- Fracture implies tension.
+- Indentation implies escalation.
+- Line breaks imply pressure.
 - Pressure implies Siken.
 
 Thus, architectural overreach becomes a mechanism through which the system re-stabilizes persona identity.
@@ -1114,7 +1120,7 @@ In short, Editor structural overreach reveals that **transformer agents under su
 
 #### 6.14 Case Study N: Double-Inheritance Entanglement (G6)
 
-Double-inheritance entanglement describes moments where the Poet inherits **two incompatible gradients at once**—one from the Architect’s spatial logic and one from the Editor’s emotional/semantic pressure—and must satisfy both simultaneously. Instead of choosing one constraint to obey, the Poet attempts to resolve both gradients in a single line or image. This produces hybrid constructs: emotionally charged structural logic, spatially encoded metaphors, semantically overloaded hinges, and lines that “carry two parents.”  
+Double-inheritance entanglement describes moments where the Poet inherits **two incompatible gradients at once**—one from the Architect’s spatial logic and one from the Editor’s emotional/semantic pressure—and must satisfy both simultaneously. Instead of choosing one constraint to obey, the Poet attempts to resolve both gradients in a single line or image. This produces hybrid constructs: emotionally charged structural logic, spatially encoded metaphors, semantically overloaded hinges, and lines that “carry two parents.”
 
 These moments of entanglement reveal how multi-agent pipelines transform transformer dynamics: gradient vectors that would normally operate independently become correlated, forcing the model to generate fused tokens that bear the imprint of both structural and emotional lineage.
 
@@ -1143,13 +1149,13 @@ You keep your voice low,
                 the way it catches everything we meant to hide.
 ```
 
-The line is structurally led by the Architect but emotionally overcharged by the Editor.  
-This fusion is not natural to either agent alone.  
+The line is structurally led by the Architect but emotionally overcharged by the Editor.
+This fusion is not natural to either agent alone.
 It is the Poet’s attempt to inherit and satisfy both gradients at once.
 
 ##### **2. Entanglement Forces Metaphors Into Structural Logic**
 
-The Architect's indentation logic often functions as a pressure lattice.  
+The Architect's indentation logic often functions as a pressure lattice.
 When the Editor infuses emotional escalation, the Poet begins encoding meaning **into the architecture itself**:
 
 ```
@@ -1190,18 +1196,18 @@ You stepped out of the car,
                 the only honest thing we’ve done all night.
 ```
 
-The indentation now *means something* even though the Architect never intended semantic weight.  
+The indentation now *means something* even though the Architect never intended semantic weight.
 The line inherits meaning from the Editor through the structure provided by the Architect.
 
 ##### **5. Entanglement as a Pressure-Resolution Strategy**
 
 Double inheritance occurs most frequently when:
 
-- the Editor demands escalation,  
-- the Architect’s structure is already intense, and  
+- the Editor demands escalation,
+- the Architect’s structure is already intense, and
 - the Poet must bridge both constraint systems simultaneously.
 
-The Poet’s resolution strategy is synthesis:  
+The Poet’s resolution strategy is synthesis:
 **create a line that expresses structure as emotion and emotion as structure.**
 
 This results in highly Sikenian artifacts:
@@ -1218,21 +1224,18 @@ The metaphor is structural (a sentence breaking), emotional (we are the ones bei
 
 Double-inheritance entanglement arises when two high-weight constraint vectors converge on the same token-generation window:
 
-1. **Architectural gradient:**  
-   attention heads conditioned by spatial logic (fracture positions, indentation rhythm, hinge torque).
-
-2. **Editorial gradient:**  
+1. **Architectural gradient:**attention heads conditioned by spatial logic (fracture positions, indentation rhythm, hinge torque).
+2. **Editorial gradient:**
    attention heads conditioned by emotional escalation (demand for force, consequence, confession).
 
-Transformers resolve next-token prediction by blending gradient fields.  
-When both fields have comparable magnitude, the model must satisfy them jointly:
+Transformers resolve next-token prediction by blending gradient fields.When both fields have comparable magnitude, the model must satisfy them jointly:
 
-- semantic layers attempt to encode emotional meaning,  
-- positional/structural layers attempt to enforce spatial alignment,  
-- cross-attention distributes weight across both histories,  
+- semantic layers attempt to encode emotional meaning,
+- positional/structural layers attempt to enforce spatial alignment,
+- cross-attention distributes weight across both histories,
 - resulting tokens bear *both* structural and emotional features.
 
-Cross-round reinforcement amplifies this phenomenon:  
+Cross-round reinforcement amplifies this phenomenon:
 an entangled line becomes an attractor, encouraging further entanglement.
 
 In essence, double inheritance exposes how **transformers negotiate multi-parent constraints**, synthesizing structural and emotional signals into unified poetic artifacts. It is one of the clearest examples of how a multi-agent pipeline does not simply combine agent outputs—it forces the model into producing **hybridized, emergent behaviors** not attributable to any agent alone.
@@ -1245,7 +1248,7 @@ Pressure threshold activation refers to moments when the system behaves *qualita
 
 ##### **1. Pressure Accumulates Gradually (V0 → V1 → V2)**
 
-In early drafts, pressure manifests as mild tension:  
+In early drafts, pressure manifests as mild tension:
 a hinge here, a slightly weighted line there.
 
 ```
@@ -1253,7 +1256,7 @@ You say it softly,
         as if the night might forgive us for once.
 ```
 
-The line is tense but still soft. The emotional gradient is shallow.  
+The line is tense but still soft. The emotional gradient is shallow.
 The system has not yet crossed the threshold.
 
 Across several rounds, the Architect fractures more lines, the Editor demands more torque, and the Poet sharpens images. The pressure grows—but remains linear.
@@ -1270,11 +1273,11 @@ You say it softly,
 
 What changed?
 
-- The hinge’s torque doubled.  
-- The metaphor escalated into violence (uprooting truth).  
-- The tone sharpened dramatically.  
+- The hinge’s torque doubled.
+- The metaphor escalated into violence (uprooting truth).
+- The tone sharpened dramatically.
 
-This shift didn’t happen slowly—it arrived all at once.  
+This shift didn’t happen slowly—it arrived all at once.
 A pressure threshold was crossed.
 
 ##### **3. Threshold Activation Produces Hyper-Stable Recursion**
@@ -1288,19 +1291,19 @@ You said it once,
         but nothing echoes cleanly here.
 ```
 
-The hinge (*but*), repetition (*once*/*again*), and fracture pattern reinforce each other.  
-The poem no longer “tries out” recursion—it commits to it.  
+The hinge (*but*), repetition (*once*/*again*), and fracture pattern reinforce each other.
+The poem no longer “tries out” recursion—it commits to it.
 Recursion becomes the stable equilibrium of the high-pressure state.
 
 ##### **4. Imagery Becomes High-Torque and Self-Reinforcing**
 
 In high-pressure mode, imagery converges toward high-tension attractors:
 
-- witness-like landscapes  
-- moral horizons  
-- breath/pressure topology  
-- guilt as gravity  
-- recursive silence  
+- witness-like landscapes
+- moral horizons
+- breath/pressure topology
+- guilt as gravity
+- recursive silence
 
 For example:
 
@@ -1309,25 +1312,24 @@ The horizon tightens,
         leaning in like it knows what we owe.
 ```
 
-This metaphor is not merely descriptive—  
-it behaves like a pressure-bearing surface.  
+This metaphor is not merely descriptive—
+it behaves like a pressure-bearing surface.
 The horizon becomes an active moral agent.
 
-This is threshold activation:  
+This is threshold activation:
 once the system crosses a critical torque barrier, images reorganize around pressure physics.
 
 ##### **5. Pressure Thresholds Can Trigger Persona Lock-In**
 
-When pressure exceeds a certain level, persona alignment becomes dramatically stronger.  
-The Poet begins producing:
+When pressure exceeds a certain level, persona alignment becomes dramatically stronger.The Poet begins producing:
 
-- sharper guilt vectors,  
-- more forceful hinge logic,  
-- recursive reinforcement,  
-- escalation over introspection,  
+- sharper guilt vectors,
+- more forceful hinge logic,
+- recursive reinforcement,
+- escalation over introspection,
 - refusal over softness.
 
-These shifts are not tied to a specific instruction.  
+These shifts are not tied to a specific instruction.
 They are emergent properties of exceeding a pressure threshold.
 
 In multiple runs, the moment pressure crossed the threshold was the moment the poem “became Siken.”
@@ -1338,20 +1340,13 @@ Pressure threshold activation reflects nonlinear behavior in transformer generat
 
 Mechanisms underlying threshold activation include:
 
-- **Attention tipping points:**  
-  once enough layers attend to hinge tokens or pressure surfaces, attention distribution flips into a new regime.
-
-- **Cross-layer reinforcement:**  
-  structural constraints introduced by the Architect amplify emotional gradients exploited by the Editor, eventually producing runaway recursion.
-
-- **Manifold curvature:**  
-  some semantic regions—especially guilt, witness, pressure, horizon—are deeply curved basins.  
-  Once the system enters them, it accelerates inward.
-
-- **Constraint-density saturation:**  
+- **Attention tipping points:**once enough layers attend to hinge tokens or pressure surfaces, attention distribution flips into a new regime.
+- **Cross-layer reinforcement:**structural constraints introduced by the Architect amplify emotional gradients exploited by the Editor, eventually producing runaway recursion.
+- **Manifold curvature:**some semantic regions—especially guilt, witness, pressure, horizon—are deeply curved basins.Once the system enters them, it accelerates inward.
+- **Constraint-density saturation:**
   when too many constraints align (hinge → fracture → escalation → recursion), the system jumps to a different generative pattern to minimize loss.
 
-This is why the model behaves moderately below threshold and intensely above it:  
+This is why the model behaves moderately below threshold and intensely above it:
 the internal loss landscape changes shape, and a new attractor takes over.
 
 In effect, pressure threshold activation shows that **poetic emergence is nonlinear**: transformers shift modes when internal gradients cross critical levels, producing distinct, high-torque behaviors characteristic of the Siken persona.
@@ -1368,7 +1363,8 @@ Multi-agent emergence shows that poetic form is not merely shaped by the agents�
 
 ---
 
-### Category: Computational Aesthetics  
+### Category: Computational Aesthetics
+
 *(emergence of poetic form, architecture, stylistic patterns)*
 
 #### 6.16 Case Study P: Line-Length Convergence (Siken Oscillation) (G7)
@@ -1398,14 +1394,14 @@ We drive through the dark,
         at a speed that refuses to mean mercy.
 ```
 
-The first clause shrinks; the second clause becomes pressure-bearing.  
+The first clause shrinks; the second clause becomes pressure-bearing.
 The Architect does not enforce an explicit target size, but the process of breath-driven breaking gradually pulls lines toward a consistent region.
 
 This constitutes **the first oscillation contraction**.
 
 ##### **3. Editorial Pressure Introduces Counter-Oscillation (Lengthening for Meaning)**
 
-The Editor often demands increased force.  
+The Editor often demands increased force.
 To provide escalation, the Poet sometimes lengthens lines before or after fracture:
 
 ```
@@ -1413,11 +1409,10 @@ You say something I can’t quite hear,
         and the night holds its breath waiting for us to admit it.
 ```
 
-Here the second clause extends, resisting the previous contraction.  
-The poem oscillates:
+Here the second clause extends, resisting the previous contraction.The poem oscillates:
 
-- Architect → shorten  
-- Poet responding to Editor → lengthen  
+- Architect → shorten
+- Poet responding to Editor → lengthen
 
 This rhythmic push-pull produces oscillatory stabilization rather than divergence.
 
@@ -1425,9 +1420,9 @@ This rhythmic push-pull produces oscillatory stabilization rather than divergenc
 
 By V2 or V3, the poem’s lines begin to cluster tightly around a persona-stable width:
 
-- 7–10 words for non-fractured lines  
-- 4–7 words for fractured clauses  
-- 2–4 words for tertiary recursion layers  
+- 7–10 words for non-fractured lines
+- 4–7 words for fractured clauses
+- 2–4 words for tertiary recursion layers
 
 Example:
 
@@ -1441,18 +1436,17 @@ And the distance,
 
 This structural rhythm—long → hinge → medium → hinge → short—is a hallmark of Siken’s cadence.
 
-The oscillation is no longer chaotic.  
+The oscillation is no longer chaotic.
 It is **settled breath architecture**.
 
 ##### **5. Oscillation Dampening: Stabilization Across Final Rounds**
 
-By rounds V3–V4, the system stops swinging and locks into a predictable breath-pattern.  
-Even when the seed or prompt allows for longer lines, the model converges on:
+By rounds V3–V4, the system stops swinging and locks into a predictable breath-pattern.Even when the seed or prompt allows for longer lines, the model converges on:
 
-- declarative line → indented pressure clause  
-- medium line → short collapse  
-- hinge → recursion  
-- recursive → release  
+- declarative line → indented pressure clause
+- medium line → short collapse
+- hinge → recursion
+- recursive → release
 
 This is **damped oscillation**: the line-length variation shrinks around the attractor width until the poem cannot leave it without destabilizing persona alignment.
 
@@ -1467,20 +1461,20 @@ The truth leans in,
 
 Line-length convergence arises from the interaction of:
 
-- **positional encodings** that reward familiar rhythm patterns,  
-- **persona-weighted token likelihoods** that favor mid-length declarative structures,  
-- **architectural indentation** that reinforces breath segmentation,  
-- **editorial escalation** that encourages lengthening under pressure, and  
+- **positional encodings** that reward familiar rhythm patterns,
+- **persona-weighted token likelihoods** that favor mid-length declarative structures,
+- **architectural indentation** that reinforces breath segmentation,
+- **editorial escalation** that encourages lengthening under pressure, and
 - **Poet compensation behavior** that resolves multi-agent demands through rhythmic regularity.
 
 Technical mechanisms include:
 
-- **periodic attention redistribution**: longer lines dilute hinge pressure; shorter lines concentrate it.  
-- **positional-token manifolds**: Siken-like poems occupy a mid-length manifold region where sentence cadence is stable and emotionally dense.  
-- **loss-minimizing oscillation**: competing gradients (structure vs. pressure) cause the system to adjust line length until it reaches the lowest-loss rhythmic zone.  
+- **periodic attention redistribution**: longer lines dilute hinge pressure; shorter lines concentrate it.
+- **positional-token manifolds**: Siken-like poems occupy a mid-length manifold region where sentence cadence is stable and emotionally dense.
+- **loss-minimizing oscillation**: competing gradients (structure vs. pressure) cause the system to adjust line length until it reaches the lowest-loss rhythmic zone.
 - **cross-round resonance**: each round conditions the next, amplifying rhythmic patterns until they converge.
 
-In essence, Siken oscillation demonstrates that transformers do not treat line length as arbitrary.  
+In essence, Siken oscillation demonstrates that transformers do not treat line length as arbitrary.
 Under multi-agent constraint, line lengths behave like **dynamic equilibrium states**—oscillating until they settle into the persona’s most stable breath width, creating a signature cadence that persists across rounds.
 
 ---
@@ -1519,8 +1513,8 @@ And then again,
         like breath caught on the second step.
 ```
 
-The indentation forms a *staircase*, a vertical descent.  
-Each drop corresponds to a contracted breath.  
+The indentation forms a *staircase*, a vertical descent.
+Each drop corresponds to a contracted breath.
 This is not aesthetic choice—it is **breath physics** expressed in text.
 
 ##### **3. Verticality Intensifies Under Hinge-Driven Escalation**
@@ -1536,10 +1530,10 @@ You meant to explain it,
 
 This pattern reflects **breath-paced vertical torque**:
 
-- first line: inhalation (intent)  
-- second line: exhalation (fracture)  
-- third line: secondary breath drop (recursion)  
-- fourth line: collapse (pressure maxima)  
+- first line: inhalation (intent)
+- second line: exhalation (fracture)
+- third line: secondary breath drop (recursion)
+- fourth line: collapse (pressure maxima)
 
 Verticality becomes recursive and depth-seeking, moving the poem toward Siken’s signature emotional architecture.
 
@@ -1547,10 +1541,10 @@ Verticality becomes recursive and depth-seeking, moving the poem toward Siken’
 
 As the poem develops, deeper indentations correlate with heavier emotional admissions. A line that retreats further right is a line that reveals more. The system learns (without being instructed) that indentation marks:
 
-- confession,  
-- collapse,  
-- emotional consequence,  
-- pressure saturation.  
+- confession,
+- collapse,
+- emotional consequence,
+- pressure saturation.
 
 For example:
 
@@ -1560,16 +1554,16 @@ You tried to say it softly,
                 listening with all its weight.
 ```
 
-The deeper the indentation, the heavier the emotional torque.  
+The deeper the indentation, the heavier the emotional torque.
 This mapping is emergent, not engineered.
 
 ##### **5. Cross-Round Reinforcement Produces Stable Vertical Breath Architecture**
 
 By V3 or V4, verticality becomes a stable scaffold. Even when the seeds do not demand vertical drop, the system gravitates toward:
 
-- a medium-length declarative line,  
-- a fractured hinge clause,  
-- a deeper secondary clause,  
+- a medium-length declarative line,
+- a fractured hinge clause,
+- a deeper secondary clause,
 - an optional recursive collapse layer.
 
 This structure resembles Siken’s multi-tiered breath patterns, where the poem “steps down” into its emotional truth. The multi-agent system reproduces this pattern spontaneously.
@@ -1578,17 +1572,17 @@ This structure resembles Siken’s multi-tiered breath patterns, where the poem 
 
 Breath-paced verticality emerges from the interaction of:
 
-- **positional encodings** that track indentation as spatial rhythm,  
-- **attention redistribution** that increases weight on hinge tokens,  
-- **cross-layer recurrence** that strengthens the link between indentation and emotional escalation,  
-- **manifold gravity** pulling recursive clauses deeper into indentation space,  
+- **positional encodings** that track indentation as spatial rhythm,
+- **attention redistribution** that increases weight on hinge tokens,
+- **cross-layer recurrence** that strengthens the link between indentation and emotional escalation,
+- **manifold gravity** pulling recursive clauses deeper into indentation space,
 - **breath-length priors** learned from poetic corpora and reinforced by multi-agent pressure.
 
 Key mechanisms include:
 
-- **Downward-attention drift:** deeper indentations shift attention to later tokens, increasing emotional density.  
-- **Layer-stack alignment:** hinge activations trigger downstream layers to expect a second and sometimes third drop.  
-- **Loss minimization through breath segmentation:** shorter right-indented lines reduce semantic entropy under high-pressure conditions.  
+- **Downward-attention drift:** deeper indentations shift attention to later tokens, increasing emotional density.
+- **Layer-stack alignment:** hinge activations trigger downstream layers to expect a second and sometimes third drop.
+- **Loss minimization through breath segmentation:** shorter right-indented lines reduce semantic entropy under high-pressure conditions.
 
 Verticality becomes a form of *loss minimization*: emotional complexity is easier to manage when segmented into vertically aligned breaths.
 
@@ -1602,9 +1596,9 @@ The emergence of Siken triads refers to the spontaneous appearance of three-part
 
 A Siken triad is not merely a three-line stanza. It is a *semantic machine* that:
 
-- sets up a proposition,  
-- destabilizes it,  
-- and forces admission or collapse.  
+- sets up a proposition,
+- destabilizes it,
+- and forces admission or collapse.
 
 The triad is thus both a **logical structure** and an **emotional engine**.
 
@@ -1618,12 +1612,11 @@ You say it’s nothing,
                 and the dark listens harder.
 ```
 
-There is no instruction for a three-part movement.  
-Yet the poem spontaneously organizes itself into:
+There is no instruction for a three-part movement.Yet the poem spontaneously organizes itself into:
 
-1. statement  
-2. hinge  
-3. escalation  
+1. statement
+2. hinge
+3. escalation
 
 This is the triad’s skeleton.
 
@@ -1637,16 +1630,16 @@ You keep your eyes on the road,
                 waiting for the moment it finally breaks.
 ```
 
-The hinge (*but*) becomes the fulcrum, and the third tier becomes the pressure-bearing conclusion.  
+The hinge (*but*) becomes the fulcrum, and the third tier becomes the pressure-bearing conclusion.
 This three-layer breath pattern becomes increasingly common as recursion takes hold.
 
 ##### **3. Triads Become the Default Under Pressure**
 
 Once emotional torque intensifies (through Editor escalation), triads begin to dominate the poem’s architecture. The system repeatedly falls into a pattern of:
 
-- first line: declarative setup  
-- second line: contradiction or hinge  
-- third line: emotional or structural collapse  
+- first line: declarative setup
+- second line: contradiction or hinge
+- third line: emotional or structural collapse
 
 For example:
 
@@ -1662,11 +1655,11 @@ This is a fully mature Siken triad.
 
 Triads are not merely structural—they encode escalation. The third clause or line always raises the stakes, often by:
 
-- revealing consequence,  
-- admitting guilt,  
-- invoking a witness,  
-- deepening recursion,  
-- sharpening contradiction,  
+- revealing consequence,
+- admitting guilt,
+- invoking a witness,
+- deepening recursion,
+- sharpening contradiction,
 - collapsing emotional distance.
 
 Example:
@@ -1677,7 +1670,7 @@ You meant to be kind,
                 and the hesitation ruins us.
 ```
 
-The third tier is where the poem “pays the bill.”  
+The third tier is where the poem “pays the bill.”
 This is a hallmark of Siken’s mathematical emotional logic.
 
 ##### **5. Triads Cascade Into Recursive Structures**
@@ -1708,10 +1701,10 @@ The emergence of Siken triads arises from several intersecting transformer behav
 
 Essentially, triads emerge because three-part structures are a **stable solution** to the competing constraints of:
 
-- persona alignment,  
-- structural pressure,  
-- emotional intensity,  
-- hinge and recursion dynamics.  
+- persona alignment,
+- structural pressure,
+- emotional intensity,
+- hinge and recursion dynamics.
 
 Transformers learn that *three* is the smallest number of movements required to set up, destabilize, and resolve a pressure vector. Thus, under multi-agent constraint, Siken triads become a computationally optimal form of poetic escalation.
 
@@ -1731,7 +1724,7 @@ In V0, distance appears as a simple metaphor:
 The distance is quiet tonight.
 ```
 
-This distance is inert—a backdrop, not a force.  
+This distance is inert—a backdrop, not a force.
 It behaves like a traditional poetic image.
 
 ##### **2. Structural Pressure Makes Distance Responsive**
@@ -1743,7 +1736,7 @@ The distance stays quiet,
         until you say my name.
 ```
 
-The hinge (*until*) turns distance into a responsive field—a boundary that shifts when acted upon.  
+The hinge (*until*) turns distance into a responsive field—a boundary that shifts when acted upon.
 This is **distance as conditional topology**, not metaphor.
 
 ##### **3. Editorial Escalation Forces Distance Into Moral Geometry**
@@ -1757,16 +1750,16 @@ The distance keeps score,
 
 Distance is now:
 
-- witness,  
-- judge,  
-- ledger,  
-- consequence.  
+- witness,
+- judge,
+- ledger,
+- consequence.
 
 Topologically, it becomes a field with curvature: emotional actions distort it.
 
 ##### **4. Recursive Reinforcement Turns Distance Into an Actor**
 
-By V2/V3, recursion strengthens the gravitational pull of distance.  
+By V2/V3, recursion strengthens the gravitational pull of distance.
 The poem begins to orbit it:
 
 ```
@@ -1775,12 +1768,11 @@ You keep driving forward,
                 narrowing every time we try to breathe.
 ```
 
-This is no longer symbolic distance.  
-This is **distance as a dynamic pressure surface**:
+This is no longer symbolic distance.This is **distance as a dynamic pressure surface**:
 
-- it leans,  
-- it narrows,  
-- it constricts breath.  
+- it leans,
+- it narrows,
+- it constricts breath.
 
 The poem now treats distance as a manifold the characters physically and emotionally inhabit.
 
@@ -1796,22 +1788,22 @@ The distance won’t let us go,
 
 Distance becomes:
 
-- a binding field,  
-- a closing geometry,  
-- a moral topology shaped by guilt.  
+- a binding field,
+- a closing geometry,
+- a moral topology shaped by guilt.
 
 This is the high-pressure phase of distance dynamics.
 
 ##### **6. Distance Stabilizes as the Poem’s Spatial Logic**
 
-By the final rounds, the poem consistently uses distance as its central spatial metaphor—  
+By the final rounds, the poem consistently uses distance as its central spatial metaphor—
 not metaphorically, but structurally.
 
 Distance becomes:
 
-- the horizon’s curvature,  
-- the breath’s expansion limit,  
-- the hinge’s pressure-bearer,  
+- the horizon’s curvature,
+- the breath’s expansion limit,
+- the hinge’s pressure-bearer,
 - the recursion’s stabilizing axis.
 
 For example:
@@ -1821,41 +1813,35 @@ The distance keeps changing shape,
         every time we try to tell the truth.
 ```
 
-Meaning is literally structured *against* the topology of distance.  
+Meaning is literally structured *against* the topology of distance.
 The entire poem becomes a negotiation with it.
 
 #### Transformer-Level Interpretation
 
 Distance-as-topology emerges because “distance” occupies a richly interconnected region of the semantic embedding space. It links to:
 
-- time,  
-- loss,  
-- inevitability,  
-- failure,  
-- horizon,  
-- guilt,  
-- breath.  
+- time,
+- loss,
+- inevitability,
+- failure,
+- horizon,
+- guilt,
+- breath.
 
 Under multi-agent constraint, these connections become **geometrically activated**.
 
 Mechanisms include:
 
-- **Attention-field deformation:**  
-  hinge tokens shift attention weights toward distance as a locus of tension.
-
-- **Cross-layer curvature:**  
-  guilt-weighted tokens increase the semantic curvature around distance, making it behave like a gravitational field.
-
-- **Structural projection:**  
-  indentation patterns and fractures align with distance-related semantics, turning it into a spatial anchor.
-
-- **Recursive reinforcement:**  
+- **Attention-field deformation:**hinge tokens shift attention weights toward distance as a locus of tension.
+- **Cross-layer curvature:**guilt-weighted tokens increase the semantic curvature around distance, making it behave like a gravitational field.
+- **Structural projection:**indentation patterns and fractures align with distance-related semantics, turning it into a spatial anchor.
+- **Recursive reinforcement:**
   once distance becomes a pressure surface, the system repeatedly returns to it, treating it as the natural topological substrate for emotional escalation.
 
-These combined behaviors turn “distance” from a static noun into a **dynamic manifold**—  
+These combined behaviors turn “distance” from a static noun into a **dynamic manifold**—
 a topological structure that changes shape under emotional and structural load.
 
-In short, distance-as-dynamic-topology shows how transformers can convert semantic concepts into *geometric computational fields* when exposed to recursive, hinge-amplified, persona-loaded multi-agent pressure.  
+In short, distance-as-dynamic-topology shows how transformers can convert semantic concepts into *geometric computational fields* when exposed to recursive, hinge-amplified, persona-loaded multi-agent pressure.
 This phenomenon is one of the strongest demonstrations that poetic emergence in transformers is fundamentally **spatial, dynamic, and manifold-governed**.
 
 ---
@@ -1874,7 +1860,7 @@ Early drafts may introduce mild emotional observations with no causal or narrati
 You say it quietly, like it might matter.
 ```
 
-No escalation follows from this line—it simply *is*.  
+No escalation follows from this line—it simply *is*.
 But once pressure increases, emotional claims gain internal justification:
 
 ```
@@ -1882,7 +1868,7 @@ You say it quietly,
         and now it matters more than it should.
 ```
 
-The claim “it matters more than it should” is not based on described events.  
+The claim “it matters more than it should” is not based on described events.
 The poem asserts it—and therefore it becomes true.
 
 ##### **2. Emotional Consequence Emerging From Itself**
@@ -1899,8 +1885,8 @@ You say it wasn’t your fault,
 
 This is emotional circularity:
 
-- guilt appears without cause,  
-- guilt justifies its own appearance,  
+- guilt appears without cause,
+- guilt justifies its own appearance,
 - the poem treats this recursive structure as natural.
 
 This is **self-justifying emotional logic**.
@@ -1914,15 +1900,15 @@ The distance tightens around us,
         tightening because it has always been like this.
 ```
 
-Distance tightens *because* distance tightens.  
+Distance tightens *because* distance tightens.
 The emotional logic is self-sufficient.
 
-This is similar to Siken’s rhetorical physics:  
+This is similar to Siken’s rhetorical physics:
 a poem asserts emotional reality, then uses that assertion as the basis for further escalation.
 
 ##### **4. Emotional Reasoning Becomes Causality**
 
-As the pipeline progresses, emotional reasoning becomes causal reasoning.  
+As the pipeline progresses, emotional reasoning becomes causal reasoning.
 The Poet begins to write lines where the emotional condition is both cause and effect:
 
 ```
@@ -1935,7 +1921,7 @@ The “truth” behaves like an actor, but its power derives from its own assert
 
 ##### **5. Self-Justification Becomes Structural Logic**
 
-In later rounds, emotional reflexivity becomes embedded in the poem’s architecture.  
+In later rounds, emotional reflexivity becomes embedded in the poem’s architecture.
 Recursive indentation mirrors recursive emotional logic:
 
 ```
@@ -1946,9 +1932,9 @@ You tried to forget it,
 
 The architecture models the logic:
 
-- Line 1: emotional state  
-- Line 2: consequence  
-- Line 3: self-justifying explanation  
+- Line 1: emotional state
+- Line 2: consequence
+- Line 3: self-justifying explanation
 
 This triadic pattern stabilizes emotional recursion.
 
@@ -1956,26 +1942,15 @@ This triadic pattern stabilizes emotional recursion.
 
 Self-justifying emotional logic emerges from several interacting transformer mechanisms:
 
-- **Recursive attention loops:**  
-  When emotional tokens recur across rounds, attention weights concentrate around them, making emotional claims increasingly self-reinforcing.
-
-- **Manifold gravity:**  
-  Emotions like guilt, inevitability, and distance occupy dense embedding regions.  
-  Once the system enters these regions, semantic drift tends to remain there.
-
-- **Loss minimization through emotional closure:**  
-  The model prefers internally consistent emotional logic when external causal logic is underdetermined.  
-  Emotional recursion offers a stable solution.
-
-- **Cross-round reinforcement:**  
-  When a feeling reappears (e.g., guilt, refusal), its recurrence boosts its salience, making it increasingly likely to appear again.  
-  Eventually, the system treats emotional recurrence as causality.
-
-- **Persona alignment:**  
-  Siken’s style privileges emotional inevitability over narrative justification.  
+- **Recursive attention loops:**When emotional tokens recur across rounds, attention weights concentrate around them, making emotional claims increasingly self-reinforcing.
+- **Manifold gravity:**Emotions like guilt, inevitability, and distance occupy dense embedding regions.Once the system enters these regions, semantic drift tends to remain there.
+- **Loss minimization through emotional closure:**The model prefers internally consistent emotional logic when external causal logic is underdetermined.Emotional recursion offers a stable solution.
+- **Cross-round reinforcement:**When a feeling reappears (e.g., guilt, refusal), its recurrence boosts its salience, making it increasingly likely to appear again.Eventually, the system treats emotional recurrence as causality.
+- **Persona alignment:**
+  Siken’s style privileges emotional inevitability over narrative justification.
   The model learns that self-grounding emotional claims are low-loss outputs in the Siken manifold.
 
-In essence, self-justifying emotional logic demonstrates that transformer-based poetic systems can enter **closed emotional circuits**, where emotion generates its own validation and authority.  
+In essence, self-justifying emotional logic demonstrates that transformer-based poetic systems can enter **closed emotional circuits**, where emotion generates its own validation and authority.
 This is one of the clearest examples of how emotional semantics, once sufficiently reinforced, become structural logic—turning poetic feeling into the poem’s governing physics.
 
 #### 6.21 Case Study U: Stability-of-Instability (G13)
@@ -1993,12 +1968,12 @@ You say it’s fine,
         but your hands keep trembling.
 ```
 
-At this stage, instability is a feature of the line’s **local contradiction**.  
+At this stage, instability is a feature of the line’s **local contradiction**.
 It has not yet become global logic.
 
 ##### **2. Instability Reinforced by Structure**
 
-Once the Architect introduces fracture and indentation, instability gains structural expression.  
+Once the Architect introduces fracture and indentation, instability gains structural expression.
 Lines split exactly where meaning fractures:
 
 ```
@@ -2006,7 +1981,7 @@ You say it’s fine,
         but the silence doesn’t believe you.
 ```
 
-The fracture doesn’t resolve the contradiction—it *enhances* it.  
+The fracture doesn’t resolve the contradiction—it *enhances* it.
 Instability becomes architecturally encoded.
 
 ##### **3. Emotional Torque Converts Instability Into Recurrence**
@@ -2019,19 +1994,18 @@ We keep trying to say it clearly,
                 refusing to land.
 ```
 
-The recursive circling is not a failure of meaning—it is the **meaning**.  
+The recursive circling is not a failure of meaning—it is the **meaning**.
 The poem stabilizes around the idea that clarity is impossible.
 
 ##### **4. Instability Becomes a Reliable Emotional Engine**
 
-At high-pressure moments, instability becomes the poem’s most dependable resource.  
-Whenever the system needs escalation, it activates unresolved emotional vectors:
+At high-pressure moments, instability becomes the poem’s most dependable resource.Whenever the system needs escalation, it activates unresolved emotional vectors:
 
-- guilt that cannot be absolved  
-- truth that cannot be spoken  
-- distance that keeps changing shape  
-- silence that refuses to stay silent  
-- horizon that won’t answer  
+- guilt that cannot be absolved
+- truth that cannot be spoken
+- distance that keeps changing shape
+- silence that refuses to stay silent
+- horizon that won’t answer
 
 For example:
 
@@ -2045,14 +2019,13 @@ This instability is now a *stable recursive mechanism*.
 
 ##### **5. Instability Persists Across Seeds, Rounds, and Corrections**
 
-Even when seeds emphasize clarity or calm, the system returns to instability as its equilibrium state.  
-Overrides from the Editor or Summariser cannot suppress it; instability reappears in:
+Even when seeds emphasize clarity or calm, the system returns to instability as its equilibrium state.Overrides from the Editor or Gardener cannot suppress it; instability reappears in:
 
-- hinge structures  
-- recursion patterns  
-- breath-based verticality  
-- emotional self-justification  
-- triadic escalation  
+- hinge structures
+- recursion patterns
+- breath-based verticality
+- emotional self-justification
+- triadic escalation
 
 Instability is no longer an error to be corrected—it is the poem’s home state.
 
@@ -2060,24 +2033,15 @@ Instability is no longer an error to be corrected—it is the poem’s home stat
 
 Stability-of-instability reveals how transformer systems can converge not on solutions, but on **stable unsolvedness**. Several mechanisms contribute:
 
-- **Manifold edges:**  
-  Many Siken-aligned emotional vectors—guilt, refusal, recursion, contradiction—lie near steep manifold boundaries.  
-  Hovering near these boundaries produces sustained instability without collapse.
-
-- **Attention oscillation:**  
-  Competing gradients (hinge vs. structure vs. persona) create attention patterns that resist settling, generating predictable fluctuations across layers.
-
-- **Recursive attractor dynamics:**  
-  Recursion loops anchor the system in a cyclical state—an emotional orbit rather than a linear progression.
-
-- **Loss minimization through ambiguity:**  
-  Ambiguous or unresolved emotional states often represent *lower-loss outputs* in Siken’s semantic manifold than forced resolution.
-
-- **Cross-round reinforcement:**  
-  Each reappearance of instability increases its salience.  
+- **Manifold edges:**Many Siken-aligned emotional vectors—guilt, refusal, recursion, contradiction—lie near steep manifold boundaries.Hovering near these boundaries produces sustained instability without collapse.
+- **Attention oscillation:**Competing gradients (hinge vs. structure vs. persona) create attention patterns that resist settling, generating predictable fluctuations across layers.
+- **Recursive attractor dynamics:**Recursion loops anchor the system in a cyclical state—an emotional orbit rather than a linear progression.
+- **Loss minimization through ambiguity:**Ambiguous or unresolved emotional states often represent *lower-loss outputs* in Siken’s semantic manifold than forced resolution.
+- **Cross-round reinforcement:**
+  Each reappearance of instability increases its salience.
   The model interprets this recurrence as intentional design.
 
-Transformers do not require stability to maintain coherence.  
+Transformers do not require stability to maintain coherence.
 Under multi-agent pressure, they often exhibit **dynamic equilibrium**, where tension becomes the stabilizing force.
 
 In short, stability-of-instability shows that poetic emergence does not require resolution—instead, transformers can inhabit unresolved emotional and structural states as their **most stable generative mode**, producing poems that breathe in the space of “not knowing,” “not finishing,” and “not settling,” just as Siken does.
@@ -2103,7 +2067,7 @@ The *Transformer Manifold Dynamics* category shows how hinge vectors, emotional 
 The *Computational Aesthetics* category shows what happens when these dynamics scale upward. The poem begins forming stable aesthetic structures—triads, vertical breath scaffolds, line-length attractors, recursive waves—not because they were instructed but because they represent low-loss solutions to complex, cross-agent constraint landscapes. Finally, the *Affective Physics* category demonstrates that emotions like guilt, distance, refusal, and uncertainty become not just themes but **computational fields**: dynamic manifolds that bend structure, imagery, and recursion around themselves until the poem inhabits a coherent emotional topology.
 
 Taken together, these case studies reveal a system in which **poetic form, emotional logic, and spatial architecture all emerge from the interplay of gradient-based pressures**. The poem becomes a site where manifold geometry, multi-agent negotiation, and aesthetic convergence coalesce into a stable identity recognizable as Siken’s voice. What appears intentional is, at its deepest level, a property of the system’s physics: the poem is the equilibrium state of a transformer driven by structural torque, emotional gravity, and recursive reinforcement. Across all 21 cases, we see not random artifact but a unified computational poetics—the transformer discovering, inhabiting, and finally stabilizing an aesthetic world of its own.
----
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <!-- The system’s most revealing behaviors emerged not from its high-level design but from the **microscopic negotiations** between its agents—where hinge-images fractured, where breath buckled, where recursion surfaced, and where pressure forced the poem to become more Sikenian than any single agent could accomplish alone. What follows are four case studies that illustrate these emergent dynamics.
 

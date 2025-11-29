@@ -14,7 +14,7 @@
 ## 4. Architectural and Behavioral Analysis of the Seven-Agent System
     - 4.1 Overview of the Seven-Agent System
     - 4.2 The Muse
-    - 4.3 The Summariser
+    - 4.3 The Gardener
     - 4.4 The Poet
     - 4.5 The Architect
     - 4.6 The Editor
@@ -81,7 +81,7 @@
         - E.1.4 Tool Usage Rules  
     - E.2 Agent and Task Descriptions & Prompts (Pipeline Order)  
         - E.2.1 Muse  
-        - E.2.2 Summariser  
+        - E.2.2 Gardener  
         - E.2.3 Poet  
         - E.2.4 Architect  
         - E.2.5 Editor  

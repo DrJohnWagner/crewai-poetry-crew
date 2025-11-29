@@ -29,7 +29,7 @@ Here we describe the system as a whole.
 The system contains seven agents:
 
 1. **Muse**  
-2. **Summariser**  
+2. **Gardener**  
 3. **Poet**  
 4. **Architect**  
 5. **Editor**  
@@ -67,7 +67,7 @@ In LLMs, it is a source of collapse—unless we distribute it.
 The pipeline distributes interior functions across agents so that:
 
 - the **Muse** produces conceptual heat without structural responsibility,  
-- the **Summariser** condenses and stabilizes thematic vectors,  
+- the **Gardener** condenses and stabilizes thematic vectors,  
 - the **Poet** generates emotional physics,  
 - the **Architect** reshapes breath and spatial fracture,  
 - the **Editor** escalates pressure,  
@@ -178,7 +178,7 @@ Instead, each agent contributes *directional force*:
 These forces accumulate without resolving one another.  
 The computational analogy is not “refinement” but **vector addition under tension**.
 
-The system remains coherent because the Summariser and Publisher provide periodic normalization: one at the beginning of each round, one at the end.
+The system remains coherent because the Gardener and Publisher provide periodic normalization: one at the beginning of each round, one at the end.
 
 This is the “litany of things not crossed out.”  
 The poem moves forward because many pressures remain active, unresolved, and alive.

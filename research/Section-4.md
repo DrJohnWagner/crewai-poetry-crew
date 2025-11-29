@@ -16,7 +16,7 @@ drift**—to understand agents not as software modules but as **forces**. Each a
 
 A crucial distinction guides this architecture:
 
-- **The Muse, Summariser, Critic, and Publisher** do *not* participate in the core
+- **The Muse, Gardener, Critic, and Publisher** do *not* participate in the core
   contested cycle. They provide emotional material, reduce it, evaluate the finished poem,
   or assemble the final artifact.
 - **The Poet, Architect, and Editor** *do* participate in the contested cycle. Their
@@ -37,7 +37,7 @@ moments where identity becomes behavior. Each task applies a distinct axis of pr
 associative, reductive, generative, structural, semantic, evaluative, or curatorial.
 
 1. **Muse-task** – expands the emotional terrain into proto-worlds.
-2. **Summariser-task** – compresses each proto-world into a distilled seed.
+2. **Gardener-task** – compresses each proto-world into a distilled seed.
 3. **Poet-task** – expands a seed into language under persona grammar.
 4. **Architect-task** – imposes visual, spatial, and rhythmic structure.
 5. **Editor-task** – applies semantic and emotional pressure through notes.
@@ -78,17 +78,17 @@ pipeline entirely.
 
 ---
 
-## 4.3 The Summariser
+## 4.3 The Gardener
 
 > **“You were trying to tell me something,
 > but I kept forgetting what it was.”**
 > — Richard Siken, *Crush*
 
-The Summariser, like the Muse, remains outside the contested cycle. It performs a single,
+The Gardener, like the Muse, remains outside the contested cycle. It performs a single,
 non-recursive act: compressing the Muse’s expansive emotional universes into compact
 **poetic seeds**.
 
-Its genotype is reductive: “extract only the essence.”The Summariser must **discard** everything that does not constitute emotional necessity:
+Its genotype is reductive: “extract only the essence.”The Gardener must **discard** everything that does not constitute emotional necessity:
 no narrative sequence, no backstory, no causality, no interpretation. Its task,
 `task_summarise`, yields three SEEDS composed only of:
 
@@ -96,7 +96,7 @@ no narrative sequence, no backstory, no causality, no interpretation. Its task,
 - indispensable anchors,
 - and a minimal atmospheric field.
 
-Where the Muse creates **breadth**, the Summariser creates **density**. It converts
+Where the Muse creates **breadth**, the Gardener creates **density**. It converts
 associative emotional worlds into high-pressure briefs suitable for persona-driven
 generation. After this reduction, it exits the pipeline and exerts no further influence.
 
@@ -109,7 +109,7 @@ generation. After this reduction, it exits the pipeline and exerts no further in
 
 The Poet is the generative core of the system—the only agent permitted to mutate lexical
 content. It is the locus where emotional pressure becomes language. Unlike the Muse and
-Summariser, who operate outside the core contested cycle, the Poet stands directly inside
+Gardener, who operate outside the core contested cycle, the Poet stands directly inside
 the recursive field of conflict shared with the Architect and Editor. Its genotype is
 defined by its persona: a grammar of breath, metaphor, cadence, perceptual bias, refusal,
 and emotional physics encoded directly in the backstory.
@@ -156,7 +156,7 @@ The Poet’s behavior is expressed through three tasks: `task_write`, `task_revi
 
 #### `task_write` — first expansion
 
-The Poet receives three emotional briefs from the Summariser and must:
+The Poet receives three emotional briefs from the Gardener and must:
 
 - choose **exactly one** and justify that choice,
 - treat the brief’s content as **pressure**, not material,
@@ -195,7 +195,7 @@ Poet must speak about artistic intention, not process machinery.
 
 The Poet undergoes three primary pressure sources:
 
-1. **Summariser pressure (compression → expansion)**  
+1. **Gardener pressure (compression → expansion)**  
    The seed’s conceptual density forces expansion into breath, image, and emotional logic.
 
 2. **Architectural pressure (structural constraint)**  
@@ -585,7 +585,7 @@ Each agent occupies a different domain of authority:
 - **Poet** — semantic mutation  
 - **Architect** — spatial and breath-based discipline  
 - **Editor** — semantic and emotional pressure (without rewriting)  
-- **Muse / Summariser** — upstream emotional field construction  
+- **Muse / Gardener** — upstream emotional field construction  
 - **Critic / Publisher** — downstream externalization and assembly  
 
 These authorities do not merge. They collide.  

@@ -15,7 +15,7 @@ The car hums, a patient animal, counting how long until we are only memory sayin
 The landscape is a stern witness, and you answer with gentleness you do not trust.
 Letting go is not leaving; it is a kind of love wearing different clothes.
 The road continues past the exit, and you follow it, somehow not chasing but freeing.
-`````
+```
 
 ## V1: Architect Round 1 Revision (Complete)
 
@@ -55,7 +55,7 @@ Letting go is not leaving;
 
 The road continues past the exit,
     and you follow it, somehow not chasing but freeing.
-`````
+```
 
 ### V2: Poet Round 1 Recursive Expansion (Complete)
 
@@ -120,7 +120,7 @@ The road continues past the exit,
         not chasing but freeing.
 
 horizon.
-`````
+```
 
 ### V3: Architect Round 2 Stabilization (Complete)
 
@@ -185,7 +185,7 @@ The road continues past the exit,
         not chasing but freeing.
 
 horizon.
-`````
+```
 
 ### V4: Poet Final Recursive Intensification (Complete)
 
@@ -259,7 +259,7 @@ The road continues past the exit,
         not chasing but freeing.
 
 horizon.
-`````
+```
 
 ## A.2 Version Comparisons (Diffs)
 
@@ -680,12 +680,12 @@ for downstream agents.
 - Avoid narrative development; focus on atmosphere, tension, and interior landscape.
 - Provide concept-level diversity without enforcing structure or style.
 
-### E.2.2 Summariser
+### E.2.2 Gardener
 
 **Task:** `task_summarise`
 
 **Role:**
-The Summariser transforms the Muse’s conceptual list into a compact, unified “poetic
+The Gardener transforms the Muse’s conceptual list into a compact, unified “poetic
 intention” summary. It does not add new themes; it distills, clarifies, and stabilizes.
 
 **Input:**
@@ -714,7 +714,7 @@ of a specified persona (e.g., Rilke, Siken, Frost). The Poet is the *only* agent
 to change wording, syntax, ordering, diction, and imagery.
 
 **Input:**
-Summariser’s blueprint, plus any editor notes (later rounds).
+Gardener’s blueprint, plus any editor notes (later rounds).
 
 **Output:**
 A full poetic draft (V0), then recursive expansions (V2, V4, etc.).
@@ -2051,7 +2051,7 @@ The analyses in Sections F.1 through F.8 show that the seven-agent system does n
 
 The case study shows decisively that **interdependence, not independence, is the core engine of poetic emergence**. While each agent has a defined role, the most consequential transformations arise from their interactions:
 
-- The Muse provides a conceptual topology the Summariser distills but does not overdetermine.
+- The Muse provides a conceptual topology the Gardener distills but does not overdetermine.
 - The Poet embodies a persona and transforms concept into early verse.
 - The Architect reads the draft as *geometry* rather than content, reshaping breath, indentation, tension, and recursion.
 - The Editor repairs or refines meaning that structural intervention destabilizes.

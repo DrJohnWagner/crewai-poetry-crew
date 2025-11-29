@@ -42,8 +42,8 @@ muse:
     verbose: true
     allow_delegation: false
 
-summariser:
-    role: "Executive Summariser of Emotional Fields"
+gardener:
+    role: "Executive Gardener of Emotional Fields"
     goal: |
         Distill each Muse concept into a minimal emotional seed suitable
         for poetic transformation.
