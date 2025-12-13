@@ -1,0 +1,37 @@
+Here you go — six tight, three-sentence summaries. No fluff.
+
+---
+
+## **1. Sharpen divergence between leverage groups**
+
+The leverage for Poet, Architect, and Editor should push each agent in *different* conceptual directions instead of overlapping. This forces downstream transformations to diverge rather than converge, increasing system dynamism. Clear separation produces richer tension and more visible multi-agent interplay.
+
+---
+
+## **2. Make the Architect destabilize instead of merely refine**
+
+The Architect should introduce spatial stress — fractures, voids, jagged verticality — that creates new pressure rather than smoothing existing lines. Architecture becomes a provocation the Poet must answer, not a formatting pass. This transforms the Architect into a genuine engine of instability.
+
+---
+
+## **3. Make the Editor adversarial about persona drift**
+
+The Editor should challenge lines that violate persona physics, calling out metaphors or pivots inconsistent with the commanded voice. Instead of gentle refinement, they supply pressure to sharpen identity. This turns the Editor into a corrective force preventing poetic drift.
+
+---
+
+## **4. Require wound amplification in the Poet's revision**
+
+Each poetic revision must intensify the core wound — through contradiction, recursion, or somatic escalation — without expanding into new imagery systems. This prevents dilution and enforces a deepening spiral rather than lateral movement. It anchors the Poet’s output firmly inside persona logic.
+
+---
+
+## **5. Add localized-memory constraints to create variation**
+
+Restrict one agent (usually the Editor) to reference only small sections of the poem at a time. This forces interpretation to become fragmentary and situated. The result is increased variability, sharper micro-observations, and less homogenized feedback.
+
+---
+
+## **6. Introduce constructive disobedience in the Poet**
+
+When Architect and Editor agree on a pressure point, the Poet should resist instead of comply. This models a psychologically real creative identity that struggles against imposed structure. The tension preserves unpredictability and enhances persona fidelity.

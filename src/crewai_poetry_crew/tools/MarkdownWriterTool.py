@@ -1,5 +1,5 @@
 import os
-import sys
+import json
 from crewai.tools import BaseTool
 import re
 import logging
@@ -9,19 +9,64 @@ from typing import Type, Optional
 
 logger = logging.getLogger("crewai")
 
-# Regex to strip a trailing datetime stamp like -2025-11-24-02-40-00
+# Regex to strip a trailing datetime stamp like -2025-11-24-02-40-00 from a base filename
 TIMESTAMP_RE = re.compile(r"-\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$")
 
 
-class MarkdownWriterToolInput(BaseModel):
-    """Input schema for MarkdownWriterTool."""
+def normalise_base_filename(filename: str) -> str:
+    """
+    Normalise a caller-provided *base filename* (no extension) before use:
 
-    poem_title: str = Field(
+    - Strip a single trailing datetime stamp, if the LLM accidentally included one.
+    - Remove characters that are problematic on most filesystems.
+    - Trim and compress whitespace.
+
+    This function works purely at the "logical filename" level; it does not
+    add extensions or timestamps.
+    """
+    # Strip one trailing datetime stamp if present
+    base = TIMESTAMP_RE.sub("", filename).strip()
+
+    # Remove characters that are problematic on most filesystems
+    # (keep letters, digits, spaces, underscores, hyphens)
+    base = re.sub(r'[\\/:*?"<>|]', "", base)
+
+    # Compress whitespace to single spaces
+    base = re.sub(r"\s+", " ", base).strip()
+
+    return base
+
+
+def create_filename(base_filename: str, extension: str = "md") -> str:
+    """
+    Create a safe, timestamped markdown filename from a *base filename*.
+
+    The caller supplies a base filename with no extension, e.g.
+    "case-study-a-constraint-driven-mutation". We normalise it, convert
+    spaces to underscores, and append a datetime stamp and the extension.
+
+    Ensures we only ever end up with a single datetime stamp.
+    """
+    base = normalise_base_filename(base_filename)
+    timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
+
+    # Convert spaces to underscores and keep alphanumerics, underscores, hyphens
+    safe_base_name = re.sub(r"[^\w\-]+", "_", base).strip("_")
+
+    filename = f"{safe_base_name}-{timestamp}.{extension}"
+    logger.debug(f"Final filename after normalisation and timestamp: {filename}")
+    return filename
+
+
+class MarkdownWriterToolInput(BaseModel):
+    """Input schema for MarkdownWriterTool."""  # noqa: D401
+
+    filename: str = Field(
         ...,
         description=(
-            "The exact poem title to use as the base for the filename, "
-            "e.g. 'Hinge of Tender Light'. Do NOT include any timestamps "
-            "or file extensions."
+            "The base filename (without extension) to use for the markdown file, "
+            "e.g. 'Case Study a Constraint-Driven Mutation'. "
+            "Do NOT include any timestamps or file extensions."
         ),
     )
     content: str = Field(
@@ -35,23 +80,25 @@ class MarkdownWriterToolInput(BaseModel):
 
 
 class MarkdownWriterTool(BaseTool):
-    """
-    Tool that writes the final combined poem-and-critique markdown file.
+    """Tool that writes a final markdown file for publication.
+
+    This tool takes a logical *filename* (without extension) and the full markdown
+    content, writes a .md file under the configured output directory, and returns
+    the final file path.
 
     In this workflow, the tool ONLY needs to be called successfully once per
     crew run. To guard against framework bugs or repeated tool calls, this
     implementation is idempotent: after the first successful write in a run,
     subsequent calls will NOT write a new file and will simply return the
-    existing file path.
-    """
+    path to the already-written file.
+    """  # noqa: D401
 
-    name: str = "Markdown Writer Tool"
+    name: str = "MarkdownWriterTool"
     description: str = (
-        "Writes the final combined poem-and-critique content to a markdown (.md) file. "
-        "The tool handles adding a datetime stamp to the filename and the .md extension. "
-        "You MUST pass the poem_title (not a full path) and the complete markdown content. "
-        "Use this tool exactly once per poem. If it is called multiple times in the same "
-        "run, it will reuse the already written file instead of creating new ones."
+        "Writes the final combined markdown content to a single .md file on disk. "
+        "Takes two arguments: 'filename' (base filename without extension) and "
+        "'content' (the complete markdown to write). "
+        "Returns a JSON string with status and file_path."
     )
     args_schema: Type[BaseModel] = MarkdownWriterToolInput
 
@@ -66,92 +113,56 @@ class MarkdownWriterTool(BaseTool):
         self.has_already_written_file = False
         self.last_file_path = None
 
-    def _normalise_base_title(self, poem_title: str) -> str:
-        """
-        Normalise the poem title before turning it into a base filename:
-        - Strip any trailing datetime stamp (if the LLM accidentally includes one).
-        - Remove dangerous filesystem characters.
-        - Trim and compress whitespace.
-        """
-        # Strip one trailing datetime stamp if present
-        base = TIMESTAMP_RE.sub("", poem_title).strip()
-
-        # Remove characters that are problematic on most filesystems
-        # (keep letters, digits, spaces, underscores, hyphens)
-        base = re.sub(r'[\\/:*?"<>|]', "", base)
-
-        # Compress whitespace to single spaces, then we'll convert spaces to underscores
-        base = re.sub(r"\s+", " ", base).strip()
-
-        return base
-
-    def _make_final_filename(self, poem_title: str) -> str:
-        """
-        Create a safe, timestamped markdown filename from the poem title.
-        Ensures we only ever end up with a single datetime stamp.
-        """
-        base = self._normalise_base_title(poem_title)
-        timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-
-        # Convert spaces to underscores and keep alphanumerics, underscores, hyphens
-        safe_base_name = re.sub(r"[^\w\-]+", "_", base).strip("_")
-
-        final_filename = f"{safe_base_name}-{timestamp}.md"
-        logger.debug(f"Final filename after normalisation and timestamp: {final_filename}")
-        return final_filename
-
-    def _run(self, poem_title: str, content: str) -> str:
-        """
-        Writes the given content to a markdown file derived from the poem title.
+    def _run(self, filename: str, content: str) -> str:
+        """Write the given content to a markdown file derived from the filename.
 
         Idempotent behaviour:
+
         - On the first successful call in a crew run, it writes the file and
           stores the path.
         - On subsequent calls in the same run, it does NOT write again; it
           simply returns the existing file path.
-        """
+        """  # noqa: D401
+        logger.info(f"MarkdownWriterTool called with: {filename}")
         # If we've already written the file in this run, do not write again
         if self.has_already_written_file and self.last_file_path is not None:
             logger.info(
                 "MarkdownWriterTool called again, but file has already been written "
                 f"for this run. Reusing existing file: {self.last_file_path}"
             )
-            return (
-                "File already written in this run. "
-                f"Reusing existing publication at '{self.last_file_path}'."
+            return json.dumps(
+                {
+                    "status": "ok",
+                    "filename": os.path.basename(self.last_file_path),
+                    "file_path": self.last_file_path,
+                    "note": "Reused existing file for this crew run.",
+                }
             )
 
-        logger.info(
-            f"Starting to write markdown file for poem_title '{poem_title}' "
-            f"with content length {len(content)}"
-        )
-
-        final_filename = self._make_final_filename(poem_title)
-
         try:
-            # Create a 'publications' directory if it doesn't exist
-            if not os.path.exists("publications"):
-                logger.info("Creating 'publications' directory")
-                os.makedirs("publications")
+            directory = os.environ.get("PUBLISH_OUTPUT_DIR", "publications")
+            os.makedirs(directory, exist_ok=True)
 
-            file_path = os.path.join("publications", final_filename)
-            logger.debug(f"Directory/filename: {file_path}")
+            final_filename = create_filename(filename)
+            file_path = os.path.join(directory, final_filename)
 
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(content)
 
-            logger.info(f"File written successfully: {file_path}")
+            logger.info(f"MarkdownWriterTool wrote file: {file_path}")
 
-            # Mark as written for this run and remember the path
+            # Update idempotent state
             self.has_already_written_file = True
             self.last_file_path = file_path
 
-            # Return a message that clearly distinguishes poem_title from file_path
-            return (
-                "Publication successful. "
-                f"poem_title: '{poem_title}'. "
-                f"file_path: '{file_path}'."
+            # Return a JSON-serialised summary
+            return json.dumps(
+                {
+                    "status": "ok",
+                    "filename": final_filename,
+                    "file_path": file_path,
+                }
             )
         except Exception as e:
             logger.error(f"Error writing file: {e}")
-            return f"Error writing file: {e}"
+            return json.dumps({"status": "error", "message": str(e)})

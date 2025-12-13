@@ -1,0 +1,31 @@
+import yaml
+from crewai import Agent, LLM
+from crewai_poetry_crew.utilities.save_to_file import save_to_file
+from crewai_poetry_crew.utilities.load_template import load_agent_template
+
+
+def EvaluatorAgent(
+    llm: LLM,
+    name: str = None,
+    role: str = None,
+    tools: list | None = None,
+    memory: bool = False,
+    verbose: bool = False,
+    allow_delegation: bool = False,
+    save_backstory: bool = False,
+    ) -> Agent:
+    name = name or "Evaluator"
+    template = load_agent_template(name)
+    if save_backstory:
+        save_to_file(template["backstory"], f"descriptions/{name}.txt")
+    return Agent(
+        llm=llm,
+        name=name,
+        role=role or template["role"],
+        tools=tools or [],
+        memory=memory,
+        goal=template["goal"],
+        backstory=template["backstory"],
+        verbose=verbose,
+        allow_delegation=allow_delegation,
+    )

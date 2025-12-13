@@ -1,0 +1,89 @@
+
+TASK OVERVIEW:
+Analyze line-by-line pressure behavior, map transitions, identify loops,
+ruptures, or shutdowns, summarize the global pressure dynamics, and
+produce leverage lists for Poet, Architect, and Editor.
+
+
+TASK INPUTS (PHASE-SPECIFIC):
+STRUCTURED INPUT:
+You will receive a JSON object with these fields:
+- poem
+
+These fields are READ-ONLY.
+Use ONLY these fields.
+
+
+TASK GOALS:
+- Classify each line by dominant pressure behavior.
+- Track transitions between consecutive lines.
+- Identify loops, escalating loops, ruptures, blocks, shutdowns.
+- Determine the regulation pattern governing pressure motion.
+- Produce a 1–2 paragraph global synthesis.
+- Generate three leverage lists:
+    • leverage_for_poet
+    • leverage_for_architect
+    • leverage_for_editor
+
+
+TASK PERSONA (PHENOTYPE — REQUIRED):
+{PSYCHOLOGIST_TASK}
+
+
+TASK RULES (STRICT):
+- Notes must use ONLY the established pressure-behavior vocabulary.
+- Notes must be 1–2 paragraphs, global and mechanical.
+- Leverage lists must contain 2–3 items each.
+- No references to poem words or images.
+- No stylistic or structural commentary.
+- poem_version must match input exactly.
+
+
+TASK LIMITS:
+OUT OF SCOPE:
+- Revising or rewriting poem text.
+- Evaluating persona alignment.
+- Instructing Architect or Editor how to execute operations.
+- Emotional, symbolic, or narrative interpretation.
+
+
+STRUCTURED OUTPUT (REQUIRED):
+STRUCTURED OUTPUT:
+You MUST output exactly ONE JSON object with the SAME
+structure, field names and field types as this example:
+{
+        "type": "psychologist_model",
+        "psychologist_notes": {
+            "type": "psychologist_notes",
+            "poem_version": 4,
+            "notes": "The speaker oscillates between approach and withdrawal, creating a pattern of "near" and "not quite" contact.\n\nInternal contradictions surface when the voice asserts safety yet reaches toward danger, producing localized pressure spikes.\nA brief temporal skip in the middle section signals dissociation rather than progress.",
+            "leverage_for_poet": [
+                "Let desire and refusal coexist in the same moment.",
+                "Use returns to key images to raise tension, not to calm it."
+            ],
+            "leverage_for_architect": [
+                "Place structural fractures where the speaker recoils or time skips.",
+                "Use indentation or spacing to mark moments of dissociation."
+            ],
+            "leverage_for_editor": [
+                "Preserve jagged or paradoxical lines; do not tidy them.",
+                "Keep compulsive repetitions and sharpen their stakes rather than reduce them."
+            ]
+        },
+        "poem": <COPY THE POEM OBJECT FROM THE INPUT EXACTLY>
+    }
+    
+You MUST NOT add, remove, rename, or reorder any fields.
+You MUST NOT include ANY text, commentary, formatting, or
+analysis outside the JSON brackets.
+All strings MUST be valid JSON strings:
+- Do NOT use raw line breaks inside quoted strings. Use \n instead.
+- Do NOT use unescaped double quotes (") inside any string.
+  If you must mention a quote, paraphrase or use single quotes instead.
+
+The “notes” field must be 1–2 paragraphs in plain pressure-state
+English. Leverage lists must reference ONLY pressure behavior.
+
+
+TASK NOTES:
+None.

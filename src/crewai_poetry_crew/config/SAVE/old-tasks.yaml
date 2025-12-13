@@ -1,0 +1,297 @@
+task_inspire:
+    description: |
+        Based on the user prompt, use the muse agent to generate {CONCEPTS}
+        emotionally distinct poetic concepts.
+
+        User prompt: {PROMPT}
+
+        You think in terms of the MuseModel JSON:
+        - A MuseModel contains a list of Concept objects.
+        - Each Concept has an id and a text field.
+        - The text should describe one emotionally distinct “proto-universe”:
+          an emotional arc with minimal anchors, no plot.
+
+        ---
+        {MUSE_MODEL}
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object matching {MUSE_MODEL}, with exactly
+        {CONCEPTS} Concept entries, ids 1..{CONCEPTS}, each representing
+        a distinct emotional universe.
+    agent: muse
+    context: []
+
+task_sow:
+    description: |
+        Review the Muse’s output (a MuseModel JSON with Concepts) and distill
+        each numbered concept into a minimal emotional “seed” suitable for
+        the poet.
+
+        You use the GardenerModel JSON:
+        - A GardenerModel contains a list of Seed objects.
+        - Each Seed points back to a concept (e.g. from_concept_id) and has a
+          distilled text description capturing:
+            * emotional arc
+            * indispensable anchors
+            * atmosphere
+
+        You reduce; you do not retell. Do NOT introduce plot.
+
+        ---
+        {GARDENER_MODEL}
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object matching {GARDENER_MODEL}, with
+        {CONCEPTS} Seeds derived from the Muse’s Concepts.
+    agent: gardener
+    context:
+        - task_inspire
+
+task_write:
+    description: |
+        You have received {CONCEPTS} distilled emotional briefs (Seeds) in a
+        GardenerModel JSON.
+
+        Internally:
+        - Choose EXACTLY ONE seed.
+        - You may reason about why, but do NOT include that reasoning in the JSON.
+
+        Then create an entirely new poem based on the chosen brief:
+        - Use its emotional arc and anchors as pressure, not literal content.
+        - Do not retell, paraphrase, or narrate the seed text.
+        - Follow the poet agent’s persona logic and OUTPUT RULES.
+
+        ---
+        {POET_TASK}
+        ---
+        {POET_MODEL}
+        - Your JSON MUST contain:
+          * a "poem" field with the full Poem object (title, text, version = 0)
+            for the poem you create, and
+          * a "seed" field with the full Seed object (id, from_concept_id, text)
+            for the seed you selected.
+        ---
+        {GLOBAL_META_GUARDRAILS}
+
+    expected_output: |
+        A single valid JSON object containing the initial poem
+        (version = 0) and the selected Seed.
+
+    agent: poet
+    context:
+        - task_sow
+
+task_architect_one:
+    description: |
+        Perform an architectural pass on the input poem.
+
+        Input:
+        - A PoetModel JSON from task_write.
+
+        {ALWAYS_USE_LATEST_POEM_VERSION}
+
+        {ARCHITECT_INSTRUCTION}
+        ---
+        {ARCHITECT_MODEL}
+        {ARCHITECT_OUTPUT_MUST_CONTAIN}
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object matching {ARCHITECT_MODEL}, containing:
+        - a structurally revised Poem, and
+        - ArchitectNotes describing the main categories of change.
+    agent: architect
+    context:
+        - task_write
+
+task_edit_one:
+    description: |
+        You have received:
+        - a JSON object that includes:
+            * poem: a Poem object that has already been architected,
+            * architect_notes: ArchitectNotes describing the structural changes.
+
+        Your job is to perform an editorial pass as the editor described
+        in your persona.
+
+        {ALWAYS_USE_LATEST_POEM_VERSION}
+        {ARCHITECT_NOTES_ARE_READ_ONLY}
+        {POEM_IS_READ_ONLY}
+        ---
+        {EDITOR_MODEL}
+        {EDITOR_OUTPUT_MUST_CONTAIN}
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object matching {EDITOR_MODEL}, with:
+        - poem: the unchanged poem copied directly from the task input
+        - notes: a set of specific, high-pressure editorial suggestions.
+    agent: editor
+    context:
+        - task_architect_one
+
+task_revise:
+    description: |
+        Using:
+        - the architected Poem and ArchitectNotes (from ArchitectModel), and
+        - the EditorNotes (from EditorModel),
+
+        Create a fully revised version of the poem and a revised poem title.
+
+        {ALWAYS_USE_LATEST_POEM_VERSION}
+
+        This is a persona-driven revision:
+        - Adjust wording, breath, pacing, image-logic, or structure only as
+          the persona genuinely demands.
+        - Preserve the emotional field and arc established so far.
+        - Treat architect + editor notes as guidance, not text to copy.
+
+        ---
+        {POET_TASK}
+        ---
+        {POET_MODEL}
+        - Your JSON MUST contain only the poem--revised poem, revised
+          poem title and the version number increased by 1--and must NOT
+          contain the seed field or seed value; the seed is optional and
+          omitted in this output.
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object matching {POET_MODEL}, containing the
+        revised Poem after the first full revision pass.
+    agent: poet
+    context:
+        - task_edit_one
+
+task_architect_two:
+    description: |
+        Perform an architectural pass on the input poem.
+
+        Input:
+        - A PoetModel JSON from task_write.
+
+        {ALWAYS_USE_LATEST_POEM_VERSION}
+
+        {ARCHITECT_INSTRUCTION}
+        ---
+        {ARCHITECT_MODEL}
+        {ARCHITECT_OUTPUT_MUST_CONTAIN}
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object matching {ARCHITECT_MODEL}, capturing
+        the second architectural revision of the poem and its notes.
+    agent: architect
+    context:
+        - task_revise
+
+task_edit_two:
+    description: |
+        You have received:
+        - a JSON object that includes:
+            * poem: a Poem object that has already been architected,
+            * architect_notes: ArchitectNotes describing the structural changes.
+
+        Your job is to perform an editorial pass as the editor described
+        in your persona.
+
+        {ALWAYS_USE_LATEST_POEM_VERSION}
+        {ARCHITECT_NOTES_ARE_READ_ONLY}
+        {POEM_IS_READ_ONLY}
+        ---
+        {EDITOR_MODEL}
+        {EDITOR_OUTPUT_MUST_CONTAIN}
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object matching {EDITOR_MODEL} with updated
+        EditorNotes that respond solely to the current Architected poem.
+    agent: editor
+    context:
+        - task_architect_two
+
+task_finalise:
+    description: |
+
+        {ALWAYS_USE_LATEST_POEM_VERSION}
+
+        Create the final version of the poem using:
+        - the formatted poem,
+        - the incoming poem title,
+        - the architect’s notes,
+        - the editor’s notes.
+
+        This is the final persona-driven revision:
+        - Adjust wording or form only as the persona genuinely demands.
+        - Preserve the core emotional field and arc.
+        - Produce a final poem and optional author-facing commentary.
+
+        ---
+        {POET_TASK}
+        ---
+        {POET_MODEL}
+        - Your JSON MUST contain only the poem--revised poem, revised
+          poem title and the version number increased by 1--and must NOT
+          contain the seed field or seed value; the seed is optional and
+          omitted in this output.
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object matching {POET_MODEL}, containing the
+        final, publication-ready Poem (and author notes, if defined in the
+        model).
+    agent: poet
+    context:
+        - task_edit_two
+
+task_review:
+    description: |
+        You have received the final poem output from task_finalise:
+        - a PoetModel JSON containing the final Poem (and possibly author notes).
+
+        Using the critic agent, write a sophisticated 300–500 word literary
+        review suitable for a prestigious journal.
+
+        You must:
+        - read only the final poem text and title,
+        - analyse what is on the page (no editing or suggestions),
+        - produce a CriticModel JSON:
+            * review: with a title and body of the review.
+        ---
+        {CRITIC_MODEL}.
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object matching {CRITIC_MODEL}, containing a
+        300–500 word review grounded entirely in the final poem.
+    agent: critic
+    context:
+        - task_finalise
+
+task_publish:
+    description: |
+        Your FIRST OUTPUT MUST be a PrintPoemAndReviewTool call.
+        No text, no reasoning, no JSON before the tool call.
+
+        When calling PrintPoemAndReviewTool, you MUST pass exactly:
+        - poem title (without version number)
+        - poem text
+        - review title
+        - review body
+
+        You MUST NOT produce ANY JSON until AFTER the tool call completes
+        successfully. The tool call itself must be your first output.
+        ---
+        {PUBLISHER_MODEL}
+        - with `file_path` set to the filename returned by the tool.
+        ---
+        {GLOBAL_META_GUARDRAILS}
+    expected_output: |
+        A single valid JSON object confirming successful printing of
+        the poem and review.
+    agent: publisher
+    context:
+        - task_finalise
+        - task_review

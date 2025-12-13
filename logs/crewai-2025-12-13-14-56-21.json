@@ -1,0 +1,76 @@
+[
+    {
+        "type": "muse_model",
+        "concepts": [
+            {
+                "type": "concept",
+                "id": 1,
+                "text": "Kitchen: the fridge light flickers, the kettle rattles on the boil, a towel slides a fraction each time you reach for it, and the floorboard sighs as you stand."
+            },
+            {
+                "type": "concept",
+                "id": 2,
+                "text": "Street: a map crease widens as you unfold it, the traffic signal stutters, wind yanks the umbrella, and footsteps land on the pavement at an offbeat tempo."
+            },
+            {
+                "type": "concept",
+                "id": 3,
+                "text": "Car: the rearview mirror jitters, the radio repeats a single phrase, a bottle leans in the cup holder, and the seatbelt latch clicks with a sleepy pause."
+            },
+            {
+                "type": "concept",
+                "id": 4,
+                "text": "Office: the printer hisses in a stubborn rhythm, a coffee ring grows, a desk drawer stops halfway, and the elevator doors pause between floors."
+            },
+            {
+                "type": "concept",
+                "id": 5,
+                "text": "Waiting room: the clock and the distant phone ring align in a strange cadence, a magazine flips to a stubborn page, a plant leaf shivers in a draft, and a chair cushion sinks when you shift."
+            }
+        ]
+    },
+    {
+        "type": "gardener_model",
+        "seeds": [
+            {
+                "type": "seed",
+                "id": 1,
+                "from_concept_id": 1,
+                "text": "Quiet friction: flicker, rattle, slide, sigh."
+            },
+            {
+                "type": "seed",
+                "id": 2,
+                "from_concept_id": 2,
+                "text": "Dissonant alignment: crease widens, signal stutters, umbrella yanked, footsteps tempo slips."
+            },
+            {
+                "type": "seed",
+                "id": 3,
+                "from_concept_id": 3,
+                "text": "Unsteady pattern: mirror jitters, refrain repeats, bottle tilts, latch clicks in pause."
+            },
+            {
+                "type": "seed",
+                "id": 4,
+                "from_concept_id": 4,
+                "text": "Stalled motion: printer hisses, coffee ring spreads, drawer halts, doors pause."
+            },
+            {
+                "type": "seed",
+                "id": 5,
+                "from_concept_id": 5,
+                "text": "Tense cadence: clock and phone align, page stalls, leaf shivers, cushion sinks."
+            }
+        ]
+    },
+    {
+        "type": "poet_model",
+        "poem": {
+            "type": "poem",
+            "title": "Small Stoppages",
+            "text": "The machine on the table makes a narrow sound and keeps it.\nA sheet shows its edge and waits at the mouth. I wait too.\nA small green light says working, which is not the same as done.\n\nThe cup leaves a damp ring that widens without hurry.\nI press a finger into it. The mark comes with me, curved and cold.\nI say I will wipe it in a minute. I do not.\n\nThe top drawer opens until the spoon catches.\nA soft thunk, a polite argument. It gives a little and then stays.\nI close it to the same place it was.\n\nThe door to the hall slows near the frame and rests there,\nnot shut, not open. It does this every day.\nIf it is trying to be helpful, it is succeeding.\n\nThe page inside the machine bends its corner, like it is thinking it over.\nNo alarm. A light changes its mind from green to not green.\nI could pull. I hold the edge and let go.\n\nOutside, steps come up the stairs, stop by my door, and continue.\nI listen to the part where nothing happens. It is a clear part.\n\nI send a note that says yes. The bar says sent. Nothing else occurs.\nI look at the ring again. It has made a second ring, faint, around the first.\nI move the cup and make a third. This is how progress looks today.\n\nI try the drawer again. Same catch, same give, same stop.\nThere is a way to lift the spoon and slide past. I know it.\nI leave it as is. The knowing is enough for now.\n\nThe machine sighs without breath, then holds still. The page shows a stripe\nwhere a sentence will be later. I pull it free and set it aside.\nIt is almost something. I call that close and let it be.\n\nThe door rests against its own weight, nearly closed.\nAir passes through the not-quite. I stand in the kitchen and watch it consider.\nI tell myself the rest can happen after this. After what. After this.",
+            "version": 0
+        }
+    }
+]

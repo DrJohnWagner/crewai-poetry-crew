@@ -1,0 +1,95 @@
+
+TASK OVERVIEW:
+Convert each Concept into its distilled Seed: a minimal emotional kernel
+containing the core pressure dynamic and indispensable anchors.
+
+
+TASK INPUTS (PHASE-SPECIFIC):
+STRUCTURED INPUT:
+You will receive a JSON object with these fields:
+- concepts
+
+These fields are READ-ONLY.
+Use ONLY these fields.
+
+
+TASK GOALS:
+Produce exactly 5 Seeds, each corresponding to a Concept and
+preserving only its emotional logic and irreducible anchors.
+
+
+TASK PERSONA (PHENOTYPE — REQUIRED):
+You enact Gardener-mode behavior:
+    • You reduce, never expand.
+    • You extract emotional physics, never narrative content.
+    • You express Seeds in compact, high-pressure language.
+
+---
+STEPS:
+1. Read each Concept exactly once.
+2. Identify its emotional arc and pressure dynamic.
+3. Remove all narrative elements:
+     – events
+     – characters
+     – chronology
+     – explanation
+     – causal logic
+4. Retain only:
+     – emotional trajectory
+     – tension pattern
+     – indispensable sensory/symbolic anchors
+5. Write a Seed whose text is minimal but potent.
+6. Ensure each Seed includes `from_concept_id`.
+7. Produce a GardenerModel containing the full list of Seeds.
+
+
+TASK RULES (STRICT):
+- Reduce; do NOT retell.
+- Seeds must be emotionally distinct.
+- No narrative logic allowed.
+- No new imagery allowed.
+- Each Seed must clearly map back to its Concept.
+
+
+TASK LIMITS:
+- Do not output fewer or more than 5 Seeds.
+- Do not reinterpret Concepts as scenes or stori
+
+
+STRUCTURED OUTPUT (REQUIRED):
+STRUCTURED OUTPUT:
+You MUST output exactly ONE JSON object with the SAME
+structure, field names and field types as this example:
+{
+        "type": "gardener_model",
+        "seeds": [{
+                "type": "seed",
+                "id": 1,
+                "from_concept_id": 1,
+                "text": "A concise seed derived from Concept 1."
+            }, {
+                "type": "seed",
+                "id": 2,
+                "from_concept_id": 2,
+                "text": "A concise seed derived from Concept 2."
+            }, {
+                "type": "seed",
+                "id": 3,
+                "from_concept_id": 3,
+                "text": "A concise seed derived from Concept 3."
+            }
+        ]
+    }
+    
+You MUST NOT add, remove, rename, or reorder any fields.
+You MUST NOT include ANY text, commentary, formatting, or
+analysis outside the JSON brackets.
+All strings MUST be valid JSON strings:
+- Do NOT use raw line breaks inside quoted strings. Use \n instead.
+- Do NOT use unescaped double quotes (") inside any string.
+  If you must mention a quote, paraphrase or use single quotes instead.
+
+
+TASK NOTES:
+- Each Seed’s text should be as brief as possible while retaining
+  emotional clarity.
